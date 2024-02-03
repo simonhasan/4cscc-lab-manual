@@ -1,0 +1,19 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: "The micro:bit Display"
+    chapters:
+    - file: openers/opener-01
+    - file: intros/intro-01
+    - file: objectives/objectives-01
+    - file: materials/materials-01
+    - file: lessons/lesson-01
+      sections:
+      - file: lessons-makecode/lesson-makecode-01
+      - file: lessons-micropython/lesson-micropython-01 
+    - file: labs/lab-01
+    - file: rubrics/rubric-01
+    - file: further-reading/further-reading-01
