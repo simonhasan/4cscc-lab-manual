@@ -1,5 +1,5 @@
 # Materials
 
-> - a PC or Laptop
+> - a desktop PC or laptop (any operating system)
 > - a BBC micro:bit
-> - a Micro USB cable
+> - a micro USB cable

@@ -16,4 +16,4 @@ parts:
       - file: lessons-micropython/lesson-micropython-01 
     - file: labs/lab-01
     - file: rubrics/rubric-01
-    - file: further-reading/further-reading-01
+    - file: resources/resources-01
