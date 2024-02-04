@@ -3,7 +3,10 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+parts:
+  - caption: "micro:bit Classroom"
+    chapters:
+      - file: microbit-classroom/microbit-classroom-01
+        sections:
+        - file: microbit-classroom/microbit-classroom-02
+        - file: microbit-classroom/microbit-classroom-03

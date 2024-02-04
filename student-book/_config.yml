@@ -4,7 +4,7 @@
 title: Four Corners Science and Computing Club Lab Notebook  # The title of the book. Will be placed in the left navbar.
 author: Four Corners Science and Computing Club
 copyright: "2024"
-logo: logo.png
+logo: 4cscc-logo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
