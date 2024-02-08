@@ -1,4 +1,5 @@
 # Python: Displaying Text
+
 TODO
 ## The 5x5 LED Matrix Display
 
