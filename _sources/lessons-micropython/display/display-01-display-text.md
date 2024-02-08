@@ -1,5 +1,4 @@
-# The micro:bit Display (MicroPython)
-
+# Displaying Text (MicroPython)
 TODO
 ## The 5x5 LED Matrix Display
 
@@ -7,6 +6,8 @@ TODO
 
 
 ## Displaying Text
+
+TODO
 
 ### Strings
 

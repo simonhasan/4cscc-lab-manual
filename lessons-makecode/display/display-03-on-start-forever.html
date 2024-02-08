@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>The micro:bit Display (MicroPython) &#8212; Four Corners Science and Computing Club Lab Notebook</title>
+    <title>MakeCode: on start and forever Blocks &#8212; Four Corners Science and Computing Club Lab Notebook</title>
   
   
   
@@ -62,11 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'lessons-micropython/display/lesson-display-01-display-text';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lessons-makecode/display/display-03-on-start-forever';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Variables" href="lesson-display-02-variables.html" />
-    <link rel="prev" title="The micro:bit Display (MicroPython)" href="lesson-display-00-intro.html" />
+    <link rel="next" title="MakeCode: Displaying Built-In Images" href="display-04-display-image.html" />
+    <link rel="prev" title="MakeCode: Variables" href="display-02-variables.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -177,13 +177,18 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../objectives/objectives-01.html">Objectives</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../materials/materials-01.html">Materials</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../lessons/lesson-01.html">The micro:bit Display</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/lesson-makecode-01.html">The micro:bit Display (MakeCode)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lesson-display-00-intro.html">The micro:bit Display (MicroPython)</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">The micro:bit Display (MicroPython)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lesson-display-02-variables.html">Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lesson-display-03-while-loop.html">The <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lesson-display-04-display-image.html">Displaying Built-In Images</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lesson-display-05-display-custom-image.html">Displaying Custom Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-00-intro.html">MakeCode: The micro:bit Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-01-display-text.html">MakeCode: Displaying Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-02-variables.html">MakeCode: Variables</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">MakeCode: <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">forever</span></code> Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-04-display-image.html">MakeCode: Displaying Built-In Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-05-display-custom-image.html">MakeCode: Displaying Custom Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-00-intro.html">The micro:bit Display (MicroPython)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-01-display-text.html">Displaying Text (MicroPython)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-02-variables.html">Variables (MicroPython)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-03-while-loop.html">The <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-04-display-image.html">Displaying Built-In Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-05-display-custom-image.html">Displaying Custom Images</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../labs/lab-01.html">Lab: Creating a Digital Nametag with BBC micro:bit</a></li>
@@ -260,7 +265,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/simonhasan/4cscc-lab-manual/issues/new?title=Issue%20on%20page%20%2Flessons-micropython/display/lesson-display-01-display-text.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/simonhasan/4cscc-lab-manual/issues/new?title=Issue%20on%20page%20%2Flessons-makecode/display/display-03-on-start-forever.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -290,7 +295,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/lessons-micropython/display/lesson-display-01-display-text.md" target="_blank"
+      <li><a href="../../_sources/lessons-makecode/display/display-03-on-start-forever.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -361,9 +366,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -374,25 +377,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>The micro:bit Display (MicroPython)</h1>
+    <h1>MakeCode: on start and forever Blocks</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-5x5-led-matrix-display">The 5x5 LED Matrix Display</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#displaying-text">Displaying Text</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-scroll"><code class="docutils literal notranslate"><span class="pre">display.scroll()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-show"><code class="docutils literal notranslate"><span class="pre">display.show()</span></code></a></li>
-</ul>
-</li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -402,42 +391,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="the-micro-bit-display-micropython">
-<h1>The micro:bit Display (MicroPython)<a class="headerlink" href="#the-micro-bit-display-micropython" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="makecode-on-start-and-forever-blocks">
+<h1>MakeCode: <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">forever</span></code> Blocks<a class="headerlink" href="#makecode-on-start-and-forever-blocks" title="Permalink to this heading">#</a></h1>
 <p>TODO</p>
-<section id="the-5x5-led-matrix-display">
-<h2>The 5x5 LED Matrix Display<a class="headerlink" href="#the-5x5-led-matrix-display" title="Permalink to this heading">#</a></h2>
-<p>TODO</p>
-</section>
-<section id="displaying-text">
-<h2>Displaying Text<a class="headerlink" href="#displaying-text" title="Permalink to this heading">#</a></h2>
-<section id="strings">
-<h3>Strings<a class="headerlink" href="#strings" title="Permalink to this heading">#</a></h3>
-<p>TODO</p>
-</section>
-<section id="display-scroll">
-<h3><code class="docutils literal notranslate"><span class="pre">display.scroll()</span></code><a class="headerlink" href="#display-scroll" title="Permalink to this heading">#</a></h3>
-<p>TODO</p>
-<p><img alt="display-scroll-micropython" src="../../_images/display-scroll-micropython.gif" /></p>
-<p>TODO</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span> 
-
-<span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s1">&#39;Python&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</section>
-<section id="display-show">
-<h3><code class="docutils literal notranslate"><span class="pre">display.show()</span></code><a class="headerlink" href="#display-show" title="Permalink to this heading">#</a></h3>
-<p>TODO</p>
-<p><img alt="display-show-micropython" src="../../_images/display-show-micropython.gif" /></p>
-<p>TODO</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-
-<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s1">&#39;Python&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</section>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -453,7 +409,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./lessons-micropython/display"
+            path: "./lessons-makecode/display"
         },
         predefinedOutput: true
     }
@@ -471,20 +427,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="lesson-display-00-intro.html"
+       href="display-02-variables.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">The micro:bit Display (MicroPython)</p>
+        <p class="prev-next-title">MakeCode: Variables</p>
       </div>
     </a>
     <a class="right-next"
-       href="lesson-display-02-variables.html"
+       href="display-04-display-image.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Variables</p>
+        <p class="prev-next-title">MakeCode: Displaying Built-In Images</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -495,26 +451,7 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-5x5-led-matrix-display">The 5x5 LED Matrix Display</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#displaying-text">Displaying Text</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-scroll"><code class="docutils literal notranslate"><span class="pre">display.scroll()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-show"><code class="docutils literal notranslate"><span class="pre">display.show()</span></code></a></li>
-</ul>
-</li>
-</ul>
-  </nav></div>
-
-</div></div>
+                <div class="bd-sidebar-secondary bd-toc"></div>
               
             
           </div>

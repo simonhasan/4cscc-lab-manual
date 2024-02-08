@@ -10,7 +10,9 @@ TODO
 ![while-flowchart-infinite](assets/while-flowchart-infinite.png)
 
 
-
+```{sidebar} My sidebar title
+My sidebar content
+```
 
 ```python
 from microbit import *
