@@ -1,3 +1,3 @@
-# Ruberic: Creating a Fidget Device
+# Ruberic: Building a Fidget Device with BBC micro:bit
 
 TODO
