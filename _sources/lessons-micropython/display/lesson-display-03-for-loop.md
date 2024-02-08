@@ -1,4 +1,4 @@
-# The `for` Loop
+# The `while` Loop
 
 TODO
 
