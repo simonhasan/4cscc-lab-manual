@@ -10,7 +10,7 @@ parts:
     - file: intros/intro-01
     - file: objectives/objectives-01
     - file: materials/materials-01
-    - file: lessons/lesson-01
+    - file: lessons/makecode-display
       sections:
       - file: lessons-makecode/display/display-00-intro
       - file: lessons-makecode/display/display-01-display-text
@@ -18,6 +18,8 @@ parts:
       - file: lessons-makecode/display/display-03-on-start-forever
       - file: lessons-makecode/display/display-04-display-image
       - file: lessons-makecode/display/display-05-display-custom-image
+    - file: lessons/micropython-display
+      sections:
       - file: lessons-micropython/display/display-00-intro
       - file: lessons-micropython/display/display-01-display-text
       - file: lessons-micropython/display/display-02-variables
