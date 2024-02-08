@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>micro:bit Onboard Components &#8212; Four Corners Science and Computing Club Lab Notebook</title>
+    <title>Lab: Building a Fidget Device with BBC micro:bit &#8212; Four Corners Science and Computing Club Lab Notebook</title>
   
   
   
@@ -228,7 +228,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/onboard-components/onboard-components-08-buzzer.html">Python: The Buzzer</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">micro:bit Onboard Components</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lab: Building a Fidget Device with BBC micro:bit</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../rubrics/onboard-components-rubric.html">Ruberic: Creating a Fidget Device</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../resources/onboard-components-resources.html">Resources</a></li>
 </ul>
@@ -403,7 +403,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -414,11 +416,23 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>micro:bit Onboard Components</h1>
+    <h1>Lab: Building a Fidget Device with BBC micro:bit</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objective">Objective:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inputs">Inputs:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outputs">Outputs:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions:</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -428,9 +442,60 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="micro-bit-onboard-components">
-<h1>micro:bit Onboard Components<a class="headerlink" href="#micro-bit-onboard-components" title="Permalink to this heading">#</a></h1>
-<p>TODO</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="lab-building-a-fidget-device-with-bbc-micro-bit">
+<h1>Lab: Building a Fidget Device with BBC micro:bit<a class="headerlink" href="#lab-building-a-fidget-device-with-bbc-micro-bit" title="Permalink to this heading">#</a></h1>
+<section id="objective">
+<h2>Objective:<a class="headerlink" href="#objective" title="Permalink to this heading">#</a></h2>
+<p>In this lab, you will design and build a fidget device using the BBC micro:bit. Your device should have at least five different input/output reactions.</p>
+</section>
+<section id="materials">
+<h2>Materials:<a class="headerlink" href="#materials" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>a PC or Laptop</p></li>
+<li><p>a BBC micro:bit</p></li>
+<li><p>a Micro USB cable</p></li>
+</ul>
+</section>
+<section id="inputs">
+<h2>Inputs:<a class="headerlink" href="#inputs" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Buttons</p></li>
+<li><p>Capacitive touch logo</p></li>
+<li><p>Accelerometer</p></li>
+<li><p>Temperature sensor</p></li>
+<li><p>Light sensor</p></li>
+<li><p>Sound sensor</p></li>
+<li><p>Compass</p></li>
+</ul>
+</section>
+<section id="outputs">
+<h2>Outputs:<a class="headerlink" href="#outputs" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>5x5 LED matrix</p></li>
+<li><p>Buzzer</p></li>
+</ul>
+</section>
+<section id="instructions">
+<h2>Instructions:<a class="headerlink" href="#instructions" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Setup</strong>: Connect your BBC micro:bit to your PC or laptop using the Micro USB cable.</p></li>
+<li><p><strong>Programming Environment</strong>: Open the BBC micro:bit programming environment on your PC or laptop.</p></li>
+<li><p><strong>Design your fidget device:</strong> Sketch out a design for your fidget device. Think about how you can incorporate the inputs and outputs in an interactive and fun way.</p></li>
+<li><p><strong>Code your device:</strong> Using the MakeCode editor or Python editor for micro:bit, write code to control your device. Here are some ideas for input/output reactions:</p>
+<ul class="simple">
+<li><p>When a button is pressed, display a pattern on the LED matrix.</p></li>
+<li><p>When the device is shaken, make the buzzer sound.</p></li>
+<li><p>When the light level changes, change the display on the LED matrix.</p></li>
+<li><p>When a loud sound is detected, make the buzzer sound.</p></li>
+<li><p>When the device is tilted, change the display on the LED matrix.</p></li>
+</ul>
+</li>
+<li><p><strong>Test your device:</strong> After you’ve written your code, download it to your micro:bit and test your device. Make sure all the inputs and outputs are working as expected.</p></li>
+<li><p><strong>Document your work:</strong> Take pictures or videos of your device in action. Write a brief report explaining your design process, how you coded your device, any challenges you faced, and how you overcame them.</p></li>
+<li><p><strong>Present your work:</strong> Prepare a short presentation to share your fidget device with the class. Demonstrate each input/output reaction and explain how you created it.</p></li>
+<li><p><strong>Reflection</strong>: Write a brief report explaining the logic behind your code and how it results in a fidget device with at least five input/output reactions.</p></li>
+</ol>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -488,7 +553,24 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objective">Objective:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inputs">Inputs:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outputs">Outputs:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions:</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
