@@ -12,13 +12,18 @@ parts:
     - file: materials/materials-01
     - file: lessons/lesson-01
       sections:
-      - file: lessons-makecode/lesson-makecode-01
-      - file: lessons-micropython/display/lesson-display-00-intro
-      - file: lessons-micropython/display/lesson-display-01-display-text
-      - file: lessons-micropython/display/lesson-display-02-variables
-      - file: lessons-micropython/display/lesson-display-03-while-loop
-      - file: lessons-micropython/display/lesson-display-04-display-image
-      - file: lessons-micropython/display/lesson-display-05-display-custom-image 
+      - file: lessons-makecode/display/display-00-intro
+      - file: lessons-makecode/display/display-01-display-text
+      - file: lessons-makecode/display/display-02-variables
+      - file: lessons-makecode/display/display-03-on-start-forever
+      - file: lessons-makecode/display/display-04-display-image
+      - file: lessons-makecode/display/display-05-display-custom-image
+      - file: lessons-micropython/display/display-00-intro
+      - file: lessons-micropython/display/display-01-display-text
+      - file: lessons-micropython/display/display-02-variables
+      - file: lessons-micropython/display/display-03-while-loop
+      - file: lessons-micropython/display/display-04-display-image
+      - file: lessons-micropython/display/display-05-display-custom-image 
     - file: labs/lab-01
     - file: rubrics/rubric-01
     - file: resources/resources-01
