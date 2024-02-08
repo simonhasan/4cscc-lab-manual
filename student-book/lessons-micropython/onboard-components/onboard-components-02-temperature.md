@@ -1,3 +1,3 @@
-# Python: 
+# Python: The Temperature Sensor
 
 TODO

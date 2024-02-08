@@ -1,3 +1,3 @@
-# Python: 
+# Python: The Sound Sensor
 
 TODO

@@ -1,3 +1,3 @@
-# Python: 
+# Python: The Light Sensor
 
 TODO
