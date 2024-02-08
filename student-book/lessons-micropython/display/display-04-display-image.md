@@ -1,3 +1,3 @@
-# Displaying Built-In Images
+# Python: Displaying Built-In Images
 
 TODO

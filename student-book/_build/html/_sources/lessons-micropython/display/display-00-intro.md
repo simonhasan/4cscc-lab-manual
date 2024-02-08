@@ -1,2 +1,2 @@
-# The micro:bit Display (MicroPython)
+# Python: The micro:bit Display
 TODO
