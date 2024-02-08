@@ -6,11 +6,11 @@ root: intro
 parts:
   - caption: "The micro:bit Display"
     chapters:
-    - file: openers/opener-01
-    - file: intros/intro-01
-    - file: objectives/objectives-01
-    - file: materials/materials-01
-    - file: lessons/makecode-display
+    - file: openers/display-opener
+    - file: intros/display-intro
+    - file: objectives/display-objectives
+    - file: materials/display-materials
+    - file: lessons/display-makecode
       sections:
       - file: lessons-makecode/display/display-00-intro
       - file: lessons-makecode/display/display-01-display-text
@@ -18,7 +18,7 @@ parts:
       - file: lessons-makecode/display/display-03-on-start-forever
       - file: lessons-makecode/display/display-04-display-image
       - file: lessons-makecode/display/display-05-display-custom-image
-    - file: lessons/micropython-display
+    - file: lessons/display-micropython
       sections:
       - file: lessons-micropython/display/display-00-intro
       - file: lessons-micropython/display/display-01-display-text
@@ -26,6 +26,6 @@ parts:
       - file: lessons-micropython/display/display-03-while-loop
       - file: lessons-micropython/display/display-04-display-image
       - file: lessons-micropython/display/display-05-display-custom-image 
-    - file: labs/lab-01
-    - file: rubrics/rubric-01
-    - file: resources/resources-01
+    - file: labs/display-lab
+    - file: rubrics/display-rubric
+    - file: resources/display-resources
