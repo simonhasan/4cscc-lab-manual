@@ -1,4 +1,4 @@
-# The micro:bit Display
+# The micro:bit Display with Python
 
 TODO
 
