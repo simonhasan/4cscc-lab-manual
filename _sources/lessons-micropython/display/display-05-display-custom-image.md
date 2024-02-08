@@ -1,3 +1,3 @@
-# Displaying Custom Images
+# Python: Displaying Custom Images
 
 TODO
