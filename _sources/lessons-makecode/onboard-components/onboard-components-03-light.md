@@ -1,3 +1,0 @@
-# MakeCode: Light Sensor
-
-TODO

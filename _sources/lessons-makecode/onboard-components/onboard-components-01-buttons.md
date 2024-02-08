@@ -1,3 +1,3 @@
-# MakeCode: Buttons
+# MakeCode: The A and B Buttons
 
 TODO

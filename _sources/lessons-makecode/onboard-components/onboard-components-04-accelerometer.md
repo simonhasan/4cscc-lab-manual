@@ -1,3 +1,0 @@
-# MakeCode: Accelerometer
-
-TODO

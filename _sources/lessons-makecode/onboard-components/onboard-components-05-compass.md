@@ -1,3 +1,0 @@
-# MakeCode: Compass
-
-TODO

@@ -1,3 +1,0 @@
-# MakeCode: Temperature Sensor
-
-TODO
