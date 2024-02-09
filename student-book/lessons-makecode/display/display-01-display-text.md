@@ -1,3 +1,3 @@
-# MakeCode: Displaying Text
+$ Displaying Text
 
 TODO

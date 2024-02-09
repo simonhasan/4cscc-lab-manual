@@ -1,3 +1,3 @@
-# MakeCode: Introduction to the Onboard Components
+# An Introduction to the Onboard Components
 
 TODO

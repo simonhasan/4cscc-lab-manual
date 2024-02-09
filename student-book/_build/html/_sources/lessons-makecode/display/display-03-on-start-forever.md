@@ -1,3 +1,3 @@
-# MakeCode: `on start` and `forever` Blocks
+# The `on start` and `forever` Blocks
 
 TODO

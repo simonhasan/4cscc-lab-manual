@@ -10,10 +10,13 @@ TODO
 ![while-flowchart-infinite](assets/while-flowchart-infinite.png)
 
 ```python
+# Imports go at the top
 from microbit import *
 
+# Code in a 'while True:' loop repeats forever
 while True:
-    display.scroll('Python')
+    # Scroll "Python" on the display
+    display.scroll('Python') 
 ```
 
 
@@ -21,10 +24,13 @@ while True:
 ![while-flowchart-microbit](assets/while-flowchart-microbit.png)
 
 ```python
+# Imports go at the top
 from microbit import *
 
+# Code in a 'while True:' loop repeats forever
 while True:
-    display.show('Python')
+    # Show each character of "Python" individually on the display
+    display.show('Python') 
 ```
 
 TODO

@@ -1,3 +1,3 @@
-# MakeCode: Displaying Custom Images
+# Displaying Custom Images
 
 TODO

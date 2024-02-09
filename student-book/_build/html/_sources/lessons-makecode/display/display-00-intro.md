@@ -1,3 +1,3 @@
-# MakeCode: The micro:bit Display
+# The micro:bit Display
 
 TODO

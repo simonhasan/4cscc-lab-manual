@@ -59,5 +59,44 @@ parts:
       - file: lessons-micropython/onboard-components/onboard-components-08-buzzer
     - file: labs/onboard-components-lab
     - file: rubrics/onboard-components-rubric
-    - file: resources/onboard-components-resources 
+    - file: resources/onboard-components-resources
+  - caption: "Light-Emitting Dioded (LEDs)"
+    chapters:
+    - file: openers/leds-opener
+    - file: intros/leds-intro
+    - file: objectives/leds-objectives
+    - file: materials/leds-materials
+    - file: lessons/leds-makecode
+      sections:
+      - file: lessons-makecode/leds/leds-00-intro
+      - file: lessons-makecode/leds/leds-01-microbit-pins
+      - file: lessons-makecode/leds/leds-02-breadboard
+      - file: lessons-makecode/leds/leds-03-leds
+      - file: lessons-makecode/leds/leds-04-resistors
+      - file: lessons-makecode/leds/leds-05-ohms-law
+      - file: lessons-makecode/leds/leds-06-complete-and-incomplete
+      - file: lessons-makecode/leds/leds-07-digital-analog
+      - file: lessons-makecode/leds/leds-08-blink-led
+      - file: lessons-makecode/leds/leds-09-conditionals
+      - file: lessons-makecode/leds/leds-10-on-off-led
+      - file: lessons-makecode/leds/leds-11-brightness-led
+      - file: lessons-makecode/leds/leds-12-light-led
+    - file: lessons/leds-micropython
+      sections:
+      - file: lessons-micropython/leds/leds-00-intro
+      - file: lessons-micropython/leds/leds-01-microbit-pins
+      - file: lessons-micropython/leds/leds-02-breadboard
+      - file: lessons-micropython/leds/leds-03-leds
+      - file: lessons-micropython/leds/leds-04-resistors
+      - file: lessons-micropython/leds/leds-05-ohms-law
+      - file: lessons-micropython/leds/leds-06-complete-and-incomplete
+      - file: lessons-micropython/leds/leds-07-digital-analog
+      - file: lessons-micropython/leds/leds-08-blink-led
+      - file: lessons-micropython/leds/leds-09-conditionals
+      - file: lessons-micropython/leds/leds-10-on-off-led
+      - file: lessons-micropython/leds/leds-11-brightness-led
+      - file: lessons-micropython/leds/leds-12-light-led
+    - file: labs/leds-lab
+    - file: rubrics/leds-rubric
+    - file: resources/leds-resources
 

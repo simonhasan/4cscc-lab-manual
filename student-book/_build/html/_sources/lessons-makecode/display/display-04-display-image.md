@@ -1,3 +1,3 @@
-# MakeCode: Displaying Built-In Images
+# Displaying Built-In Images
 
 TODO
