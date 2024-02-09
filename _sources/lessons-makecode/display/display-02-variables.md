@@ -1,3 +1,3 @@
-# MakeCode: Variables
+# Variables
 
 TODO

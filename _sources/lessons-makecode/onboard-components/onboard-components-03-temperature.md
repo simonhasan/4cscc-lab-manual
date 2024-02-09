@@ -1,3 +1,3 @@
-# MakeCode: The Temperature Sensor
+# The Temperature Sensor
 
 TODO

@@ -1,3 +1,3 @@
-# MakeCode: The Light Sensor
+# The Light Sensor
 
 TODO

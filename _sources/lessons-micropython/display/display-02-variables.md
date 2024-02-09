@@ -1,4 +1,4 @@
-# Python: Variables
+# Variables
 
 TODO
 

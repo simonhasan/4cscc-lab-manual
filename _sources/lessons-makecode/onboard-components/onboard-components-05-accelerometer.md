@@ -1,3 +1,3 @@
-# MakeCode: The Accelerometer
+# The Accelerometer
 
 TODO

@@ -1,3 +1,3 @@
-# MakeCode: The Compass
+# The Compass
 
 TODO

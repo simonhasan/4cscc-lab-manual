@@ -1,3 +1,3 @@
-# MakeCode: The Captive Touch Logo
+# The Captive Touch Logo
 
 TODO
