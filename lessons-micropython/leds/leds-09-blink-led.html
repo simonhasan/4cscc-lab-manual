@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Turing an LED on and Off with the micro:bit Buttons &#8212; Four Corners Science and Computing Club Lab Notebook</title>
+    <title>Blinking an LED &#8212; Four Corners Science and Computing Club Lab Notebook</title>
   
   
   
@@ -62,11 +62,9 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'lessons-micropython/leds/leds-10-on-off-led';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lessons-micropython/leds/leds-09-blink-led';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Varying the Brightness of an LED" href="leds-11-brightness-led.html" />
-    <link rel="prev" title="Conditionals" href="leds-09-conditionals.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -128,6 +126,8 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -178,6 +178,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../materials/display-materials.html">Materials</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/display-makecode.html">The micro:bit Display with MakeCode</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/display/display-00-intro.html">The micro:bit Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/display/display-01-display-text.html">Displaying Text</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/display/display-02-variables.html">Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/display/display-03-on-start-forever.html">The <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">forever</span></code> Blocks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/display/display-04-display-image.html">Displaying Built-In Images</a></li>
@@ -185,12 +186,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/display-micropython.html">The micro:bit Display with Python</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../display/display-00-intro.html">Python: The micro:bit Display</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../display/display-01-display-text.html">Python: Displaying Text</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../display/display-02-variables.html">Python: Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../display/display-00-intro.html">The micro:bit Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../display/display-01-display-text.html">Displaying Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../display/display-02-variables.html">Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../display/display-03-while-loop.html">Python: The <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../display/display-04-display-image.html">Python: Displaying Built-In Images</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../display/display-05-display-custom-image.html">Python: Displaying Custom Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../display/display-04-display-image.html">Displaying Built-In Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../display/display-05-display-custom-image.html">Displaying Custom Images</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../labs/display-lab.html">Lab: Creating a Digital Nametag with BBC micro:bit</a></li>
@@ -232,7 +233,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../resources/onboard-components-resources.html">Resources</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Light-Emitting Dioded (LEDs)</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../openers/leds-opener.html">Opener</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intros/leds-intro.html">Introduction to Light-Emitting Diodes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../objectives/leds-objectives.html">Objectives</a></li>
@@ -244,29 +245,15 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-03-leds.html">Parts of an LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-04-resistors.html">Resistors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-05-ohms-law.html">Ohm’s Law</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-06-complete-and-incomplete.html">Complete and Incomplete Circuits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-07-digital-analog.html">Analog and Digital Signals</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-08-blink-led.html">Blinking an LED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-09-conditionals.html">Conditionals</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-10-on-off-led.html">Turing an LED on and Off with the micro:bit Buttons</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-11-brightness-led.html">Varying the Brightness of an LED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-12-light-led.html">Using an LED with the Light Sensor</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../lessons/leds-micropython.html">Using LEDS with Python</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/leds-micropython.html">Using LEDS with Python</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="leds-00-intro.html">Introduction to LEDs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-01-microbit-pins.html">The micro:bit General-Purpose Input/Output (GPIO) Pins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-02-breadboard.html">Breadboards</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-03-leds.html">Parts of an LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-04-resistors.html">Resistors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-05-ohms-law.html">Ohm’s Law</a></li>
-<li class="toctree-l2"><a class="reference internal" href="leds-06-complete-and-incomplete.html">Complete and Incomplete Circuits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="leds-07-digital-analog.html">Analog and Digital Signals</a></li>
-<li class="toctree-l2"><a class="reference internal" href="leds-08-blink-led.html">Blinking an LED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="leds-09-conditionals.html">Conditionals</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Turing an LED on and Off with the micro:bit Buttons</a></li>
-<li class="toctree-l2"><a class="reference internal" href="leds-11-brightness-led.html">Varying the Brightness of an LED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="leds-12-light-led.html">Using an LED with the Light Sensor</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../labs/leds-lab.html">Lab:</a></li>
@@ -343,7 +330,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/simonhasan/4cscc-lab-manual/issues/new?title=Issue%20on%20page%20%2Flessons-micropython/leds/leds-10-on-off-led.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/simonhasan/4cscc-lab-manual/issues/new?title=Issue%20on%20page%20%2Flessons-micropython/leds/leds-09-blink-led.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -373,7 +360,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/lessons-micropython/leds/leds-10-on-off-led.md" target="_blank"
+      <li><a href="../../_sources/lessons-micropython/leds/leds-09-blink-led.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -455,7 +442,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Turing an LED on and Off with the micro:bit Buttons</h1>
+    <h1>Blinking an LED</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -469,8 +456,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="turing-an-led-on-and-off-with-the-micro-bit-buttons">
-<h1>Turing an LED on and Off with the micro:bit Buttons<a class="headerlink" href="#turing-an-led-on-and-off-with-the-micro-bit-buttons" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="blinking-an-led">
+<h1>Blinking an LED<a class="headerlink" href="#blinking-an-led" title="Permalink to this heading">#</a></h1>
 <p>TODO</p>
 </section>
 
@@ -504,24 +491,6 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="leds-09-conditionals.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Conditionals</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="leds-11-brightness-led.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Varying the Brightness of an LED</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
