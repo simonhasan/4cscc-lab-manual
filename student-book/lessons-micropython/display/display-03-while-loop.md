@@ -9,11 +9,6 @@ TODO
 
 ![while-flowchart-infinite](assets/while-flowchart-infinite.png)
 
-
-```{sidebar} My sidebar title
-My sidebar content
-```
-
 ```python
 from microbit import *
 
@@ -24,8 +19,6 @@ while True:
 
 
 ![while-flowchart-microbit](assets/while-flowchart-microbit.png)
-
-
 
 ```python
 from microbit import *
