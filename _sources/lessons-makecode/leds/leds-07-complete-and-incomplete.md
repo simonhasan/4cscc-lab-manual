@@ -12,7 +12,7 @@ TODO
 
 ![circuit-incomplete](assets/circuit-incomplete.png)
 
-## Complete or Incomplete
+## Checkpoint: Complete or Incomplete Circuits
 
 Which circuits are complete or incomplete circuits?
 

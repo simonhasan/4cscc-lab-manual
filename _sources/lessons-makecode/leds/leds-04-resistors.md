@@ -4,12 +4,9 @@ TODO
 
 ![resistor-chart](assets/resistor-chart.png)
 
-## Checkpoint: Calculating Resistor Values  
-
-Calculate the values of the resistors below:
+## Checkpoint: Interpreting Resistor Values  
 
 ![resistor-quiz](assets/resistor-quiz.png)
-
 
 ```{admonition} Click here to reveal the solutions.
 :class: dropdown

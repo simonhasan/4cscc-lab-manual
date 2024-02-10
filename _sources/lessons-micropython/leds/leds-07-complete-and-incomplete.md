@@ -6,7 +6,7 @@ TODO
 
 ![circuit-complete](assets/circuit-complete.png)
 
-## Incomplete Circuits
+## Checkpoint: Complete or Incomplete Circuits
 
 TODO
 
