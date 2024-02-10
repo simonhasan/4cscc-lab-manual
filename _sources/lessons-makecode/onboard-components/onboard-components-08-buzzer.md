@@ -1,3 +1,0 @@
-# MakeCode: The Buzzer
-
-TODO

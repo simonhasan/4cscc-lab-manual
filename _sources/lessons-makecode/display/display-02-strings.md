@@ -1,1 +1,0 @@
-# The String Basic Type

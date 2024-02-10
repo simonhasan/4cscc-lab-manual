@@ -1,3 +1,0 @@
-# The Light Sensor
-
-TODO

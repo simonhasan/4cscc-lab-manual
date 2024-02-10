@@ -17,3 +17,9 @@ TODO
 TODO
 
 ![circuit-quiz](assets/circuit-quiz.png)
+
+```{admonition} Click here to reveal the solutions.
+:class: dropdown
+Solutions:
+![circuit-quiz](assets/circuit-quiz-solutions.png)
+```

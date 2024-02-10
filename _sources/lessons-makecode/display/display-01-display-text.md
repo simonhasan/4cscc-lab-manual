@@ -1,3 +1,0 @@
-# Displaying Text
-
-TODO
