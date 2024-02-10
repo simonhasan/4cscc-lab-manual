@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'lessons-makecode/display/display-00-intro';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="display-01-display-text.html" />
+    <link rel="next" title="The String Basic Type" href="display-01-strings.html" />
     <link rel="prev" title="The micro:bit Display with MakeCode" href="../../lessons/display-makecode.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -178,19 +178,22 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../materials/display-materials.html">Materials</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../lessons/display-makecode.html">The micro:bit Display with MakeCode</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">The micro:bit Display</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-02-variables.html">Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-03-on-start-forever.html">The <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">forever</span></code> Blocks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-04-display-image.html">Displaying Built-In Images</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-05-display-custom-image.html">Displaying Custom Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-01-strings.html">The String Basic Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-02-display-text.html">Displaying Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-03-variables.html">Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-04-on-start-forever.html">The <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">forever</span></code> Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-05-display-image.html">Displaying Built-In Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-06-display-custom-image.html">Displaying Custom Images</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/display-micropython.html">The micro:bit Display with Python</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-00-intro.html">Python: The micro:bit Display</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-01-display-text.html">Python: Displaying Text</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-02-variables.html">Python: Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-03-while-loop.html">Python: The <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-04-display-image.html">Python: Displaying Built-In Images</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-05-display-custom-image.html">Python: Displaying Custom Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-00-intro.html">The micro:bit Display</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-01-strings.html">The String (<code class="docutils literal notranslate"><span class="pre">str</span></code>) Data Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-02-display-text.html">Displaying Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-03-variables.html">Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-04-while-loop.html">Python: The <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-05-display-image.html">Displaying Built-In Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-06-display-custom-image.html">Displaying Custom Images</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../labs/display-lab.html">Lab: Creating a Digital Nametag with BBC micro:bit</a></li>
@@ -205,26 +208,28 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../materials/onboard-components-materials.html">Materials</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/onboard-components-makecode.html">Onboard Components with MakeCode</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-00-intro.html">An Introduction to the Onboard Components</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-01-buttons.html">The A and B Buttons</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-02-logo.html">The Captive Touch Logo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-03-temperature.html">The Temperature Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-04-light.html">The Light Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-05-accelerometer.html">The Accelerometer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-06-compass.html">The Compass</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-07-sound.html">MakeCode: The Sound Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-08-buzzer.html">MakeCode: The Buzzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-01-number.html">The Basic Number Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-02-buttons.html">The A and B Buttons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-03-logo.html">The Captive Touch Logo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-04-temperature.html">The Temperature Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-05-light.html">The Light Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-06-accelerometer.html">The Accelerometer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-07-compass.html">The Compass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-08-sound.html">MakeCode: The Sound Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-09-buzzer.html">MakeCode: The Buzzer</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/onboard-components-micropython.html">Onboard Components with Python</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/onboard-components/onboard-components-00-intro.html">Python: Introduction to the Onboard Components</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/onboard-components/onboard-components-01-buttons.html">Python: The A and B Buttons</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/onboard-components/onboard-components-02-logo.html">Python: The Captive Touch Logo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/onboard-components/onboard-components-03-temperature.html">Python: The Temperature Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/onboard-components/onboard-components-04-light.html">Python: The Light Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/onboard-components/onboard-components-05-accelerometer.html">Python: The Accelerometer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/onboard-components/onboard-components-06-compass.html">Python: The Compass</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/onboard-components/onboard-components-07-sound.html">Python: The Sound Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/onboard-components/onboard-components-08-buzzer.html">Python: The Buzzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/onboard-components/onboard-components-01-integers.html">The Integer (<code class="docutils literal notranslate"><span class="pre">int</span></code>) Data Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/onboard-components/onboard-components-02-buttons.html">Python: The A and B Buttons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/onboard-components/onboard-components-03-logo.html">Python: The Captive Touch Logo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/onboard-components/onboard-components-04-temperature.html">Python: The Temperature Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/onboard-components/onboard-components-05-light.html">Python: The Light Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/onboard-components/onboard-components-06-accelerometer.html">Python: The Accelerometer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/onboard-components/onboard-components-07-compass.html">Python: The Compass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/onboard-components/onboard-components-08-sound.html">Python: The Sound Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/onboard-components/onboard-components-09-buzzer.html">Python: The Buzzer</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../labs/onboard-components-lab.html">Lab: Building a Fidget Device with BBC micro:bit</a></li>
@@ -244,13 +249,15 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-03-leds.html">Parts of an LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-04-resistors.html">Resistors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-05-ohms-law.html">Ohm’s Law</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../leds/leds-06-complete-and-incomplete.html">Complete and Incomplete Circuits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../leds/leds-07-digital-analog.html">Analog and Digital Signals</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../leds/leds-08-blink-led.html">Blinking an LED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../leds/leds-09-conditionals.html">Conditionals</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../leds/leds-10-on-off-led.html">Turing an LED on and Off with the micro:bit Buttons</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../leds/leds-11-brightness-led.html">Varying the Brightness of an LED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../leds/leds-12-light-led.html">Using an LED with the Light Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../leds/leds-06-build-led-circuit.html">Building an LED Circuit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../leds/leds-07-complete-and-incomplete.html">Complete and Incomplete Circuits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../leds/leds-08-digital-analog.html">Analog and Digital Signals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../leds/leds-09-blink-led.html">Blinking an LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../leds/leds-10-conditionals.html">Conditionals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../leds/leds-11-bools.html">The Boolean Basic Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../leds/leds-12-on-off-led.html">Turing an LED on and Off with the micro:bit Buttons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../leds/leds-13-brightness-led.html">Varying the Brightness of an LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../leds/leds-14-light-led.html">Using an LED with the Light Sensor</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/leds-micropython.html">Using LEDS with Python</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -260,13 +267,15 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-03-leds.html">Parts of an LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-04-resistors.html">Resistors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-05-ohms-law.html">Ohm’s Law</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-06-complete-and-incomplete.html">Complete and Incomplete Circuits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-07-digital-analog.html">Analog and Digital Signals</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-08-blink-led.html">Blinking an LED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-09-conditionals.html">Conditionals</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-10-on-off-led.html">Turing an LED on and Off with the micro:bit Buttons</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-11-brightness-led.html">Varying the Brightness of an LED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-12-light-led.html">Using an LED with the Light Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-06-build-led-circuit.html">Building an LED Circuit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-07-complete-and-incomplete.html">Complete and Incomplete Circuits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-08-digital-analog.html">Analog and Digital Signals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-09-blink-led.html">Blinking an LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-10-conditionals.html">Conditionals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-11-bools.html">The Boolean (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) Data Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-12-on-off-led.html">Turing an LED on and Off with the micro:bit Buttons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-13-brightness-led.html">Varying the Brightness of an LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-14-light-led.html">Using an LED with the Light Sensor</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../labs/leds-lab.html">Lab:</a></li>
@@ -514,11 +523,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="display-01-display-text.html"
+       href="display-01-strings.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">The String Basic Type</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
