@@ -453,7 +453,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -469,6 +471,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkpoint-annode-or-cathode">Checkpoint: Annode or Cathode</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -482,6 +492,18 @@ document.write(`
 <h1>Parts of an LED<a class="headerlink" href="#parts-of-an-led" title="Permalink to this heading">#</a></h1>
 <p>TODO</p>
 <p><img alt="led-diagram" src="../../_images/led-diagram.png" /></p>
+<section id="checkpoint-annode-or-cathode">
+<h2>Checkpoint: Annode or Cathode<a class="headerlink" href="#checkpoint-annode-or-cathode" title="Permalink to this heading">#</a></h2>
+<p>Which lead is the anode? Which lead is the cathode? What is the polarity of the different leads?</p>
+<p><img alt="quiz-led-02" src="../../_images/quiz-led-parts.png" /></p>
+<div class="dropdown admonition">
+<p class="admonition-title">Click here to reveal the solutions.</p>
+<p>Solution:
+<img alt="quiz-led-02" src="../../_images/quiz-led-parts-solution.png" /></p>
+<p>A has the flat side and the shorter lead so it is the cathode. The polarity is negative.<br>
+B has the longer lead so it is the anode. The polarity is positive.</p>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -539,7 +561,20 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkpoint-annode-or-cathode">Checkpoint: Annode or Cathode</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

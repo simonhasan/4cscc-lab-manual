@@ -1,41 +1,21 @@
 # Parts of an LED
 
-TODO
+![led-diagram](assets/led-diagram.png)
 
-## Alligator Clip GPIO Pins
+## Checkpoint: Annode or Cathode
 
-TODO
+Which lead is the anode? Which lead is the cathode? What is the polarity of the different leads?
 
-![microbit-gpio](assets/microbit-gpio.png)
+![quiz-led-02](assets/quiz-led-parts.png)
 
-TODO
 
-![microbit-alligator-input-output](assets/microbit-alligator-input-output.png)
+```{admonition} Click here to reveal the solutions.
+:class: dropdown
+Solution:
+![quiz-led-02](assets/quiz-led-parts-solution.png)
 
-TODO
+A has the flat side and the shorter lead so it is the cathode. The polarity is negative.<br>
+B has the longer lead so it is the anode. The polarity is positive. 
 
-![microbit-alligator-3v3](assets/microbit-alligator-3v3.png)
 
-TODO
-
-![microbit-alligator-gnd](assets/microbit-alligator-gnd.png)
-
-## Breakout Board GPIO Pins
-
-TODO
-
-![microbit-breakout-input-output](assets/microbit-breakout-input-output.png)
-
-TODO
-
-![microbit-breakout-3v3](assets/microbit-breakout-3v3.png)
-
-TODO
-
-![microbit-breakout-gnd](assets/microbit-breakout-gnd.png)
-
-## micro:bit GPIO Pinout
-
-TODO
-
-![microbit-pinout](assets/microbit-pinout.png)
+```
