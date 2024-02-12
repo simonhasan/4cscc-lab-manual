@@ -2,7 +2,7 @@
 
 ![led-diagram](assets/led-diagram.png)
 
-## Checkpoint: Annode or Cathode
+## Checkpoint: Anode or Cathode
 
 Which lead is the anode? Which lead is the cathode? What is the polarity of the different leads?
 
