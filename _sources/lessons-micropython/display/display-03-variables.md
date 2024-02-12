@@ -22,6 +22,7 @@ Variable names can contain chatacters `a-z`, `A-Z` and `0-9` (as long as it is n
 
 ```{note}
 There are different naming convensions for variable names. 
+
 **Snake Case (Prefered)**: Words all lower case and separated by an underscore:
 - `led_pin`
 - `sensor_val`
