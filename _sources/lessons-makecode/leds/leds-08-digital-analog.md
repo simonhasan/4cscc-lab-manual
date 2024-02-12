@@ -10,7 +10,7 @@ Consider the following inputs:
 
 **A**: A button
 **B**: A temperature sensor
-**C**: A light level sensor
+**C**: A light-level sensor
 **D**: A switch
 
 Are the inputs above examples of a digital or an analog signal?
