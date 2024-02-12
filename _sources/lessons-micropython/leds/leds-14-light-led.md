@@ -7,7 +7,9 @@ TODO
 # Imports go at the top
 from microbit import *
 
+# Set the LED pin
 led_pin = pin1
+# Set the light sensor pin
 sensor_pin = pin2
 
 # Code in a 'while True:' loop repeats forever
@@ -18,4 +20,5 @@ while True:
     led_pin.write_analog(light_level)
     # Wait for 10ms (0.01 seconds)
     sleep(10)
+    
 ```

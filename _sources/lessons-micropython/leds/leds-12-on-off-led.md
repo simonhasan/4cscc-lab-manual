@@ -21,6 +21,7 @@ while True:
         led_pin.write_digital(0)
     # Wait for 10ms (0.01 seconds)
     sleep(10)
+
 ```
 
 TODO
@@ -44,6 +45,7 @@ while True:
         led_pin.write_digital(0)
     # Wait for 10ms (0.01 seconds)
     sleep(10)
+
 ```
 
 TODO
@@ -71,4 +73,5 @@ while True:
         pass
     # Wait for 10ms (0.01 seconds)
     sleep(10)
+    
 ```
