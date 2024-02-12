@@ -15,18 +15,40 @@ The assignment operater `=` does not represent equality as it does in mathematic
 Variable names come with some constraints:
 
 ### Variable names cannot start with a number
+Starting a variable with a number is not valid. If a number is needed to index the variable name, place the number after the variable name.
 
+### Variable names can only use alphanumeric characters
+Variable names can contain chatacters `a-z`, `A-Z` and `0-9` (as long as it is not at the beginning of the variable name).
 
+```{note}
+There are different naming convensions for variable names. 
+**Snake Case (Prefered)**: Words all lower case and separated by an underscore:
+- `led_pin`
+- `sensor_val`
+- `number_of_students`
 
-### Variable names can use alphanumeric characters
+**Camel Case**:  The first word is lower case and all subsequent words are capitalized. This is valid but not seen as frequently as Snake Case. 
+- `ledPin`
+- `sensorVal`
+- `numberOfStudents`
 
+**Pascal Case**: The first letter of every word is capitalixed. This is valid but discouraged. Pascal Case is used to identify classes.
+- `LedPin`
+- `SensorVal`
+- `NumberOfStudents`
 
+**Uppercase**: All letters are capitalized. This is valid but discouraged. Uppercase is used to identify constants (variables that should not be changed) Python does not have true constants and having uppercase variable names helps distinguish these variables for others.
+- `LED_PIN`
+- `SENSOR_VAL`
+- `NUMBER_OF_STUDENTS`
+```
 
 ### Variables cannot have whitespace (spaces)
+Whitespace are characters such as spaces or tabs.
 
 
-
-### Variables can contain an underscore `_`. This may make the variable more readable `myname` vs `my_name`.
+### Variables can contain an underscore `_`. 
+An underscore (`_`) is the only valid special or non-alphanumeric character allowed in variable names. This may make the variable more readable `myname` vs `my_name`.
 
 
 
@@ -90,7 +112,7 @@ Solution:
 |**B**|`sensor1_val` |**Valid**       |                                                             |
 |**C**|`1sensor_val` |**Invalid**     |The variable name starts with a number                       |
 |**D**|`sensor1-val` |**Invalid**     |The variable name has a special character `-` other than `_`.|
-|**C**|`sensor_v@l`  |**Invalid**     |The variable name has a special character `@` other than `_`.|
+|**E**|`sensor_v@l`  |**Invalid**     |The variable name has a special character `@` other than `_`.|
 |**F**|`SENSOR_VAL`  |**Valid**       |                                                             |
 
 ```

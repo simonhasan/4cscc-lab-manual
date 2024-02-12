@@ -478,9 +478,9 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-variables">Naming Variables</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-cannot-start-with-a-number">Variable names cannot start with a number</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-can-use-alphanumeric-characters">Variable names can use alphanumeric characters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-can-only-use-alphanumeric-characters">Variable names can only use alphanumeric characters</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-have-whitespace-spaces">Variables cannot have whitespace (spaces)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-can-contain-an-underscore-this-may-make-the-variable-more-readable-myname-vs-my-name">Variables can contain an underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>. This may make the variable more readable <code class="docutils literal notranslate"><span class="pre">myname</span></code> vs <code class="docutils literal notranslate"><span class="pre">my_name</span></code>.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-can-contain-an-underscore">Variables can contain an underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>.</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-be-a-python-or-micro-bit-micropython-keywords">Variables cannot be a Python or micro:bit MicroPython keywords</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-and-control-flow-keywords">Logical and Control Flow Keywords:</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types-and-constants">Data Types and Constants:</a></li>
@@ -517,15 +517,47 @@ The assignment operater `=` does not represent equality as it does in mathematic
 <p>Variable names come with some constraints:</p>
 <section id="variable-names-cannot-start-with-a-number">
 <h3>Variable names cannot start with a number<a class="headerlink" href="#variable-names-cannot-start-with-a-number" title="Permalink to this heading">#</a></h3>
+<p>Starting a variable with a number is not valid. If a number is needed to index the variable name, place the number after the variable name.</p>
 </section>
-<section id="variable-names-can-use-alphanumeric-characters">
-<h3>Variable names can use alphanumeric characters<a class="headerlink" href="#variable-names-can-use-alphanumeric-characters" title="Permalink to this heading">#</a></h3>
+<section id="variable-names-can-only-use-alphanumeric-characters">
+<h3>Variable names can only use alphanumeric characters<a class="headerlink" href="#variable-names-can-only-use-alphanumeric-characters" title="Permalink to this heading">#</a></h3>
+<p>Variable names can contain chatacters <code class="docutils literal notranslate"><span class="pre">a-z</span></code>, <code class="docutils literal notranslate"><span class="pre">A-Z</span></code> and <code class="docutils literal notranslate"><span class="pre">0-9</span></code> (as long as it is not at the beginning of the variable name).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There are different naming convensions for variable names.
+<strong>Snake Case (Prefered)</strong>: Words all lower case and separated by an underscore:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">led_pin</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sensor_val</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">number_of_students</span></code></p></li>
+</ul>
+<p><strong>Camel Case</strong>:  The first word is lower case and all subsequent words are capitalized. This is valid but not seen as frequently as Snake Case.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ledPin</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sensorVal</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">numberOfStudents</span></code></p></li>
+</ul>
+<p><strong>Pascal Case</strong>: The first letter of every word is capitalixed. This is valid but discouraged. Pascal Case is used to identify classes.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">LedPin</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SensorVal</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NumberOfStudents</span></code></p></li>
+</ul>
+<p><strong>Uppercase</strong>: All letters are capitalized. This is valid but discouraged. Uppercase is used to identify constants (variables that should not be changed) Python does not have true constants and having uppercase variable names helps distinguish these variables for others.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">LED_PIN</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SENSOR_VAL</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NUMBER_OF_STUDENTS</span></code></p></li>
+</ul>
+</div>
 </section>
 <section id="variables-cannot-have-whitespace-spaces">
 <h3>Variables cannot have whitespace (spaces)<a class="headerlink" href="#variables-cannot-have-whitespace-spaces" title="Permalink to this heading">#</a></h3>
+<p>Whitespace are characters such as spaces or tabs.</p>
 </section>
-<section id="variables-can-contain-an-underscore-this-may-make-the-variable-more-readable-myname-vs-my-name">
-<h3>Variables can contain an underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>. This may make the variable more readable <code class="docutils literal notranslate"><span class="pre">myname</span></code> vs <code class="docutils literal notranslate"><span class="pre">my_name</span></code>.<a class="headerlink" href="#variables-can-contain-an-underscore-this-may-make-the-variable-more-readable-myname-vs-my-name" title="Permalink to this heading">#</a></h3>
+<section id="variables-can-contain-an-underscore">
+<h3>Variables can contain an underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>.<a class="headerlink" href="#variables-can-contain-an-underscore" title="Permalink to this heading">#</a></h3>
+<p>An underscore (<code class="docutils literal notranslate"><span class="pre">_</span></code>) is the only valid special or non-alphanumeric character allowed in variable names. This may make the variable more readable <code class="docutils literal notranslate"><span class="pre">myname</span></code> vs <code class="docutils literal notranslate"><span class="pre">my_name</span></code>.</p>
 </section>
 <section id="variables-cannot-be-a-python-or-micro-bit-micropython-keywords">
 <h3>Variables cannot be a Python or micro:bit MicroPython keywords<a class="headerlink" href="#variables-cannot-be-a-python-or-micro-bit-micropython-keywords" title="Permalink to this heading">#</a></h3>
@@ -622,7 +654,7 @@ The assignment operater `=` does not represent equality as it does in mathematic
 <td><p><strong>Invalid</strong></p></td>
 <td><p>The variable name has a special character <code class="docutils literal notranslate"><span class="pre">-</span></code> other than <code class="docutils literal notranslate"><span class="pre">_</span></code>.</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>C</strong></p></td>
+<tr class="row-even"><td><p><strong>E</strong></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">sensor_v&#64;l</span></code></p></td>
 <td><p><strong>Invalid</strong></p></td>
 <td><p>The variable name has a special character <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> other than <code class="docutils literal notranslate"><span class="pre">_</span></code>.</p></td>
@@ -712,9 +744,9 @@ The assignment operater `=` does not represent equality as it does in mathematic
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-variables">Naming Variables</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-cannot-start-with-a-number">Variable names cannot start with a number</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-can-use-alphanumeric-characters">Variable names can use alphanumeric characters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-can-only-use-alphanumeric-characters">Variable names can only use alphanumeric characters</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-have-whitespace-spaces">Variables cannot have whitespace (spaces)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-can-contain-an-underscore-this-may-make-the-variable-more-readable-myname-vs-my-name">Variables can contain an underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>. This may make the variable more readable <code class="docutils literal notranslate"><span class="pre">myname</span></code> vs <code class="docutils literal notranslate"><span class="pre">my_name</span></code>.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-can-contain-an-underscore">Variables can contain an underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>.</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-be-a-python-or-micro-bit-micropython-keywords">Variables cannot be a Python or micro:bit MicroPython keywords</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-and-control-flow-keywords">Logical and Control Flow Keywords:</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types-and-constants">Data Types and Constants:</a></li>
