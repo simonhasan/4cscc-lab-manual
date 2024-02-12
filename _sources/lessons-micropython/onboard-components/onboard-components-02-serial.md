@@ -16,7 +16,7 @@ greeting = 'Hello. My name is Alice.'
 
 # Code in a 'while True:' loop repeats forever
 while True:
-    diplsay.scroll(greeting)
+    display.scroll(greeting)
 
 ```
 
@@ -34,7 +34,7 @@ greeting = 'Hello. My name is Alice.'
 
 # Code in a 'while True:' loop repeats forever
 while True:
-    diplsay.scroll(greeting)
+    display.scroll(greeting)
     print(greeting)
 
 ```
