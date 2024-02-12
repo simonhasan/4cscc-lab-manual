@@ -1,8 +1,3 @@
-# Varying the Brightness of an LED
-
-TODO
-
-```python
 # Imports go at the top
 from microbit import *
 
@@ -38,4 +33,3 @@ while True:
     # Wait for 500ms (0.5 seconds)
     sleep(500)
 
-```
