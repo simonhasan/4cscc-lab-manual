@@ -251,7 +251,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-05-ohms-law.html">Ohm’s Law</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-06-build-led-circuit.html">Building an LED Circuit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-07-complete-and-incomplete.html">Complete and Incomplete Circuits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-08-digital-analog.html">Analog and Digital Signals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-08-digital-analog.html">Digital and Analog Signals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-09-blink-led.html">Blinking an LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-10-conditionals.html">Conditionals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-11-bools.html">The Boolean Basic Type</a></li>
@@ -269,7 +269,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="leds-05-ohms-law.html">Ohm’s Law</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-06-build-led-circuit.html">Building an LED Circuit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-07-complete-and-incomplete.html">Complete and Incomplete Circuits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="leds-08-digital-analog.html">Analog and Digital Signals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="leds-08-digital-analog.html">Digital and Analog Signals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-09-blink-led.html">Blinking an LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-10-conditionals.html">Conditionals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-11-bools.html">The Boolean (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) Data Type</a></li>
@@ -481,6 +481,22 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="using-an-led-with-the-light-sensor">
 <h1>Using an LED with the Light Sensor<a class="headerlink" href="#using-an-led-with-the-light-sensor" title="Permalink to this heading">#</a></h1>
 <p>TODO</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
+<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">led_pin</span> <span class="o">=</span> <span class="n">pin1</span>
+<span class="n">sensor_pin</span> <span class="o">=</span> <span class="n">pin2</span>
+
+<span class="c1"># Code in a &#39;while True:&#39; loop repeats forever</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># Get the light level from the sensor</span>
+    <span class="n">light_level</span> <span class="o">=</span> <span class="n">sensor_pin</span><span class="o">.</span><span class="n">read_analog</span><span class="p">()</span>
+    <span class="c1"># Set the brightness of the LED to the light level</span>
+    <span class="n">led_pin</span><span class="o">.</span><span class="n">write_analog</span><span class="p">(</span><span class="n">light_level</span><span class="p">)</span>
+    <span class="c1"># Wait for 10ms (0.01 seconds)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
