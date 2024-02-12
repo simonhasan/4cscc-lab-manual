@@ -36,12 +36,12 @@ A  string is a data type used for a character or a sequence of characters. Strin
 
 
 
-| $p$  | $q$  | $p\and q$ | $p\or q$ |
-| ---- | ---- | --------- | -------- |
-| T    | T    | T         | T        |
-| T    | F    | F         | T        |
-| F    | T    | F         | T        |
-| F    | F    | F         | F        |
+| $p$  | $q$  | $p\land q$ | $p\lor q$ |
+| ---- | ---- | ---------- | --------- |
+| T    | T    | T          | T         |
+| T    | F    | F          | T         |
+| F    | T    | F          | T         |
+| F    | F    | F          | F         |
 
 
 
@@ -54,12 +54,12 @@ A  string is a data type used for a character or a sequence of characters. Strin
 
 
 
-| $p$  | $q$  | $\neg p$ | $\neg q$ | $p\and q$ | $p\or q$ | $\neg p \and q$ | $p \and \neg q$ | $\neg p \and \neg q$ | $\neg p \or q$ | $p \or \neg q$ | $\neg p \or \neg q$ |
-| ---- | ---- | -------- | -------- | --------- | -------- | --------------- | --------------- | -------------------- | -------------- | -------------- | ------------------- |
-| T    | T    | F        | F        | T         | T        | F               | F               | F                    | T              | T              | F                   |
-| T    | F    | F        | T        | F         | T        | F               | T               | F                    | F              | T              | T                   |
-| F    | T    | T        | F        | F         | T        | T               | F               | F                    | T              | F              | T                   |
-| F    | F    | T        | T        | F         | F        | F               | F               | T                    | T              | T              | T                   |
+| $p$  | $q$  | $\neg p$ | $\neg q$ | $p\land q$ | $p\lor q$ | $\neg p \land q$ | $p \land \neg q$ | $\neg p \land \neg q$ | $\neg p \lor q$ | $p \lor \neg q$ | $\neg p \lor \neg q$ |
+| ---- | ---- | -------- | -------- | ---------- | --------- | ---------------- | ---------------- | --------------------- | --------------- | --------------- | -------------------- |
+| T    | T    | F        | F        | T          | T         | F                | F                | F                     | T               | T               | F                    |
+| T    | F    | F        | T        | F          | T         | F                | T                | F                     | F               | T               | T                    |
+| F    | T    | T        | F        | F          | T         | T                | F                | F                     | T               | F               | T                    |
+| F    | F    | T        | T        | F          | F         | F                | F                | T                     | T               | T               | T                    |
 
 
 
