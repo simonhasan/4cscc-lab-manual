@@ -505,10 +505,11 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="variables">
 <h1>Variables<a class="headerlink" href="#variables" title="Permalink to this heading">#</a></h1>
+<p><strong>NEEDS REVISION</strong></p>
 <p>Variables in computer science are similar to variables in mathematics. In mathematics, variables represent a numerical value. In Python, variables can represent almost anything, such as strings, numbers, pins on the micro:bit, sensor values, etc.</p>
-<p>Variables have to be declared or assigned to a name. To declare a variable you use the assignment operator <code class="docutils literal notranslate"><span class="pre">=</span></code>.</p>
+<p>Variables must be declared or assigned a name. To declare a variable, you use the assignment operator <code class="docutils literal notranslate"><span class="pre">=</span></code>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note}
-The assignment operater `=` does not represent equality as it does in mathematics. To represent equality, see section TODO.
+The assignment operator `=` does not represent equality as it does in mathematics. To represent equality, see section TODO.
 ```
 </pre></div>
 </div>
@@ -521,39 +522,42 @@ The assignment operater `=` does not represent equality as it does in mathematic
 </section>
 <section id="variable-names-can-only-use-alphanumeric-characters">
 <h3>Variable names can only use alphanumeric characters<a class="headerlink" href="#variable-names-can-only-use-alphanumeric-characters" title="Permalink to this heading">#</a></h3>
-<p>Variable names can contain chatacters <code class="docutils literal notranslate"><span class="pre">a-z</span></code>, <code class="docutils literal notranslate"><span class="pre">A-Z</span></code> and <code class="docutils literal notranslate"><span class="pre">0-9</span></code> (as long as it is not at the beginning of the variable name).</p>
+<p>Variable names can contain characters <code class="docutils literal notranslate"><span class="pre">a-z</span></code>, <code class="docutils literal notranslate"><span class="pre">A-Z</span></code>, and <code class="docutils literal notranslate"><span class="pre">0-9</span></code> (as long as it is not at the beginning of the variable name).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>There are different naming convensions for variable names.</p>
-<p><strong>Snake Case (Prefered)</strong>: Words all lower case and separated by an underscore:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">led_pin</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">sensor_val</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">number_of_students</span></code></p></li>
-</ul>
-<p><strong>Camel Case</strong>:  The first word is lower case and all subsequent words are capitalized. This is valid but not seen as frequently as Snake Case.</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">ledPin</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">sensorVal</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">numberOfStudents</span></code></p></li>
-</ul>
-<p><strong>Pascal Case</strong>: The first letter of every word is capitalixed. This is valid but discouraged. Pascal Case is used to identify classes.</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">LedPin</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SensorVal</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">NumberOfStudents</span></code></p></li>
-</ul>
-<p><strong>Uppercase</strong>: All letters are capitalized. This is valid but discouraged. Uppercase is used to identify constants (variables that should not be changed) Python does not have true constants and having uppercase variable names helps distinguish these variables for others.</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">LED_PIN</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">SENSOR_VAL</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">NUMBER_OF_STUDENTS</span></code></p></li>
-</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Naming Convension</p></th>
+<th class="head"><p>Examples</p></th>
+<th class="head"><p>Explination</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Snake Case</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">led_pin</span></code><br> <code class="docutils literal notranslate"><span class="pre">sensor_val</span></code><br><code class="docutils literal notranslate"><span class="pre">number_of_students</span></code></p></td>
+<td><p>Words all lower case and separated by an underscore. <strong>This is the prefeded naming convension by many Python programmers.</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Camel Case</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ledPin</span></code><br> <code class="docutils literal notranslate"><span class="pre">sensorVal</span></code><br><code class="docutils literal notranslate"><span class="pre">numberOfStudents</span></code></p></td>
+<td><p>The first word is lower case, and all subsequent words are capitalized. This is valid but not seen as frequently as Snake Case.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Pascal Case</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">LedPin</span></code><br><code class="docutils literal notranslate"><span class="pre">SensorVal</span></code><br><code class="docutils literal notranslate"><span class="pre">NumberOfStudents</span></code></p></td>
+<td><p>The first letter of every word is capitalixed. This is valid but discouraged. Pascal Case is used to identify classes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Uppercase</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">LED_PIN</span></code><br><code class="docutils literal notranslate"><span class="pre">SENSOR_VAL</span></code><br><code class="docutils literal notranslate"><span class="pre">NUMBER_OF_STUDENTS</span></code></p></td>
+<td><p>All letters are capitalized. This is valid but discouraged. Uppercase is used to identify constants (variables that should not be changed or reassigned). Python does not have true constants and having uppercase variable names helps distinguish these variables for others.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Naming convensions may differ depending on the company or the project. It may be possible that a naming convension is set. To read more about the naming convensions in Python see <a class="reference external" href="https://peps.python.org/pep-0008/#naming-conventions">PEP 8 – Style Guide for Python Code</a>.</p>
 </div>
 </section>
 <section id="variables-cannot-have-whitespace-spaces">
 <h3>Variables cannot have whitespace (spaces)<a class="headerlink" href="#variables-cannot-have-whitespace-spaces" title="Permalink to this heading">#</a></h3>
-<p>Whitespace are characters such as spaces or tabs.</p>
+<p>Whitespace is a character such as spaces or tabs.</p>
 </section>
 <section id="variables-can-contain-an-underscore">
 <h3>Variables can contain an underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>.<a class="headerlink" href="#variables-can-contain-an-underscore" title="Permalink to this heading">#</a></h3>
@@ -590,7 +594,7 @@ The assignment operater `=` does not represent equality as it does in mathematic
 <h4>Function and Class Keywords:<a class="headerlink" href="#function-and-class-keywords" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">def</span></code>: Used to define functions.</p></li>
-<li><p>class: Used to define classes.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">class</span></code>: Used to define classes.</p></li>
 </ul>
 </section>
 <section id="other-keywords">
@@ -603,7 +607,7 @@ The assignment operater `=` does not represent equality as it does in mathematic
 <h4>micro:bit Keywords (Some are legal, but should be avoided)<a class="headerlink" href="#micro-bit-keywords-some-are-legal-but-should-be-avoided" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">microbit</span></code>: The micro:bit module name.</p></li>
-<li></li>
+<li><p>TODO</p></li>
 </ul>
 </section>
 </section>
@@ -667,7 +671,8 @@ The assignment operater `=` does not represent equality as it does in mathematic
 </tbody>
 </table>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
+<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;This is a Python string.&#39;</span>
 
