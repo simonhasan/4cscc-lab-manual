@@ -453,7 +453,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -469,6 +471,29 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-variables">Naming Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-cannot-start-with-a-number">Variable names cannot start with a number</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-can-use-alphanumeric-characters">Variable names can use alphanumeric characters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-have-whitespace-spaces">Variables cannot have whitespace (spaces)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-can-contain-an-underscore-this-may-make-the-variable-more-readable-myname-vs-my-name">Variables can contain an underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>. This may make the variable more readable <code class="docutils literal notranslate"><span class="pre">myname</span></code> vs <code class="docutils literal notranslate"><span class="pre">my_name</span></code>.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-be-a-python-or-micro-bit-micropython-keywords">Variables cannot be a Python or micro:bit MicroPython keywords</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-and-control-flow-keywords">Logical and Control Flow Keywords:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types-and-constants">Data Types and Constants:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#function-and-class-keywords">Function and Class Keywords:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#other-keywords">Other Keywords:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#micro-bit-keywords-some-are-legal-but-should-be-avoided">micro:bit Keywords (Some are legal, but should be avoided)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkpoint-identify-the-valid-and-invalid-variable-names">Checkpoint: Identify the Valid and Invalid variable names.</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -480,7 +505,136 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="variables">
 <h1>Variables<a class="headerlink" href="#variables" title="Permalink to this heading">#</a></h1>
-<p>TODO</p>
+<p>Variables in computer science are similar to variables in mathematics. In mathematics, variables represent a numerical value. In Python, variables can represent almost anything, such as strings, numbers, pins on the micro:bit, sensor values, etc.</p>
+<p>Variables have to be declared or assigned to a name. To declare a variable you use the assignment operator <code class="docutils literal notranslate"><span class="pre">=</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note}
+The assignment operater `=` does not represent equality as it does in mathematics. To represent equality, see section TODO.
+```
+</pre></div>
+</div>
+<section id="naming-variables">
+<h2>Naming Variables<a class="headerlink" href="#naming-variables" title="Permalink to this heading">#</a></h2>
+<p>Variable names come with some constraints:</p>
+<section id="variable-names-cannot-start-with-a-number">
+<h3>Variable names cannot start with a number<a class="headerlink" href="#variable-names-cannot-start-with-a-number" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="variable-names-can-use-alphanumeric-characters">
+<h3>Variable names can use alphanumeric characters<a class="headerlink" href="#variable-names-can-use-alphanumeric-characters" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="variables-cannot-have-whitespace-spaces">
+<h3>Variables cannot have whitespace (spaces)<a class="headerlink" href="#variables-cannot-have-whitespace-spaces" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="variables-can-contain-an-underscore-this-may-make-the-variable-more-readable-myname-vs-my-name">
+<h3>Variables can contain an underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>. This may make the variable more readable <code class="docutils literal notranslate"><span class="pre">myname</span></code> vs <code class="docutils literal notranslate"><span class="pre">my_name</span></code>.<a class="headerlink" href="#variables-can-contain-an-underscore-this-may-make-the-variable-more-readable-myname-vs-my-name" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="variables-cannot-be-a-python-or-micro-bit-micropython-keywords">
+<h3>Variables cannot be a Python or micro:bit MicroPython keywords<a class="headerlink" href="#variables-cannot-be-a-python-or-micro-bit-micropython-keywords" title="Permalink to this heading">#</a></h3>
+<section id="logical-and-control-flow-keywords">
+<h4>Logical and Control Flow Keywords:<a class="headerlink" href="#logical-and-control-flow-keywords" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">and</span></code></strong>: Used for logical AND operations.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">or</span></code></strong>: Used for logical OR operations.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">not</span></code></strong>: Used for logical NOT operations.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">elif</span></code>, <code class="docutils literal notranslate"><span class="pre">else</span></code>: Used for conditional statements.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">while</span></code>: Used for creating loops.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">for</span></code>: Used for iterating over sequences.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">break</span></code>: Used to exit a loop prematurely.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">continue</span></code>: Used to skip the current iteration and proceed to the next one.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pass</span></code>: A placeholder statement that does nothing.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">return</span></code>: Used to exit a function and return a value.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">try</span></code>, <code class="docutils literal notranslate"><span class="pre">except</span></code>, <code class="docutils literal notranslate"><span class="pre">finally</span></code>: Used for exception handling.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">assert</span></code>: Used for debugging and ensuring conditions are met.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">with</span></code>: Used for context management (e.g., file handling).</p></li>
+</ul>
+</section>
+<section id="data-types-and-constants">
+<h4>Data Types and Constants:<a class="headerlink" href="#data-types-and-constants" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code>, <code class="docutils literal notranslate"><span class="pre">False</span></code>: Boolean constants.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">None</span></code>: Represents the absence of a value (similar to null in other languages).</p></li>
+</ul>
+</section>
+<section id="function-and-class-keywords">
+<h4>Function and Class Keywords:<a class="headerlink" href="#function-and-class-keywords" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">def</span></code>: Used to define functions.</p></li>
+<li><p>class: Used to define classes.</p></li>
+</ul>
+</section>
+<section id="other-keywords">
+<h4>Other Keywords:<a class="headerlink" href="#other-keywords" title="Permalink to this heading">#</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">global</span></code>: Used to declare global variables.
+<code class="docutils literal notranslate"><span class="pre">lambda</span></code>: Used to create anonymous functions.
+<code class="docutils literal notranslate"><span class="pre">yield</span></code>: Used in generator functions.</p>
+</section>
+<section id="micro-bit-keywords-some-are-legal-but-should-be-avoided">
+<h4>micro:bit Keywords (Some are legal, but should be avoided)<a class="headerlink" href="#micro-bit-keywords-some-are-legal-but-should-be-avoided" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">microbit</span></code>: The micro:bit module name.</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="checkpoint-identify-the-valid-and-invalid-variable-names">
+<h2>Checkpoint: Identify the Valid and Invalid variable names.<a class="headerlink" href="#checkpoint-identify-the-valid-and-invalid-variable-names" title="Permalink to this heading">#</a></h2>
+<p>Discuss the following:</p>
+<ul class="simple">
+<li><p>Which variable names are valid?</p></li>
+<li><p>Which variable names are invalid?</p></li>
+<li><p>If the variable names are invalid, describe the reasoning.</p></li>
+</ul>
+<p><strong>A</strong>. <code class="docutils literal notranslate"><span class="pre">sensor</span> <span class="pre">1</span> <span class="pre">val</span></code>
+<strong>B</strong>. <code class="docutils literal notranslate"><span class="pre">sensor1_val</span></code>
+<strong>C</strong>. <code class="docutils literal notranslate"><span class="pre">1sensor_val</span></code>
+<strong>D</strong>. <code class="docutils literal notranslate"><span class="pre">sensor1-val</span></code>
+<strong>E</strong>. <code class="docutils literal notranslate"><span class="pre">sensor_v&#64;l</span></code>
+<strong>F</strong>. <code class="docutils literal notranslate"><span class="pre">SENSOR_VAL</span></code></p>
+<div class="dropdown admonition">
+<p class="admonition-title">Click here to reveal the solutions.</p>
+<p>Solution:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Variable Name</p></th>
+<th class="head"><p>Valid or Invalid</p></th>
+<th class="head"><p>Reason</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>A</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sensor</span> <span class="pre">1</span> <span class="pre">val</span></code></p></td>
+<td><p><strong>Invalid</strong></p></td>
+<td><p>The variable name has whitespace</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>B</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sensor1_val</span></code></p></td>
+<td><p><strong>Valid</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>C</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1sensor_val</span></code></p></td>
+<td><p><strong>Invalid</strong></p></td>
+<td><p>The variable name starts with a number</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>D</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sensor1-val</span></code></p></td>
+<td><p><strong>Invalid</strong></p></td>
+<td><p>The variable name has special characters with other than <code class="docutils literal notranslate"><span class="pre">_</span></code>.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>C</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sensor_v&#64;l</span></code></p></td>
+<td><p><strong>Invalid</strong></p></td>
+<td><p>The variable name has special characters with other than <code class="docutils literal notranslate"><span class="pre">_</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>F</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SENSOR_VAL</span></code></p></td>
+<td><p><strong>Valid</strong></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;This is a Python string.&#39;</span>
@@ -489,6 +643,7 @@ document.write(`
     <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
 </pre></div>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -546,7 +701,35 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-variables">Naming Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-cannot-start-with-a-number">Variable names cannot start with a number</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-can-use-alphanumeric-characters">Variable names can use alphanumeric characters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-have-whitespace-spaces">Variables cannot have whitespace (spaces)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-can-contain-an-underscore-this-may-make-the-variable-more-readable-myname-vs-my-name">Variables can contain an underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>. This may make the variable more readable <code class="docutils literal notranslate"><span class="pre">myname</span></code> vs <code class="docutils literal notranslate"><span class="pre">my_name</span></code>.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-be-a-python-or-micro-bit-micropython-keywords">Variables cannot be a Python or micro:bit MicroPython keywords</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-and-control-flow-keywords">Logical and Control Flow Keywords:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types-and-constants">Data Types and Constants:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#function-and-class-keywords">Function and Class Keywords:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#other-keywords">Other Keywords:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#micro-bit-keywords-some-are-legal-but-should-be-avoided">micro:bit Keywords (Some are legal, but should be avoided)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkpoint-identify-the-valid-and-invalid-variable-names">Checkpoint: Identify the Valid and Invalid variable names.</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
