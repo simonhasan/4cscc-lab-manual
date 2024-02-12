@@ -251,7 +251,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-05-ohms-law.html">Ohm’s Law</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-06-build-led-circuit.html">Building an LED Circuit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-07-complete-and-incomplete.html">Complete and Incomplete Circuits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-08-digital-analog.html">Analog and Digital Signals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-08-digital-analog.html">Digital and Analog Signals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-09-blink-led.html">Blinking an LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-10-conditionals.html">Conditionals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-11-bools.html">The Boolean Basic Type</a></li>
@@ -269,7 +269,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="leds-05-ohms-law.html">Ohm’s Law</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-06-build-led-circuit.html">Building an LED Circuit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-07-complete-and-incomplete.html">Complete and Incomplete Circuits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="leds-08-digital-analog.html">Analog and Digital Signals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="leds-08-digital-analog.html">Digital and Analog Signals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-09-blink-led.html">Blinking an LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-10-conditionals.html">Conditionals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-11-bools.html">The Boolean (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) Data Type</a></li>
@@ -476,9 +476,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alligator-clip-gpio-pins">Alligator Clip GPIO Pins</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#breakout-board-gpio-pins">Breakout Board GPIO Pins</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#micro-bit-gpio-pinout">micro:bit GPIO Pinout</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkpoint-anode-or-cathode">Checkpoint: Anode or Cathode</a></li>
 </ul>
             </nav>
         </div>
@@ -492,31 +490,18 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="parts-of-an-led">
 <h1>Parts of an LED<a class="headerlink" href="#parts-of-an-led" title="Permalink to this heading">#</a></h1>
-<p>TODO</p>
-<section id="alligator-clip-gpio-pins">
-<h2>Alligator Clip GPIO Pins<a class="headerlink" href="#alligator-clip-gpio-pins" title="Permalink to this heading">#</a></h2>
-<p>TODO</p>
-<p><img alt="microbit-gpio" src="../../_images/microbit-gpio1.png" /></p>
-<p>TODO</p>
-<p><img alt="microbit-alligator-input-output" src="../../_images/microbit-alligator-input-output1.png" /></p>
-<p>TODO</p>
-<p><img alt="microbit-alligator-3v3" src="../../_images/microbit-alligator-3v31.png" /></p>
-<p>TODO</p>
-<p><img alt="microbit-alligator-gnd" src="../../_images/microbit-alligator-gnd1.png" /></p>
-</section>
-<section id="breakout-board-gpio-pins">
-<h2>Breakout Board GPIO Pins<a class="headerlink" href="#breakout-board-gpio-pins" title="Permalink to this heading">#</a></h2>
-<p>TODO</p>
-<p><img alt="microbit-breakout-input-output" src="../../_images/microbit-breakout-input-output1.png" /></p>
-<p>TODO</p>
-<p><img alt="microbit-breakout-3v3" src="../../_images/microbit-breakout-3v31.png" /></p>
-<p>TODO</p>
-<p><img alt="microbit-breakout-gnd" src="../../_images/microbit-breakout-gnd1.png" /></p>
-</section>
-<section id="micro-bit-gpio-pinout">
-<h2>micro:bit GPIO Pinout<a class="headerlink" href="#micro-bit-gpio-pinout" title="Permalink to this heading">#</a></h2>
-<p>TODO</p>
-<p><img alt="microbit-pinout" src="../../_images/microbit-pinout1.png" /></p>
+<p><img alt="led-diagram" src="../../_images/led-diagram1.png" /></p>
+<section id="checkpoint-anode-or-cathode">
+<h2>Checkpoint: Anode or Cathode<a class="headerlink" href="#checkpoint-anode-or-cathode" title="Permalink to this heading">#</a></h2>
+<p>Which lead is the anode? Which lead is the cathode? What is the polarity of the different leads?</p>
+<p><img alt="quiz-led-02" src="../../_images/quiz-led-parts1.png" /></p>
+<div class="dropdown admonition">
+<p class="admonition-title">Click here to reveal the solutions.</p>
+<p>Solution:
+<img alt="quiz-led-02" src="../../_images/quiz-led-parts-solution1.png" /></p>
+<p><strong>A</strong> has the flat side and the shorter lead so it is the <strong>cathode</strong>. The polarity is <strong>negative</strong>.<br>
+<strong>B</strong> has the longer lead so it is the <strong>anode</strong>. The polarity is <strong>positive</strong>.</p>
+</div>
 </section>
 </section>
 
@@ -584,9 +569,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alligator-clip-gpio-pins">Alligator Clip GPIO Pins</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#breakout-board-gpio-pins">Breakout Board GPIO Pins</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#micro-bit-gpio-pinout">micro:bit GPIO Pinout</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkpoint-anode-or-cathode">Checkpoint: Anode or Cathode</a></li>
 </ul>
   </nav></div>
 

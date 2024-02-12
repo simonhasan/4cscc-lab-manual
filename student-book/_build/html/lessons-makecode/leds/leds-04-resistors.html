@@ -251,7 +251,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="leds-05-ohms-law.html">Ohm’s Law</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-06-build-led-circuit.html">Building an LED Circuit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-07-complete-and-incomplete.html">Complete and Incomplete Circuits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="leds-08-digital-analog.html">Analog and Digital Signals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="leds-08-digital-analog.html">Digital and Analog Signals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-09-blink-led.html">Blinking an LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-10-conditionals.html">Conditionals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-11-bools.html">The Boolean Basic Type</a></li>
@@ -269,7 +269,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-05-ohms-law.html">Ohm’s Law</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-06-build-led-circuit.html">Building an LED Circuit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-07-complete-and-incomplete.html">Complete and Incomplete Circuits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-08-digital-analog.html">Analog and Digital Signals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-08-digital-analog.html">Digital and Analog Signals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-09-blink-led.html">Blinking an LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-10-conditionals.html">Conditionals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/leds/leds-11-bools.html">The Boolean (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) Data Type</a></li>
@@ -453,7 +453,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -469,6 +471,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkpoint-interpreting-resistor-values">Checkpoint: Interpreting Resistor Values</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -482,6 +492,19 @@ document.write(`
 <h1>Resistors<a class="headerlink" href="#resistors" title="Permalink to this heading">#</a></h1>
 <p>TODO</p>
 <p><img alt="resistor-chart" src="../../_images/resistor-chart.png" /></p>
+<section id="checkpoint-interpreting-resistor-values">
+<h2>Checkpoint: Interpreting Resistor Values<a class="headerlink" href="#checkpoint-interpreting-resistor-values" title="Permalink to this heading">#</a></h2>
+<p><img alt="resistor-quiz" src="../../_images/resistor-quiz.png" /></p>
+<div class="dropdown admonition">
+<p class="admonition-title">Click here to reveal the solutions.</p>
+<p>Solutions:
+<img alt="resistor-quiz-solutions" src="../../_images/resistor-quiz-solutions.png" />
+<strong>A</strong>: 1, 0, 1kΩ ⟹ 10 × 1kΩ = 10kΩ<br>
+<strong>B</strong>: 2, 7, 100Ω ⟹ 27 × 10Ω = 270Ω<br>
+<strong>C</strong>: 4, 7, 100Ω ⟹ 47 × 100Ω = 4700Ω = 4.7kΩ<br>
+<strong>D</strong>: 1, 0, 10Ω ⟹ 10 × 10Ω = 100Ω</p>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -539,7 +562,20 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkpoint-interpreting-resistor-values">Checkpoint: Interpreting Resistor Values</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
