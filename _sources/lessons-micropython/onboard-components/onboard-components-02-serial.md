@@ -8,8 +8,36 @@ TODO
 
 TODO
 
+```python
+# Imports go at the top
+from microbit import *
+
+greeting = 'Hello. My name is Alice.'
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    diplsay.scroll(greeting)
+
+```
+
+TODO
+
 ![serial-demo-02](assets/serial-demo-02.png)
 
+TODO
+
+```python
+# Imports go at the top
+from microbit import *
+
+greeting = 'Hello. My name is Alice.'
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    diplsay.scroll(greeting)
+    print(greeting)
+
+```
 TODO
 
 ![serial-demo-03](assets/serial-demo-03.png)
