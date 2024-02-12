@@ -495,8 +495,26 @@ document.write(`
     <span class="n">led_pin</span><span class="o">.</span><span class="n">write_analog</span><span class="p">(</span><span class="n">light_level</span><span class="p">)</span>
     <span class="c1"># Wait for 10ms (0.01 seconds)</span>
     <span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-    
 
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">map_val</span> <span class="kn">import</span> <span class="n">Map</span>
+
+<span class="c1"># Set the LED pin</span>
+<span class="n">led_pin</span> <span class="o">=</span> <span class="n">pin1</span>
+
+<span class="c1"># Code in a &#39;while True:&#39; loop repeats forever</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># Get the light level from the display</span>
+    <span class="n">light_level</span> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">read_light_level</span><span class="p">()</span>
+    <span class="c1"># Map the light level to the LED brightness in reverse</span>
+    <span class="n">map_light_level</span> <span class="o">=</span> <span class="n">Map</span><span class="p">(</span><span class="n">light_level</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">1023</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="c1"># Set the brightness of the LED to the light level</span>
+    <span class="n">led_pin</span><span class="o">.</span><span class="n">write_analog</span><span class="p">(</span><span class="n">map_light_level</span><span class="p">)</span>
+    <span class="c1"># Wait for 10ms (0.01 seconds)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+    
 </pre></div>
 </div>
 </section>
