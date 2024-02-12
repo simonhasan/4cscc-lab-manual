@@ -70,10 +70,15 @@ Discuss the following:
 - If the variable names are invalid, describe the reasoning.
 
 **A**. `sensor 1 val`
+
 **B**. `sensor1_val`
+
 **C**. `1sensor_val`
+
 **D**. `sensor1-val`
+
 **E**. `sensor_v@l`
+
 **F**. `SENSOR_VAL`
 
 ```{admonition} Click here to reveal the solutions.
@@ -84,8 +89,8 @@ Solution:
 |**A**|`sensor 1 val`|**Invalid**     |The variable name has whitespace                             |
 |**B**|`sensor1_val` |**Valid**       |                                                             |
 |**C**|`1sensor_val` |**Invalid**     |The variable name starts with a number                       |
-|**D**|`sensor1-val` |**Invalid**     |The variable name has special characters with other than `_`.|
-|**C**|`sensor_v@l`  |**Invalid**     |The variable name has special characters with other than `_`.|
+|**D**|`sensor1-val` |**Invalid**     |The variable name has a special character `-` other than `_`.|
+|**C**|`sensor_v@l`  |**Invalid**     |The variable name has a special character `@` other than `_`.|
 |**F**|`SENSOR_VAL`  |**Valid**       |                                                             |
 
 ```
