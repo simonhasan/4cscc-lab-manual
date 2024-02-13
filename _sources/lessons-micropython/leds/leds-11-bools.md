@@ -84,7 +84,7 @@ TODO
 ### The `int` Values of the `ool` Data Type
 
 
-```{note}
+````{note}
 Given that that the Boolean data type has two values `True` and `False` with the corresponding integer values `1` and `0` respectively. It is possible to turn an LED on and off using a `bool` as demonstrated below:
 
 ```python
@@ -104,9 +104,31 @@ while True:
     led_pin.write_digital(0)
     # Wait for 500ms (0.5 seconds)
     sleep(500)
-
 ```
+
 Is equivalent to:
+
+```python
+# Imports go at the top
+from microbit import *
+
+# Set the LED pin
+led_pin = pin1
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    # Turn the LED on
+    led_pin.write_digital(True)
+    # Wait for 500ms (0.5 seconds)
+    sleep(500)
+    # Turn the LED off
+    led_pin.write_digital(False)
+    # Wait for 500ms (0.5 seconds)
+    sleep(500)
+```
+
+````
+
 
 ```python
 # Imports go at the top
