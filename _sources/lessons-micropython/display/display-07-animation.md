@@ -1,5 +1,9 @@
 # Displaying an Animation
 
+
+
+![snake-animation](assets/snake-animation.gif)
+
 TODO
 
 ```python
