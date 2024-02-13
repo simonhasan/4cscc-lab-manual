@@ -26,13 +26,26 @@ A  string is a data type used for a character or a sequence of characters. Strin
 
 
 
-### Truth Tables
+## Brief Introduction to Logic
+
+TODO
+
+### Logical Operators
+
+| Logical Operator |      |      |
+| ---------------- | ---- | ---- |
+| $\land$          | AND  | TODO |
+| $\lor$           | OR   | TODO |
+
+### Negation
 
 
 
-### Boolean Operators
+### Venn Diagram
 
-#### Boolean Operators in Mathematics
+![venn-logic](assets/venn-logic.png) 
+
+## Truth Tables
 
 
 
@@ -54,13 +67,5 @@ A  string is a data type used for a character or a sequence of characters. Strin
 
 
 
-| $p$  | $q$  | $\neg p$ | $\neg q$ | $p\land q$ | $p\lor q$ | $\neg p \land q$ | $p \land \neg q$ | $\neg p \land \neg q$ | $\neg p \lor q$ | $p \lor \neg q$ | $\neg p \lor \neg q$ |
-| ---- | ---- | -------- | -------- | ---------- | --------- | ---------------- | ---------------- | --------------------- | --------------- | --------------- | -------------------- |
-| T    | T    | F        | F        | T          | T         | F                | F                | F                     | T               | T               | F                    |
-| T    | F    | F        | T        | F          | T         | F                | T                | F                     | F               | T               | T                    |
-| F    | T    | T        | F        | F          | T         | T                | F                | F                     | T               | F               | T                    |
-| F    | F    | T        | T        | F          | F         | F                | F                | T                     | T               | T               | T                    |
+## Boolean Operators in Python
 
-
-
-#### Boolean Operators in Python

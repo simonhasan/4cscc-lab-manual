@@ -486,14 +486,16 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-boolean-data-type">The Boolean Data Type</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#about">About</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#truth-tables">Truth Tables</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-operators">Boolean Operators</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-operators-in-mathematics">Boolean Operators in Mathematics</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-operators-in-python">Boolean Operators in Python</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-introduction-to-logic">Brief Introduction to Logic</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-operators">Logical Operators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#negation">Negation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#venn-diagram">Venn Diagram</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#truth-tables">Truth Tables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-operators-in-python">Boolean Operators in Python</a></li>
 </ul>
             </nav>
         </div>
@@ -524,13 +526,41 @@ document.write(`
 <section id="about">
 <h3>About<a class="headerlink" href="#about" title="Permalink to this heading">#</a></h3>
 </section>
-<section id="truth-tables">
-<h3>Truth Tables<a class="headerlink" href="#truth-tables" title="Permalink to this heading">#</a></h3>
 </section>
-<section id="boolean-operators">
-<h3>Boolean Operators<a class="headerlink" href="#boolean-operators" title="Permalink to this heading">#</a></h3>
-<section id="boolean-operators-in-mathematics">
-<h4>Boolean Operators in Mathematics<a class="headerlink" href="#boolean-operators-in-mathematics" title="Permalink to this heading">#</a></h4>
+<section id="brief-introduction-to-logic">
+<h2>Brief Introduction to Logic<a class="headerlink" href="#brief-introduction-to-logic" title="Permalink to this heading">#</a></h2>
+<p>TODO</p>
+<section id="logical-operators">
+<h3>Logical Operators<a class="headerlink" href="#logical-operators" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Logical Operator</p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\land\)</span></p></td>
+<td><p>AND</p></td>
+<td><p>TODO</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\lor\)</span></p></td>
+<td><p>OR</p></td>
+<td><p>TODO</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="negation">
+<h3>Negation<a class="headerlink" href="#negation" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="venn-diagram">
+<h3>Venn Diagram<a class="headerlink" href="#venn-diagram" title="Permalink to this heading">#</a></h3>
+<p><img alt="venn-logic" src="../../_images/venn-logic.png" /></p>
+</section>
+</section>
+<section id="truth-tables">
+<h2>Truth Tables<a class="headerlink" href="#truth-tables" title="Permalink to this heading">#</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
@@ -588,77 +618,6 @@ document.write(`
 </tr>
 <tr class="row-odd"><td><p>F</p></td>
 <td><p>F</p></td>
-<td><p>T</p></td>
-<td><p>T</p></td>
-</tr>
-</tbody>
-</table>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(p\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(q\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(\neg p\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(\neg q\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(p\land q\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(p\lor q\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(\neg p \land q\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(p \land \neg q\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(\neg p \land \neg q\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(\neg p \lor q\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(p \lor \neg q\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(\neg p \lor \neg q\)</span></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>T</p></td>
-<td><p>T</p></td>
-<td><p>F</p></td>
-<td><p>F</p></td>
-<td><p>T</p></td>
-<td><p>T</p></td>
-<td><p>F</p></td>
-<td><p>F</p></td>
-<td><p>F</p></td>
-<td><p>T</p></td>
-<td><p>T</p></td>
-<td><p>F</p></td>
-</tr>
-<tr class="row-odd"><td><p>T</p></td>
-<td><p>F</p></td>
-<td><p>F</p></td>
-<td><p>T</p></td>
-<td><p>F</p></td>
-<td><p>T</p></td>
-<td><p>F</p></td>
-<td><p>T</p></td>
-<td><p>F</p></td>
-<td><p>F</p></td>
-<td><p>T</p></td>
-<td><p>T</p></td>
-</tr>
-<tr class="row-even"><td><p>F</p></td>
-<td><p>T</p></td>
-<td><p>T</p></td>
-<td><p>F</p></td>
-<td><p>F</p></td>
-<td><p>T</p></td>
-<td><p>T</p></td>
-<td><p>F</p></td>
-<td><p>F</p></td>
-<td><p>T</p></td>
-<td><p>F</p></td>
-<td><p>T</p></td>
-</tr>
-<tr class="row-odd"><td><p>F</p></td>
-<td><p>F</p></td>
-<td><p>T</p></td>
-<td><p>T</p></td>
-<td><p>F</p></td>
-<td><p>F</p></td>
-<td><p>F</p></td>
-<td><p>F</p></td>
-<td><p>T</p></td>
-<td><p>T</p></td>
 <td><p>T</p></td>
 <td><p>T</p></td>
 </tr>
@@ -666,9 +625,7 @@ document.write(`
 </table>
 </section>
 <section id="boolean-operators-in-python">
-<h4>Boolean Operators in Python<a class="headerlink" href="#boolean-operators-in-python" title="Permalink to this heading">#</a></h4>
-</section>
-</section>
+<h2>Boolean Operators in Python<a class="headerlink" href="#boolean-operators-in-python" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 
@@ -743,14 +700,16 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-boolean-data-type">The Boolean Data Type</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#about">About</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#truth-tables">Truth Tables</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-operators">Boolean Operators</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-operators-in-mathematics">Boolean Operators in Mathematics</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-operators-in-python">Boolean Operators in Python</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-introduction-to-logic">Brief Introduction to Logic</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-operators">Logical Operators</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#negation">Negation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#venn-diagram">Venn Diagram</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#truth-tables">Truth Tables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boolean-operators-in-python">Boolean Operators in Python</a></li>
 </ul>
   </nav></div>
 
