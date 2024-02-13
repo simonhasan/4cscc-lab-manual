@@ -478,7 +478,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ass">ASS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-custom-image-of-a-coyote">Creating a Custom Image of A Coyote</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#method-1-more-visual">Method #1 (More Visual)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#method-2-one-line">Method #2 (One Line)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkpoint-creating-custom-images">Checkpoint: Creating Custom Images</a></li>
 </ul>
             </nav>
@@ -493,9 +498,46 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="displaying-custom-images">
 <h1>Displaying Custom Images<a class="headerlink" href="#displaying-custom-images" title="Permalink to this heading">#</a></h1>
-<p>TODO</p>
-<section id="ass">
-<h2>ASS<a class="headerlink" href="#ass" title="Permalink to this heading">#</a></h2>
+<p>It is possible to create custom images on the 5x5 LED matrix display. TODO</p>
+<section id="creating-a-custom-image-of-a-coyote">
+<h2>Creating a Custom Image of A Coyote<a class="headerlink" href="#creating-a-custom-image-of-a-coyote" title="Permalink to this heading">#</a></h2>
+<p><img alt="coyote" src="../../_images/coyote.png" /></p>
+<p>There are two methods to create a custom of the coyote above. TODO</p>
+<section id="method-1-more-visual">
+<h3>Method #1 (More Visual)<a class="headerlink" href="#method-1-more-visual" title="Permalink to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
+<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Create a custom image of a coyote</span>
+<span class="n">coyote</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;99099:&quot;</span>
+               <span class="s2">&quot;09990:&quot;</span>
+               <span class="s2">&quot;90909:&quot;</span>
+               <span class="s2">&quot;99999:&quot;</span>
+               <span class="s2">&quot;00900&quot;</span><span class="p">)</span>
+
+<span class="c1"># Display the custom image</span>
+<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">coyote</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</section>
+<section id="method-2-one-line">
+<h3>Method #2 (One Line)<a class="headerlink" href="#method-2-one-line" title="Permalink to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
+<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Create a custom image of a coyote</span>
+<span class="n">coyote</span> <span class="o">=</span> <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;99099:09990:90909:99999:00900&quot;</span><span class="p">)</span>
+
+<span class="c1"># Display the custom image</span>
+<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">coyote</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</section>
+</section>
+<section id="id1">
+<h2><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 </section>
 <section id="checkpoint-creating-custom-images">
 <h2>Checkpoint: Creating Custom Images<a class="headerlink" href="#checkpoint-creating-custom-images" title="Permalink to this heading">#</a></h2>
@@ -574,7 +616,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ass">ASS</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-custom-image-of-a-coyote">Creating a Custom Image of A Coyote</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#method-1-more-visual">Method #1 (More Visual)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#method-2-one-line">Method #2 (One Line)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkpoint-creating-custom-images">Checkpoint: Creating Custom Images</a></li>
 </ul>
   </nav></div>
