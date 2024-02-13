@@ -63,13 +63,13 @@ snake_10 = Image("00099:"
                  "00000:"
                  "00000")
 # Eleventh frame of the animation
-snake_12 = Image("00009:"
+snake_11 = Image("00009:"
                  "00000:"
                  "00000:"
                  "00000:"
                  "00000")
 # Twelfth frame of the animation
-snake_01 = Image("00000:"
+snake_12 = Image("00000:"
                  "00000:"
                  "00000:"
                  "00000:"
