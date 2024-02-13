@@ -19,11 +19,11 @@ snake_07 = Image("00090:00090:00090:09900:00000")
 # Eighth frame of the animation
 snake_08 = Image("00099:00090:00090:00900:00000")
 # Ninth frame of the animation
-snake_09 = Image("00099:00090:00000:00900:00000")
+snake_09 = Image("00099:00090:00000:00000:00000")
 # Tenth frame of the animation
-snake_10 = Image("00099:00000:00000:00900:00000")
+snake_10 = Image("00099:00000:00000:00000:00000")
 # Eleventh frame of the animation
-snake_11 = Image("00009:00000:00000:00900:00000")
+snake_11 = Image("00009:00000:00000:00000:00000")
 # Twelfth frame of the animation
 snake_12 = Image("00000:00000:00000:00000:00000")
 
