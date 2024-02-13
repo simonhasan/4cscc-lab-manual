@@ -27,7 +27,8 @@ parts:
       - file: lessons-micropython/display/display-03-variables
       - file: lessons-micropython/display/display-04-while-loop
       - file: lessons-micropython/display/display-05-display-image
-      - file: lessons-micropython/display/display-06-display-custom-image 
+      - file: lessons-micropython/display/display-06-display-custom-image
+      - file: lessons-micropython/display/display-07-animation 
     - file: labs/display-lab
     - file: rubrics/display-rubric
     - file: resources/display-resources
