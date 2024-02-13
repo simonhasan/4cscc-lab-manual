@@ -6,11 +6,11 @@ Variables in computer science are similar to variables in mathematics. In mathem
 
 Variables must be declared or assigned a name. To declare a variable, you use the assignment operator `=`.
 
-````
+
 ```{note}
 The assignment operator `=` does not represent equality as it does in mathematics. To represent equality, see section TODO.
 ```
-````
+
 
  ## Naming Variables
 
