@@ -2,19 +2,33 @@
 
 ## What is a Resistor?
 
+
+
+## Ohm's Law
+
 TODO
 
-TODO: REMOVE OHM'S LAW SECTION AND INTEGRATE IT HERE.
+![ohms-law](assets/ohms-law.png)
+
+TODO
 
 ![water-analogy](assets/water-analogy.png)
-
-
 
 ## Resistor Color Codes
 
 TODO
 
+![four-five-band-resistor](assets/four-five-band-resistor.png)
+
+Four-band resistors are more common in hobby kits. They are also easier to interpret as the colors are easier to distinguish. TODO
+
+TODO: LINK TO FIVE-BAND CHART 
+
 ![resistor-chart](assets/resistor-chart.png)
+
+TODO
+
+![resistor-chart-example](assets/resistor-chart-example.png)
 
 ## Checkpoint: Interpreting Resistor Values  
 
