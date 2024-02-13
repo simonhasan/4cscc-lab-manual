@@ -1,3 +1,3 @@
 # Introduction to the Onboard Components
 
-TODO
+The BBC micro:bit 
