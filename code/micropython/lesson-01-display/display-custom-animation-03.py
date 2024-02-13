@@ -1,7 +1,7 @@
 # Imports go at the top
 from microbit import *
 
-# Create a custom image of a coyote
+# Create a custom animation of a snake
 # First frame of the animation
 snake_01 = Image("00000:00000:00000:00000:00000")
 # Second frame of the animation
