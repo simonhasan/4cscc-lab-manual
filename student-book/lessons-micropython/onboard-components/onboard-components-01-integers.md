@@ -1,3 +1,7 @@
 # The Integer (`int`) Data Type
 
-TODO
+## Integers in Mathematics
+
+$$
+
+## Integers in Python

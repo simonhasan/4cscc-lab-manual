@@ -1,3 +1,0 @@
-# Python: The Compass
-
-TODO

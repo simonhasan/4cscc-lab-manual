@@ -53,14 +53,15 @@ parts:
       sections:
       - file: lessons-micropython/onboard-components/onboard-components-00-intro
       - file: lessons-micropython/onboard-components/onboard-components-01-integers
-      - file: lessons-micropython/onboard-components/onboard-components-02-buttons
-      - file: lessons-micropython/onboard-components/onboard-components-03-logo
-      - file: lessons-micropython/onboard-components/onboard-components-04-temperature
-      - file: lessons-micropython/onboard-components/onboard-components-05-light
-      - file: lessons-micropython/onboard-components/onboard-components-06-accelerometer
-      - file: lessons-micropython/onboard-components/onboard-components-07-compass
-      - file: lessons-micropython/onboard-components/onboard-components-08-sound
-      - file: lessons-micropython/onboard-components/onboard-components-09-buzzer
+      - file: lessons-micropython/onboard-components/onboard-components-02-serial
+      - file: lessons-micropython/onboard-components/onboard-components-03-buttons
+      - file: lessons-micropython/onboard-components/onboard-components-04-logo
+      - file: lessons-micropython/onboard-components/onboard-components-05-temperature
+      - file: lessons-micropython/onboard-components/onboard-components-06-light
+      - file: lessons-micropython/onboard-components/onboard-components-07-accelerometer
+      - file: lessons-micropython/onboard-components/onboard-components-08-compass
+      - file: lessons-micropython/onboard-components/onboard-components-09-sound
+      - file: lessons-micropython/onboard-components/onboard-components-10-buzzer
     - file: labs/onboard-components-lab
     - file: rubrics/onboard-components-rubric
     - file: resources/onboard-components-resources

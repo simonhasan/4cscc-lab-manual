@@ -1,3 +1,3 @@
-# Python: Introduction to the Onboard Components
+# Introduction to the Onboard Components
 
 TODO
