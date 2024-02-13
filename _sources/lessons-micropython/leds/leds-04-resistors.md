@@ -2,13 +2,17 @@
 
 ## What is a Resistor?
 
+
+
+## Ohm's Law
+
 TODO
 
-TODO: REMOVE OHM'S LAW SECTION AND INTEGRATE IT HERE.
+![ohms-law](assets/ohms-law.png)
+
+TODO
 
 ![water-analogy](assets/water-analogy.png)
-
-
 
 ## Resistor Color Codes
 
