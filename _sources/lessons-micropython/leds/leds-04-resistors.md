@@ -1,5 +1,17 @@
 # Resistors
 
+## What is a Resistor?
+
+TODO
+
+TODO: REMOVE OHM'S LAW SECTION AND INTEGRATE IT HERE.
+
+![water-analogy](assets/water-analogy.png)
+
+
+
+## Resistor Color Codes
+
 TODO
 
 ![resistor-chart](assets/resistor-chart.png)
