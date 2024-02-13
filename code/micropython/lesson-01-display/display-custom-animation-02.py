@@ -31,26 +31,26 @@ snake_12 = Image("00000:00000:00000:00000:00000")
 while True:
     # Display the animation
     display.show(snake_01) # First frame of the animation
-    sleep(100)             # Wait for 100ms (0.1 seconds)
+    sleep(250)             # Wait for 250ms (0.25 seconds)
     display.show(snake_02) # Second frame of the animation
-    sleep(100)             # Wait for 100ms (0.1 seconds) 
+    sleep(250)             # Wait for 250ms (0.25 seconds)
     display.show(snake_03) # Third frame of the animation
-    sleep(100)             # Wait for 100ms (0.1 seconds)
+    sleep(250)             # Wait for 250ms (0.25 seconds)
     display.show(snake_04) # Fourth frame of the animation
-    sleep(100)             # Wait for 100ms (0.1 seconds)
+    sleep(250)             # Wait for 250ms (0.25 seconds)
     display.show(snake_05) # Fifth frame of the animation
-    sleep(100)             # Wait for 100ms (0.1 seconds)
+    sleep(250)             # Wait for 250ms (0.25 seconds)
     display.show(snake_06) # Sixth frame of the animation
-    sleep(100)             # Wait for 100ms (0.1 seconds)
+    sleep(250)             # Wait for 250ms (0.25 seconds)
     display.show(snake_07) # Seventh frame of the animation
-    sleep(100)             # Wait for 100ms (0.1 seconds)
+    sleep(250)             # Wait for 250ms (0.25 seconds)
     display.show(snake_08) # Eighth frame of the animation
-    sleep(100)             # Wait for 100ms (0.1 seconds)
+    sleep(250)             # Wait for 250ms (0.25 seconds)
     display.show(snake_09) # Ninth frame of the animation
-    sleep(100)             # Wait for 100ms (0.1 seconds)
+    sleep(250)             # Wait for 250ms (0.25 seconds)
     display.show(snake_10) # Tenth frame of the animation
-    sleep(100)             # Wait for 100ms (0.1 seconds)
+    sleep(250)             # Wait for 250ms (0.25 seconds)
     display.show(snake_11) # Eleventh frame of the animation
-    sleep(100)             # Wait for 100ms (0.1 seconds)
+    sleep(250)             # Wait for 250ms (0.25 seconds)
     display.show(snake_12) # Twelfth frame of the animation
-    sleep(100)             # Wait for 100ms (0.1 seconds)
+    sleep(250)             # Wait for 250ms (0.25 seconds)

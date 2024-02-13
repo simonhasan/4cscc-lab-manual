@@ -38,4 +38,4 @@ while True:
     # Loop through each frame of the animation
     for snake in snakes:
         display.show(snake) # Display the current frame of the animation
-        sleep(100)          # Wait for 100ms (0.1 seconds)
+        sleep(250)          # Wait for 250ms (0.25 seconds)
