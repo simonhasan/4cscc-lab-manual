@@ -454,7 +454,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -470,6 +472,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#printing-the-state-of-the-captive-touch-logo-to-serial">Printing the State of the Captive Touch Logo to Serial</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -483,6 +493,19 @@ document.write(`
 <h1>The Captive Touch Logo<a class="headerlink" href="#the-captive-touch-logo" title="Permalink to this heading">#</a></h1>
 <p>The micro:bit gas a captive touch logo that can be used similar to a button. The logo uses the electrical properties of the human body to TODO</p>
 <p><img alt="microbit-front-logo" src="../../_images/microbit-front-logo.png" /></p>
+<section id="printing-the-state-of-the-captive-touch-logo-to-serial">
+<h2>Printing the State of the Captive Touch Logo to Serial<a class="headerlink" href="#printing-the-state-of-the-captive-touch-logo-to-serial" title="Permalink to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
+<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Code in a &#39;while True:&#39; loop repeats forever</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># Print the state of the logo touch sensor</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Logo touched:&#39;</span><span class="p">,</span> <span class="n">pin_logo</span><span class="o">.</span><span class="n">is_touched</span><span class="p">())</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="c1"># Wait for 100ms (0.1 seconds)</span>
+</pre></div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -540,7 +563,20 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#printing-the-state-of-the-captive-touch-logo-to-serial">Printing the State of the Captive Touch Logo to Serial</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
