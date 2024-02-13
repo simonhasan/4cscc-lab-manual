@@ -81,7 +81,7 @@ TODO
 
 ## Boolean Operators in Python
 
-### The `int` Values of the `ool` Data Type
+### The `int` Values of the `bool` Data Type
 
 
 ````{note}
