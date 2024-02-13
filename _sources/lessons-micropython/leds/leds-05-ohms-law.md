@@ -1,3 +1,0 @@
-# Ohm's Law
-
-TODO
