@@ -1,5 +1,5 @@
 # The A and B Buttons
 
-TODO
+The micro:bit has two programmable buttons. 
 
 ![microbit-front-buttons](assets/microbit-front-buttons.png)

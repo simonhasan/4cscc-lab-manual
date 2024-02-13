@@ -1,3 +1,0 @@
-# The Temperature Sensor
-
-TODO
