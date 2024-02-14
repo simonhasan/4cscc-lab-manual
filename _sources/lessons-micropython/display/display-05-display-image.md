@@ -22,13 +22,21 @@ display.show(Image.HEART)       # Display the heart image
 
 ## Built-In Image Inventory
 
+### Arrows
+
+
+
 ### Animals
 
 | Animal                                               | Code              |
 | ---------------------------------------------------- | ----------------- |
 | ![built-in-butterfly](assets/built-in-butterfly.png) | `Image.BUTTERFLY` |
-|                                                      |                   |
-|                                                      |                   |
+| ![built-in-cow](assets/built-in-cow.png)             | `Image.COW`       |
+| ![built-in-duck](assets/built-in-duck.png)           | `Image.DUCK`      |
+| ![built-in-giraffe](assets/built-in-giraffe.png)     | `Image.GIRAFFE`   |
+| ![built-in-rabbit](assets/built-in-rabbit.png)       | `Image.RABBIT`    |
+| ![built-in-snake](assets/built-in-snake.png)         | `Image.SNAKE`     |
+| ![built-in-tortoise](assets/built-in-tortoise.png)   | `Image.TORTOISE`  |
 
 ### Clocks
 
@@ -51,9 +59,21 @@ display.show(Image.HEART)       # Display the heart image
 
 ### Faces
 
-| Face                                           | Code           |
-| ---------------------------------------------- | -------------- |
-| ![built-in-angry](assets/built-in-angry.png)   | `Image.ANGRY`  |
-| ![built-in-asleep](assets/built-in-asleep.png) | `Image.ASLEEP` |
-|                                                |                |
+| Face                                               | Code             |
+| -------------------------------------------------- | ---------------- |
+| ![built-in-angry](assets/built-in-angry.png)       | `Image.ANGRY`    |
+| ![built-in-asleep](assets/built-in-asleep.png)     | `Image.ASLEEP`   |
+| ![built-in-confused](assets/built-in-confused.png) | `Image.CONFUSED` |
+| ![built-in-fabulous](assets/built-in-fabulous.png) | `Image.FABULOUS` |
+| ![built-in-happy](assets/built-in-happy.png)       | `Image.HAPPY`    |
+| ![built-in-meh](assets/built-in-meh.png)           | `Image.MEH`      |
+| ![built-in-sad](assets/built-in-sad.png)           | `Image.SAD`      |
+| ![built-in-silly](assets/built-in-silly.png)       | `Image.SILLY`    |
+| ![built-in-smile](assets/built-in-smile.png)       | `Image.SMILE`    |
+
+### Shapes
+
+
+
+### Other
 
