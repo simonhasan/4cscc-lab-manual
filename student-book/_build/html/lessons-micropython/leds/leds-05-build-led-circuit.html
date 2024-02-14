@@ -192,7 +192,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../display/display-02-display-text.html">Displaying Text</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../display/display-03-variables.html">Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../display/display-04-while-loop.html">Python: The <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../display/display-05-display-image.html">Displaying Built-In Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../display/display-05-display-image.html">Built-In Images</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../display/display-06-display-custom-image.html">Displaying Custom Images</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../display/display-07-animation.html">Displaying an Animation</a></li>
 </ul>
@@ -481,6 +481,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-an-led-circuit-with-the-adafruit-dragontail-or-similar-type">Building an LED Circuit with the Adafruit Dragontail (Or Similar Type)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-an-led-circuit-with-an-elecfreaks-micro-bit-breakout-board-or-similar-type">Building an LED Circuit with an ELECFREAKS micro:bit Breakout Board (Or Similar Type)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-an-led-circuit-with-the-spakfun-qwiic-micro-bit-breakout-board-or-similar-type">Building an LED Circuit with the SpakFun Qwiic micro:bit Breakout Board (Or Similar Type)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-the-led-circuit">Troubleshooting the LED Circuit</a></li>
 </ul>
             </nav>
         </div>
@@ -523,7 +524,9 @@ document.write(`
 <p>Place a jumper wire from the row attached to Pin 1 to the row with the anode.</p>
 <p><img alt="blink-led-diagram-adafruit-04" src="../../_images/blink-led-diagram-adafruit-04.png" /></p>
 <p>The circuit is complete.</p>
+<p><img alt="blink-led-adafruit" src="../../_images/blink-led-adafruit.png" /></p>
 </section>
+<hr class="docutils" />
 <section id="building-an-led-circuit-with-an-elecfreaks-micro-bit-breakout-board-or-similar-type">
 <h2>Building an LED Circuit with an ELECFREAKS micro:bit Breakout Board (Or Similar Type)<a class="headerlink" href="#building-an-led-circuit-with-an-elecfreaks-micro-bit-breakout-board-or-similar-type" title="Permalink to this heading">#</a></h2>
 <p>Insert the micro:bit into the micro:bit to the breakout board.</p>
@@ -553,7 +556,9 @@ document.write(`
 <p>Place a jumper wire from the Pin 1 to the row with the anode.</p>
 <p><img alt="blink-led-diagram-elecfreaks-04" src="../../_images/blink-led-diagram-elecfreaks-04.png" /></p>
 <p>The circuit is complete.</p>
+<p><img alt="blink-led-elecfreaks" src="../../_images/blink-led-elecfreaks.png" /></p>
 </section>
+<hr class="docutils" />
 <section id="building-an-led-circuit-with-the-spakfun-qwiic-micro-bit-breakout-board-or-similar-type">
 <h2>Building an LED Circuit with the SpakFun Qwiic micro:bit Breakout Board (Or Similar Type)<a class="headerlink" href="#building-an-led-circuit-with-the-spakfun-qwiic-micro-bit-breakout-board-or-similar-type" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
@@ -566,7 +571,20 @@ document.write(`
 <p><img alt="blink-led-diagram-sparkfun-03" src="../../_images/blink-led-diagram-sparkfun-03.png" /></p>
 <p>TODO</p>
 <p><img alt="blink-led-diagram-sparkfun-04" src="../../_images/blink-led-diagram-sparkfun-04.png" /></p>
-<p>TODO</p>
+<p>The circuit is complete.</p>
+<p><img alt="blink-led-sparkfun" src="../../_images/blink-led-sparkfun.png" /></p>
+</section>
+<hr class="docutils" />
+<section id="troubleshooting-the-led-circuit">
+<h2>Troubleshooting the LED Circuit<a class="headerlink" href="#troubleshooting-the-led-circuit" title="Permalink to this heading">#</a></h2>
+<p>If the LED is not illuminating:</p>
+<ul class="simple">
+<li><p>Check that the anode and cathode leads are not on the same row on the breadboard.</p></li>
+<li><p>Check that the GPIO pin is the correct GPIO pin in the code.</p></li>
+<li><p>Check that the GPIO pin is connected to the anode.</p></li>
+<li><p>Check that the cathode is connected to GND.</p></li>
+<li><p>Check that the resistor is connected to the anode and the GND.</p></li>
+</ul>
 </section>
 </section>
 
@@ -637,6 +655,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-an-led-circuit-with-the-adafruit-dragontail-or-similar-type">Building an LED Circuit with the Adafruit Dragontail (Or Similar Type)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-an-led-circuit-with-an-elecfreaks-micro-bit-breakout-board-or-similar-type">Building an LED Circuit with an ELECFREAKS micro:bit Breakout Board (Or Similar Type)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-an-led-circuit-with-the-spakfun-qwiic-micro-bit-breakout-board-or-similar-type">Building an LED Circuit with the SpakFun Qwiic micro:bit Breakout Board (Or Similar Type)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-the-led-circuit">Troubleshooting the LED Circuit</a></li>
 </ul>
   </nav></div>
 

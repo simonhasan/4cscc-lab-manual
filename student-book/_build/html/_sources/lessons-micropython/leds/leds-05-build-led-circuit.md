@@ -47,7 +47,9 @@ Place a jumper wire from the row attached to Pin 1 to the row with the anode.
 
 The circuit is complete.
 
+![blink-led-adafruit](assets/blink-led-adafruit.png)
 
+---
 
 ## Building an LED Circuit with an ELECFREAKS micro:bit Breakout Board (Or Similar Type)
 
@@ -92,6 +94,10 @@ Place a jumper wire from the Pin 1 to the row with the anode.
 
 The circuit is complete.
 
+![blink-led-elecfreaks](assets/blink-led-elecfreaks.png)
+
+---
+
 ## Building an LED Circuit with the SpakFun Qwiic micro:bit Breakout Board (Or Similar Type)
 
 TODO
@@ -114,4 +120,19 @@ TODO
 
 ![blink-led-diagram-sparkfun-04](assets/blink-led-diagram-sparkfun-04.png)
 
-TODO
+The circuit is complete.
+
+![blink-led-sparkfun](assets/blink-led-sparkfun.png)
+
+---
+
+## Troubleshooting the LED Circuit
+
+If the LED is not illuminating:
+
+- Check that the anode and cathode leads are not on the same row on the breadboard.
+- Check that the GPIO pin is the correct GPIO pin in the code.
+- Check that the GPIO pin is connected to the anode.
+- Check that the cathode is connected to GND.
+- Check that the resistor is connected to the anode and the GND. 
+
