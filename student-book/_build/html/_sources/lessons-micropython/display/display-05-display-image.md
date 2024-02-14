@@ -2,11 +2,15 @@
 
 TODO
 
-The BBC micro:bit has 64 built-in images that can be displayed on the 5x5 LED matrix display using Python.
+The BBC micro:bit has 64 built-in images that can be displayed using Python on the 5x5 LED matrix display.
 
 ## Displaying Built-In Image
 
 To display a built-in image, the following line of code is used:
+
+### `display.show(Image.ENTER_IMAGE)`
+
+
 
 ```{note}
 The image name is always in uppercase.
@@ -14,13 +18,12 @@ The image name is always in uppercase.
 
 
 
-### `display.show(Image.ENTER_IMAGE)`
-
 ```python
 # Imports go at the top
 from microbit import *
 
-display.show(Image.HEART)       # Display the heart image
+# Display the heart image
+display.show(Image.HEART)       
 
 ```
 
@@ -142,7 +145,7 @@ These categories and images are presented below:
 
 ### Miscellaneous
 
-|                                                          |                     |
+| Miscellaneous Image                                      | Code                |
 | -------------------------------------------------------- | ------------------- |
 | ![built-in-chessboard](assets/built-in-chessboard.png)   | `Image.CHESSBOARD`  |
 | ![built-in-ghost](assets/built-in-ghost.png)             | `Image.GHOST`       |
@@ -181,7 +184,7 @@ Solutions:
 **D**: `display.show(Image.HOUSE)`
 
 Explination:
-**A**: This uses the `display.scroll()` method. This is only used with strings.
-**B**: The method is incomplete.
+**A**: This uses the `display.scroll()` method. This is only used with strings.<br>
+**B**: The method is incomplete.<br>
 **C**: The attribute of `Image` is not capitalized.
 ```

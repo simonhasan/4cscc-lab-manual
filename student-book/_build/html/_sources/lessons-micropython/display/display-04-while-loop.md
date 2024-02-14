@@ -1,6 +1,30 @@
 # Python: The `while` Loop
 
-TODO
+```py
+# Imports go at the top
+from microbit import *
+
+# Scroll "Python" on the display
+display.scroll('Python') 
+```
+
+
+
+```python
+# Imports go at the top
+from microbit import *
+
+
+message = 'Python'
+
+# Scroll "Python" on the display
+display.scroll(message) 
+```
+
+
+
+
+
 ## A Simple `while` Loop
 
 ![while-flowchart-generic](assets/while-flowchart-generic.png)
