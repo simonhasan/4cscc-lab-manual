@@ -10,19 +10,19 @@ The BBC micro:bit has built-in images that are available
 
 ### Animals
 
-| Animal                                                       | Code              |
-| ------------------------------------------------------------ | ----------------- |
-| <img src="/Users/simon/Documents/GitHub/4cscc-lab-manual/student-book/lessons-micropython/display/assets/built-in-butterfly.png" alt="built-in-butterfly" style="zoom:50%;" /> | `Image.BUTTERFLY` |
-|                                                              |                   |
-|                                                              |                   |
+| Animal                                               | Code              |
+| ---------------------------------------------------- | ----------------- |
+| ![built-in-butterfly](assets/built-in-butterfly.png) | `Image.BUTTERFLY` |
+|                                                      |                   |
+|                                                      |                   |
 
 
 
 ### Faces
 
-| Face                                                         | Code           |
-| ------------------------------------------------------------ | -------------- |
-| ![built-in-angry](assets/built-in-angry.png)                 | `Image.ANGRY`  |
-| <img src="/Users/simon/Documents/GitHub/4cscc-lab-manual/student-book/lessons-micropython/display/assets/built-in-asleep.png" alt="built-in-asleep" style="zoom:50%;" /> | `Image.ASLEEP` |
-|                                                              |                |
+| Face                                           | Code           |
+| ---------------------------------------------- | -------------- |
+| ![built-in-angry](assets/built-in-angry.png)   | `Image.ANGRY`  |
+| ![built-in-asleep](assets/built-in-asleep.png) | `Image.ASLEEP` |
+|                                                |                |
 
