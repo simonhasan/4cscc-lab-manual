@@ -10,9 +10,7 @@ TODO
 
 TODO
 
-### Strings
 
-TODO
 
 ### `display.scroll()`
 
