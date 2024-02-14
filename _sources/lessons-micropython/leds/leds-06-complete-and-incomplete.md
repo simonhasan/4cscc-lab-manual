@@ -14,7 +14,7 @@ TODO
 
 ## ## Checkpoint: Complete or Incomplete
 
-Which circuits are complete or incomplete circuits?
+Which circuits are complete or incomplete?
 
 ![circuit-quiz](assets/circuit-quiz.png)
 
