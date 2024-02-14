@@ -1,8 +1,52 @@
 # Displaying Custom Images
 
-TODO
+It is possible to create custom images on the 5x5 LED matrix display. TODO
 
-## ASS
+
+
+## Creating a Custom Image of A Coyote
+
+![coyote](assets/coyote.png)
+
+There are two methods to create a custom of the coyote above. TODO
+
+### Method #1 (More Visual)
+
+```python
+# Imports go at the top
+from microbit import *
+
+# Create a custom image of a coyote
+coyote = Image("99099:"
+               "09990:"
+               "90909:"
+               "99999:"
+               "00900")
+
+# Display the custom image
+display.show(coyote)
+
+```
+
+
+
+### Method #2 (One Line)
+
+```python
+# Imports go at the top
+from microbit import *
+
+# Create a custom image of a coyote
+coyote = Image("99099:09990:90909:99999:00900")
+
+# Display the custom image
+display.show(coyote)
+
+```
+
+
+
+## 
 
 
 

@@ -455,7 +455,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -471,6 +473,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-an-led-circuit-with-the-adafruit-dragontail-or-similar-type">Building an LED Circuit with the Adafruit Dragontail (Or Similar Type)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-an-led-circuit-with-an-elecfreaks-micro-bit-breakout-board-or-similar-type">Building an LED Circuit with an ELECFREAKS micro:bit Breakout Board (Or Similar Type)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-an-led-circuit-with-the-spakfun-qwiic-micro-bit-breakout-board-or-similar-type">Building an LED Circuit with the SpakFun Qwiic micro:bit Breakout Board (Or Similar Type)</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -482,7 +494,80 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="building-an-led-circuit">
 <h1>Building an LED Circuit<a class="headerlink" href="#building-an-led-circuit" title="Permalink to this heading">#</a></h1>
+<section id="building-an-led-circuit-with-the-adafruit-dragontail-or-similar-type">
+<h2>Building an LED Circuit with the Adafruit Dragontail (Or Similar Type)<a class="headerlink" href="#building-an-led-circuit-with-the-adafruit-dragontail-or-similar-type" title="Permalink to this heading">#</a></h2>
+<p>Insert the micro:bit into the micro:bit to the Adafruit Dragontail.</p>
+<p><img alt="blink-led-diagram-adafruit-00" src="../../_images/blink-led-diagram-adafruit-00.png" /></p>
+<p>Insert the LED into the breadboard.</p>
+<ul class="simple">
+<li><p>**Make sure that the LED and the cathode are not on the same row on the breadboard. **</p></li>
+<li><p><strong>Take note of which lead is the anode.</strong></p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Chose a side that the LED lead will always be facing (right or left). This helps prevent incomplete circuits and makes it easier to remember which lead is the anode and which lead is the cathode.</p>
+</div>
+<p><img alt="blink-led-diagram-adafruit-01" src="../../_images/blink-led-diagram-adafruit-01.png" /></p>
+<p>Attach a resistor to the row with the cathode lead of the LED.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The resistor can be attached to either the anode or the cathode in an LED circuit. Pick one lead (either anode or cathode) and attach it to that lead every time an LED circuit is built.</p>
+</div>
+<p><img alt="blink-led-diagram-adafruit-02" src="../../_images/blink-led-diagram-adafruit-02.png" /></p>
+<p>Attach the resistor to the GND rail on the side of the breadboard.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is also possible to use the resistor as the lead from the GND rail to the cathode.</p>
+</div>
+<p><img alt="blink-led-diagram-adafruit-03" src="../../_images/blink-led-diagram-adafruit-03.png" /></p>
+<p>Place a jumper wire from the row attached to Pin 1 to the row with the anode.</p>
+<p><img alt="blink-led-diagram-adafruit-04" src="../../_images/blink-led-diagram-adafruit-04.png" /></p>
+<p>The circuit is complete.</p>
+</section>
+<section id="building-an-led-circuit-with-an-elecfreaks-micro-bit-breakout-board-or-similar-type">
+<h2>Building an LED Circuit with an ELECFREAKS micro:bit Breakout Board (Or Similar Type)<a class="headerlink" href="#building-an-led-circuit-with-an-elecfreaks-micro-bit-breakout-board-or-similar-type" title="Permalink to this heading">#</a></h2>
+<p>Insert the micro:bit into the micro:bit to the breakout board.</p>
+<p><img alt="blink-led-diagram-elecfreaks-00" src="../../_images/blink-led-diagram-elecfreaks-00.png" /></p>
+<p>Insert the LED into the breadboard.</p>
+<ul class="simple">
+<li><p>**Make sure that the LED and the cathode are not on the same row on the breadboard. **</p></li>
+<li><p><strong>Take note of which lead is the anode.</strong></p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Chose a side that the LED lead will always be facing (right or left). This helps prevent incomplete circuits and makes it easier to remember which lead is the anode and which lead is the cathode.</p>
+</div>
+<p><img alt="blink-led-diagram-elecfreaks-01" src="../../_images/blink-led-diagram-elecfreaks-01.png" /></p>
+<p>Attach a resistor to the row with the cathode lead of the LED.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The resistor can be attached to either the anode or the cathode in an LED circuit. Pick one lead (either anode or cathode) and attach it to that lead every time an LED circuit is built.</p>
+</div>
+<p><img alt="blink-led-diagram-elecfreaks-02" src="../../_images/blink-led-diagram-elecfreaks-02.png" /></p>
+<p>Attach the resistor to a GND pin.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Any GND pin will work on these types of breakout boards. The GND pin does not need to be adjacent to the GPIO pin.</p>
+</div>
+<p><img alt="blink-led-diagram-elecfreaks-03" src="../../_images/blink-led-diagram-elecfreaks-03.png" /></p>
+<p>Place a jumper wire from the Pin 1 to the row with the anode.</p>
+<p><img alt="blink-led-diagram-elecfreaks-04" src="../../_images/blink-led-diagram-elecfreaks-04.png" /></p>
+<p>The circuit is complete.</p>
+</section>
+<section id="building-an-led-circuit-with-the-spakfun-qwiic-micro-bit-breakout-board-or-similar-type">
+<h2>Building an LED Circuit with the SpakFun Qwiic micro:bit Breakout Board (Or Similar Type)<a class="headerlink" href="#building-an-led-circuit-with-the-spakfun-qwiic-micro-bit-breakout-board-or-similar-type" title="Permalink to this heading">#</a></h2>
 <p>TODO</p>
+<p><img alt="blink-led-diagram-sparkfun-00" src="../../_images/blink-led-diagram-sparkfun-00.png" /></p>
+<p>TODO</p>
+<p><img alt="blink-led-diagram-sparkfun-01" src="../../_images/blink-led-diagram-sparkfun-01.png" /></p>
+<p>TODO</p>
+<p><img alt="blink-led-diagram-sparkfun-02" src="../../_images/blink-led-diagram-sparkfun-02.png" /></p>
+<p>TODO</p>
+<p><img alt="blink-led-diagram-sparkfun-03" src="../../_images/blink-led-diagram-sparkfun-03.png" /></p>
+<p>TODO</p>
+<p><img alt="blink-led-diagram-sparkfun-04" src="../../_images/blink-led-diagram-sparkfun-04.png" /></p>
+<p>TODO</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -540,7 +625,22 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-an-led-circuit-with-the-adafruit-dragontail-or-similar-type">Building an LED Circuit with the Adafruit Dragontail (Or Similar Type)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-an-led-circuit-with-an-elecfreaks-micro-bit-breakout-board-or-similar-type">Building an LED Circuit with an ELECFREAKS micro:bit Breakout Board (Or Similar Type)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-an-led-circuit-with-the-spakfun-qwiic-micro-bit-breakout-board-or-similar-type">Building an LED Circuit with the SpakFun Qwiic micro:bit Breakout Board (Or Similar Type)</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
