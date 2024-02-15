@@ -491,14 +491,14 @@ document.write(`
 <p><strong>Example 2:</strong></p>
 <iframe src="https://trinket.io/embed/python3/ce5a838eb2" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 <p>In Example 3, when attempting to use a <code class="docutils literal notranslate"><span class="pre">+</span></code> between a string and an integer, the <code class="docutils literal notranslate"><span class="pre">TypeError</span></code> displayed below is returned.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ne">TypeError</span><span class="p">:</span> <span class="n">can</span> <span class="n">only</span> <span class="n">concatenate</span> <span class="nb">str</span> <span class="p">(</span><span class="ow">not</span> <span class="s2">&quot;int&quot;</span><span class="p">)</span> <span class="n">to</span> <span class="nb">str</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>TypeError:<span class="w"> </span>can<span class="w"> </span>only<span class="w"> </span>concatenate<span class="w"> </span>str<span class="w"> </span><span class="o">(</span>not<span class="w"> </span><span class="s2">&quot;int&quot;</span><span class="o">)</span><span class="w"> </span>to<span class="w"> </span>str
 </pre></div>
 </div>
 <p>Python operates from left to right and encounters the string first, expecting another string to follow after the <code class="docutils literal notranslate"><span class="pre">+</span></code>.</p>
 <p><strong>Example 3:</strong></p>
 <iframe src="https://trinket.io/embed/python3/fc0c9bc3f6" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 <p>Similarly, when Python encounters the numeric data type first, it returns a different type error, expecting another numeric type after the <code class="docutils literal notranslate"><span class="pre">+</span></code>. This error can be seen below:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="ne">TypeError</span><span class="p">:</span> <span class="n">unsupported</span> <span class="n">operand</span> <span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">for</span> <span class="o">+</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span> <span class="ow">and</span> <span class="s1">&#39;str&#39;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>TypeError:<span class="w"> </span>unsupported<span class="w"> </span>operand<span class="w"> </span>type<span class="o">(</span>s<span class="o">)</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>+:<span class="w"> </span><span class="s1">&#39;int&#39;</span><span class="w"> </span>and<span class="w"> </span><span class="s1">&#39;str&#39;</span>
 </pre></div>
 </div>
 </section>

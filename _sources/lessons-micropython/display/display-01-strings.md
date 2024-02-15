@@ -18,7 +18,7 @@ In Example 1, the numeric data type and the string data type can use the `+` ope
 
 In Example 3, when attempting to use a `+` between a string and an integer, the `TypeError` displayed below is returned. 
 
-```
+```bash
 TypeError: can only concatenate str (not "int") to str
 ```
 
@@ -32,7 +32,7 @@ Python operates from left to right and encounters the string first, expecting an
 
 Similarly, when Python encounters the numeric data type first, it returns a different type error, expecting another numeric type after the `+`. This error can be seen below:
 
-```
+```bash
 TypeError: unsupported operand type(s) for +: 'int' and 'str'
 ```
 
