@@ -14,5 +14,23 @@ Computers manipulate data. Data can come in several forms. Not all data is handl
 
 
 
+```
+TypeError: can only concatenate str (not "int") to str
+```
+
+
+
+
+
+
+
 <iframe src="https://trinket.io/embed/python3/fc0c9bc3f6" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+
+
+
+```
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+```
 
