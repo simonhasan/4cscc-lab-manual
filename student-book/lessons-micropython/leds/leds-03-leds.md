@@ -1,4 +1,8 @@
-# Parts of an LED
+# Light-emitting Diodes (LEDs)
+
+TODO
+
+## Parts of an LED
 
 ![led-diagram](assets/led-diagram.png)
 

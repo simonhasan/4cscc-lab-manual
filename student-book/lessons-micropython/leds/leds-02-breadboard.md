@@ -1,6 +1,6 @@
 # Breadboards
 
-TODO
+A breadboard is a base that is used to prototype circuits. 
 
 ![breadboard-diagram](assets/breadboard-diagram.png)
 
