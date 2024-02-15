@@ -183,7 +183,7 @@ Which line of code is correct for displaying the image above?
 Solutions:
 **D**: `display.show(Image.HOUSE)`
 
-Explination:
+Explanation:<br>
 **A**: This uses the `display.scroll()` method. This is only used with strings.<br>
 **B**: The method is incomplete.<br>
 **C**: The attribute of `Image` is not capitalized.

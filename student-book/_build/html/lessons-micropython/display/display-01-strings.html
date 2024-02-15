@@ -482,7 +482,25 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="the-string-str-data-type">
 <h1>The String (<code class="docutils literal notranslate"><span class="pre">str</span></code>) Data Type<a class="headerlink" href="#the-string-str-data-type" title="Permalink to this heading">#</a></h1>
-<p>TODO</p>
+<p>Computers manipulate data. Data can come in several forms. Not all data is handled the same way, so information is organized into different types. The same set of operations can be used to manipulate the data within data types. Consider the following examples:</p>
+<p><code class="docutils literal notranslate"><span class="pre">100</span></code> is a number that can be used in mathematical computations. The <code class="docutils literal notranslate"><span class="pre">'100'</span></code> in the sentence, <code class="docutils literal notranslate"><span class="pre">I</span> <span class="pre">have</span> <span class="pre">100</span> <span class="pre">things</span> <span class="pre">in</span> <span class="pre">my</span> <span class="pre">mind.'</span> </code> Is part of a sequence of characters. A series of characters in computer science is called a <strong>string</strong>. In Python, strings are characters between single <code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span></code> or double <code class="docutils literal notranslate"><span class="pre">&quot;</span> <span class="pre">&quot;</span></code> quotes.</p>
+<p>The three examples below the three examples below demonstrate how a numeric data type differs from a string:</p>
+<p><strong>Example 1:</strong></p>
+<iframe src="https://trinket.io/embed/python3/f10fdf980c" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<p>In Example 1, the numeric data type and the string data type can use the <code class="docutils literal notranslate"><span class="pre">+</span></code> operator, but the output is very different. In <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">+</span> <span class="pre">2</span></code>, the <code class="docutils literal notranslate"><span class="pre">+</span></code> works as expected with numbers and functions as an addition operator, returning <code class="docutils literal notranslate"><span class="pre">3</span></code> . In <code class="docutils literal notranslate"><span class="pre">'1'</span> <span class="pre">+</span> <span class="pre">'2'</span></code>, the result is <code class="docutils literal notranslate"><span class="pre">12</span></code>. This is because with strings the <code class="docutils literal notranslate"><span class="pre">+</span></code> is what is known as a concatenation operator, meaning it links sequences of strings together. In <code class="docutils literal notranslate"><span class="pre">'1</span> <span class="pre">+</span> <span class="pre">2'</span></code>, the <code class="docutils literal notranslate"><span class="pre">+</span></code> is a character in the string.</p>
+<p><strong>Example 2:</strong></p>
+<iframe src="https://trinket.io/embed/python3/ce5a838eb2" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<p>In Example 3, when attempting to use a <code class="docutils literal notranslate"><span class="pre">+</span></code> between a string and an integer, the <code class="docutils literal notranslate"><span class="pre">TypeError</span></code> displayed below is returned.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>TypeError:<span class="w"> </span>can<span class="w"> </span>only<span class="w"> </span>concatenate<span class="w"> </span>str<span class="w"> </span><span class="o">(</span>not<span class="w"> </span><span class="s2">&quot;int&quot;</span><span class="o">)</span><span class="w"> </span>to<span class="w"> </span>str
+</pre></div>
+</div>
+<p>Python operates from left to right and encounters the string first, expecting another string to follow after the <code class="docutils literal notranslate"><span class="pre">+</span></code>.</p>
+<p><strong>Example 3:</strong></p>
+<iframe src="https://trinket.io/embed/python3/fc0c9bc3f6" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<p>Similarly, when Python encounters the numeric data type first, it returns a different type error, expecting another numeric type after the <code class="docutils literal notranslate"><span class="pre">+</span></code>. This error can be seen below:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>TypeError:<span class="w"> </span>unsupported<span class="w"> </span>operand<span class="w"> </span>type<span class="o">(</span>s<span class="o">)</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>+:<span class="w"> </span><span class="s1">&#39;int&#39;</span><span class="w"> </span>and<span class="w"> </span><span class="s1">&#39;str&#39;</span>
+</pre></div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
