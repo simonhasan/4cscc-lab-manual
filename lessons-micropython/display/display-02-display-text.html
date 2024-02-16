@@ -527,12 +527,14 @@ document.write(`
 <hr class="docutils" />
 <section id="display-show">
 <h3><code class="docutils literal notranslate"><span class="pre">display.show()</span></code><a class="headerlink" href="#display-show" title="Permalink to this heading">#</a></h3>
-<p>TODO</p>
-<p>TODO</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">display.show()</span></code> method displays each character a string individually on the 5x5 LED matrix.</p>
 <p><img alt="display-show-micropython" src="../../_images/display-show-micropython.gif" /></p>
-<p>TODO</p>
+<p>Replace <code class="docutils literal notranslate"><span class="pre">scroll</span></code> in the <code class="docutils literal notranslate"><span class="pre">display.scroll()</span></code> method with <code class="docutils literal notranslate"><span class="pre">show</span></code>.</p>
+<p><img alt="micropython-display-show-01" src="../../_images/micropython-display-show-01.gif" /></p>
+<p>The code should be as follows:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
 <span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+
 
 <span class="c1"># Code in a &#39;while True:&#39; loop repeats forever</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
@@ -540,6 +542,9 @@ document.write(`
 
 </pre></div>
 </div>
+<p>Test the code in the micro:bit simulator in the upper right corner of the Python editor.</p>
+<p><img alt="micropython-display-show-02" src="../../_images/micropython-display-show-02.gif" /></p>
+<p>Run the code on the micro:bit.</p>
 </section>
 </section>
 </section>

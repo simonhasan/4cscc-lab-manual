@@ -45,26 +45,29 @@ TODO:IMAGE OF CODE RUNNING ON DEVICE
 
 ### `display.show()`
 
-TODO
-
-
-
-TODO
-
-
-
-
+The `display.show()` method displays each character a string individually on the 5x5 LED matrix.
 
 ![display-show-micropython](assets/display-show-micropython.gif)
 
-TODO
+Replace `scroll` in the `display.scroll()` method with `show`.
+
+![micropython-display-show-01](assets/micropython-display-show-01.gif)
+
+The code should be as follows:
 
 ```python
 # Imports go at the top
 from microbit import *
+
 
 # Code in a 'while True:' loop repeats forever
 while True:
     display.show('Python')
 
 ```
+
+Test the code in the micro:bit simulator in the upper right corner of the Python editor.
+
+![micropython-display-show-02](assets/micropython-display-show-02.gif)
+
+Run the code on the micro:bit.
