@@ -22,8 +22,6 @@ A window appears with a list of devices.
 Attaching more than one micro:bit to the computer can cause complicate this process. Only one device should be connected and listed in the window.
 ```
 
-
-
 ![makecode-connection-05](assets/makecode-connection-05.png)
 
 Select the device and select "Connect".
