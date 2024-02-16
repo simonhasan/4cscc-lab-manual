@@ -1,6 +1,6 @@
 # Connecting the micro:bit to a Computer
 
-Click on the button <img src="assets/connect-button.png" alt="connect-button" style="zoom:20%;" /> to start the process of connecting the micro:bit.
+Click on the button with three dots to start connecting the micro:bit.
 
 ![makecode-connection-01](assets/makecode-connection-01.png)
 
@@ -21,8 +21,6 @@ A window appears with a list of devices.
 ```{warning}
 Attaching more than one micro:bit to the computer can cause complicate this process. Only one device should be connected and listed in the window.
 ```
-
-
 
 ![makecode-connection-05](assets/makecode-connection-05.png)
 
