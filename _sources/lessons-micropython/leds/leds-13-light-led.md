@@ -1,6 +1,10 @@
 # Using an LED with the Light Sensor
 
-TODO
+The previous section introduced writing analog values to an LED to control the brightness. In this section, the brightness of an LED will be controlled by the input of the on-board light sensor.
+
+
+
+
 
 
 ```python
