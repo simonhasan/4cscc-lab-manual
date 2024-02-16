@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Displaying Text &#8212; Four Corners Science and Computing Club Lab Notebook</title>
+    <title>Displaying Strings &#8212; Four Corners Science and Computing Club Lab Notebook</title>
   
   
   
@@ -179,7 +179,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/display-makecode.html">The micro:bit Display with MakeCode</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/display/display-00-intro.html">The micro:bit Display</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/display/display-01-strings.html">The String Basic Type</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/display/display-02-display-text.html">Displaying Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/display/display-02-display-text.html">Displaying Strings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/display/display-03-variables.html">Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/display/display-04-on-start-forever.html">The <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">forever</span></code> Blocks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/display/display-05-display-image.html">Displaying Built-In Images</a></li>
@@ -189,7 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../lessons/display-micropython.html">The micro:bit Display with Python</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="display-00-intro.html">The micro:bit Display</a></li>
 <li class="toctree-l2"><a class="reference internal" href="display-01-strings.html">The String (<code class="docutils literal notranslate"><span class="pre">str</span></code>) Data Type</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Displaying Text</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Displaying Strings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="display-03-variables.html">Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="display-04-while-loop.html">Python: The <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="display-05-display-image.html">Built-In Images</a></li>
@@ -468,7 +468,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Displaying Text</h1>
+    <h1>Displaying Strings</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -478,8 +478,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-5x5-led-matrix-display">The 5x5 LED Matrix Display</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Displaying Text</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#displaying-strings-with-python">Displaying Strings with Python</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-scroll"><code class="docutils literal notranslate"><span class="pre">display.scroll()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-show"><code class="docutils literal notranslate"><span class="pre">display.show()</span></code></a></li>
 </ul>
@@ -495,35 +494,50 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="displaying-text">
-<h1>Displaying Text<a class="headerlink" href="#displaying-text" title="Permalink to this heading">#</a></h1>
-<p>TODO</p>
-<section id="the-5x5-led-matrix-display">
-<h2>The 5x5 LED Matrix Display<a class="headerlink" href="#the-5x5-led-matrix-display" title="Permalink to this heading">#</a></h2>
-<p>TODO</p>
-</section>
-<section id="id1">
-<h2>Displaying Text<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
-<p>TODO</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="displaying-strings">
+<h1>Displaying Strings<a class="headerlink" href="#displaying-strings" title="Permalink to this heading">#</a></h1>
+<p>To display a string on the micro:bit 5x5 LED matrix using Python, there are two methods.</p>
+<p>The string <code class="docutils literal notranslate"><span class="pre">&quot;Python&quot;</span></code> will be displayed on the 5x5 LED matrix in the following examples.</p>
+<section id="displaying-strings-with-python">
+<h2>Displaying Strings with Python<a class="headerlink" href="#displaying-strings-with-python" title="Permalink to this heading">#</a></h2>
 <section id="display-scroll">
 <h3><code class="docutils literal notranslate"><span class="pre">display.scroll()</span></code><a class="headerlink" href="#display-scroll" title="Permalink to this heading">#</a></h3>
-<p>TODO</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">display.scroll()</span></code> method scrolls a string from right to left on the 5x5 LED matrix.</p>
 <p><img alt="display-scroll-micropython" src="../../_images/display-scroll-micropython.gif" /></p>
-<p>TODO</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span> 
+<p>Delete all the lines of code from the default starter code on the start screen except for <code class="docutils literal notranslate"><span class="pre">displyy.scroll('Hello')</span></code>.</p>
+<p><img alt="micropython-display-scroll-01" src="../../_images/micropython-display-scroll-01.gif" /></p>
+<p>Change the string from <code class="docutils literal notranslate"><span class="pre">'Hello'</span></code> to <code class="docutils literal notranslate"><span class="pre">'Python'</span></code></p>
+<p><img alt="micropython-display-scroll-02" src="../../_images/micropython-display-scroll-02.png" /></p>
+<p>The code should be as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
+<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 
-<span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s1">&#39;Python&#39;</span><span class="p">)</span>
+
+<span class="c1"># Code in a &#39;while True:&#39; loop repeats forever</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s1">&#39;Python&#39;</span><span class="p">)</span>
+
 </pre></div>
 </div>
+<p>Test the code in the micro:bit simulator in the upper right corner of the Python editor.</p>
+<p><img alt="micropython-display-scroll-03" src="../../_images/micropython-display-scroll-03.gif" /></p>
+<p>Run the code on the micro:bit. See TODO.</p>
+<p>TODO:IMAGE OF CODE RUNNING ON DEVICE</p>
 </section>
+<hr class="docutils" />
 <section id="display-show">
 <h3><code class="docutils literal notranslate"><span class="pre">display.show()</span></code><a class="headerlink" href="#display-show" title="Permalink to this heading">#</a></h3>
 <p>TODO</p>
+<p>TODO</p>
 <p><img alt="display-show-micropython" src="../../_images/display-show-micropython.gif" /></p>
 <p>TODO</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
+<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 
-<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s1">&#39;Python&#39;</span><span class="p">)</span>
+<span class="c1"># Code in a &#39;while True:&#39; loop repeats forever</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s1">&#39;Python&#39;</span><span class="p">)</span>
+
 </pre></div>
 </div>
 </section>
@@ -594,8 +608,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-5x5-led-matrix-display">The 5x5 LED Matrix Display</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Displaying Text</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#displaying-strings-with-python">Displaying Strings with Python</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-scroll"><code class="docutils literal notranslate"><span class="pre">display.scroll()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-show"><code class="docutils literal notranslate"><span class="pre">display.show()</span></code></a></li>
 </ul>
