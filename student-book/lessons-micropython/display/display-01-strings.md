@@ -1,8 +1,10 @@
 # The String (`str`) Data Type
 
-Computers manipulate data. Data can come in several forms. Not all data is handled the same way, so information is organized into different types. The same set of operations can be used to manipulate the data within data types. Consider the following examples:
+Computers manipulate data. Data can come in several forms. Not all data is handled the same way, so information is organized into different types. The same operations can be used to manipulate the data within data types. Consider the following examples:
 
-`100` is a number that can be used in mathematical computations. The `'100'` in the sentence, `I have 100 things in my mind.' ` Is part of a sequence of characters. A series of characters in computer science is called a **string**. In Python, strings are characters between single `' '` or double `" "` quotes.
+`100` is a number that can be used in mathematical computations. The `'100'` in the sentence, `I have 100 things in my mind.' ` Is part of a sequence of characters. A series of characters in computer science is called a **string**. 
+
+In Python, strings are characters between single `' '` or double `" "` quotes.
 
 The three examples below the three examples below demonstrate how a numeric data type differs from a string:
 
