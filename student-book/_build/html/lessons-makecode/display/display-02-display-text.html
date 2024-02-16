@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Displaying Text &#8212; Four Corners Science and Computing Club Lab Notebook</title>
+    <title>Displaying Strings &#8212; Four Corners Science and Computing Club Lab Notebook</title>
   
   
   
@@ -179,7 +179,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../lessons/display-makecode.html">The micro:bit Display with MakeCode</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="display-00-intro.html">The micro:bit Display</a></li>
 <li class="toctree-l2"><a class="reference internal" href="display-01-strings.html">The String Basic Type</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Displaying Text</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Displaying Strings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="display-03-variables.html">Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="display-04-on-start-forever.html">The <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">forever</span></code> Blocks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="display-05-display-image.html">Displaying Built-In Images</a></li>
@@ -189,7 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/display-micropython.html">The micro:bit Display with Python</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-00-intro.html">The micro:bit Display</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-01-strings.html">The String (<code class="docutils literal notranslate"><span class="pre">str</span></code>) Data Type</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-02-display-text.html">Displaying Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-02-display-text.html">Displaying Strings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-03-variables.html">Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-04-while-loop.html">Python: The <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-micropython/display/display-05-display-image.html">Built-In Images</a></li>
@@ -455,7 +455,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -466,11 +468,22 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Displaying Text</h1>
+    <h1>Displaying Strings</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#displaying-strings-in-makecode">Displaying Strings in MakeCode</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#show-string-block"><code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">string</span></code> Block</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -480,9 +493,28 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="displaying-text">
-<h1>Displaying Text<a class="headerlink" href="#displaying-text" title="Permalink to this heading">#</a></h1>
-<p>TODO</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="displaying-strings">
+<h1>Displaying Strings<a class="headerlink" href="#displaying-strings" title="Permalink to this heading">#</a></h1>
+<p>To display a string on the micro:bit 5x5 LED matrix using MakeCode, use the <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">string</span></code> block.</p>
+<p>The string <code class="docutils literal notranslate"><span class="pre">&quot;MakeCode&quot;</span></code> will be displayed on the 5x5 LED matrix in the following example.</p>
+<section id="displaying-strings-in-makecode">
+<h2>Displaying Strings in MakeCode<a class="headerlink" href="#displaying-strings-in-makecode" title="Permalink to this heading">#</a></h2>
+<section id="show-string-block">
+<h3><code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">string</span></code> Block<a class="headerlink" href="#show-string-block" title="Permalink to this heading">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">string</span></code> block is located in the <code class="docutils literal notranslate"><span class="pre">Basic</span></code> section of the Toolbox.</p>
+<p><img alt="makecode-show-string-block-01" src="../../_images/makecode-show-string-block-01.png" /></p>
+<p>Drag the <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">string</span></code> block into a forever block.</p>
+<p><img alt="makecode-show-string-block-02" src="../../_images/makecode-show-string-block-02.gif" /></p>
+<p>Change the show string block string from <code class="docutils literal notranslate"><span class="pre">&quot;Hello&quot;</span></code> to <code class="docutils literal notranslate"><span class="pre">&quot;MakeCode&quot;</span></code>.</p>
+<p><img alt="makecode-show-string-block-03" src="../../_images/makecode-show-string-block-03.png" /></p>
+<p>The code blocks should be as follows:</p>
+<p><img alt="makecode-show-string-block-05" src="../../_images/makecode-show-string-block-05.png" /></p>
+<p>Test the code in the micro:bit simulator in the upper left corner of the MakeCode editor.</p>
+<p><img alt="makecode-show-string-block-06" src="../../_images/makecode-show-string-block-06.gif" /></p>
+<p>Run the code on the micro:bit. See TODO.</p>
+<p>TODO:IMAGE OF CODE RUNNING ON DEVICE</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -540,7 +572,23 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#displaying-strings-in-makecode">Displaying Strings in MakeCode</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#show-string-block"><code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">string</span></code> Block</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
