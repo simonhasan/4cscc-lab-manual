@@ -4,6 +4,19 @@
 format: jb-book
 root: intro
 parts:
+  - caption: Introduction
+    chapters: 
+    - file: openers/introduction-opener
+    - file: intros/introduction-intro
+    - file: objectives/introduction-objectives
+    - file: materials/introduction-materials
+    - file: lessons/introduction-makecode
+      sections:
+      - file: lessons-makecode/introduction/introduction-00-microbit
+      - file: lessons-makecode/introduction/introduction-01-makecode
+      - file: lessons-makecode/introduction/introduction-02-connecting
+      - file: lessons-makecode/introduction/introduction-03-running-code
+    - file: labs/introduction-lab
   - caption: "The micro:bit Display"
     chapters:
     - file: openers/display-opener
