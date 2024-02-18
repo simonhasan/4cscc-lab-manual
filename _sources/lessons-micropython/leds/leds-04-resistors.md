@@ -42,6 +42,8 @@ TODO: LINK TO FIVE-BAND CHART
 
 ![resistor-chart](assets/resistor-chart.png)
 
+TODO:EXPLAIN 1ST DIGIT, 2ND DIGIT, AND MULTIPLIER
+
 ### Interpreting Four-Band Resistor Color Bands
 
 

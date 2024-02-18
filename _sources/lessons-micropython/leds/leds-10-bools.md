@@ -43,6 +43,12 @@ TODO
 
 TODO
 
+| Negation Operator |      |      |
+| ----------------- | ---- | ---- |
+| $\neg$            |      |      |
+
+
+
 ### Negation
 
 TODO
@@ -83,9 +89,11 @@ TODO
 
 ### The `int` Values of the `bool` Data Type
 
+<iframe src="https://trinket.io/embed/python3/d7e8e9fff9" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 
 ````{note}
-Given that that the Boolean data type has two values `True` and `False` with the corresponding integer values `1` and `0` respectively. It is possible to turn an LED on and off using a `bool` as demonstrated below:
+, `True` and `False`, with the corresponding integer values `1` and `0`,Given that that the Boolean data type has two values `True` and `False` with the corresponding integer values `1` and `0` respectively. It is possible to turn an LED on and off using a `bool` as demonstrated below:
 
 ```python
 # Imports go at the top
