@@ -26,7 +26,7 @@ Returning to the water pipe analogy mentioned above, Ohm's Law helps us understa
 
 - Resistance ($R$) is like the width of the pipe. A wider pipe allows more water to flow through, while a narrower one restricts the flow.
 
-![water-analogy](assets/water-analogy.png)
+![water-analogy-02](assets/water-analogy-02.png)
 
 ## Resistor Color Bands
 

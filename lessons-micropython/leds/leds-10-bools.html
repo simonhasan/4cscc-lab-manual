@@ -672,7 +672,7 @@ document.write(`
 <h2>Boolean Operators in Python<a class="headerlink" href="#boolean-operators-in-python" title="Permalink to this heading">#</a></h2>
 <section id="the-int-values-of-the-bool-data-type">
 <h3>The <code class="docutils literal notranslate"><span class="pre">int</span></code> Values of the <code class="docutils literal notranslate"><span class="pre">bool</span></code> Data Type<a class="headerlink" href="#the-int-values-of-the-bool-data-type" title="Permalink to this heading">#</a></h3>
-<iframe src="https://trinket.io/embed/python3/d7e8e9fff9" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python3/3066842cb6?runOption=run&showInstructions=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>, <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code>, with the corresponding integer values <code class="docutils literal notranslate"><span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">0</span></code>,Given that that the Boolean data type has two values <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code> with the corresponding integer values <code class="docutils literal notranslate"><span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">0</span></code> respectively. It is possible to turn an LED on and off using a <code class="docutils literal notranslate"><span class="pre">bool</span></code> as demonstrated below:</p>
@@ -709,6 +709,29 @@ document.write(`
     <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
     <span class="c1"># Turn the LED off</span>
     <span class="n">led_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="c1"># Wait for 500ms (0.5 seconds)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Is equivalent to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
+<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Set the LED pin</span>
+<span class="n">led_pin</span> <span class="o">=</span> <span class="n">pin1</span>
+<span class="c1"># Set the LED to on</span>
+<span class="n">led_on</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1"># Set the LED to off</span>
+<span class="n">led_off</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="c1"># Code in a &#39;while True:&#39; loop repeats forever</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># Turn the LED on</span>
+    <span class="n">led_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="n">led_on</span><span class="p">)</span>
+    <span class="c1"># Wait for 500ms (0.5 seconds)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+    <span class="c1"># Turn the LED off</span>
+    <span class="n">led_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="n">led_off</span><span class="p">)</span>
     <span class="c1"># Wait for 500ms (0.5 seconds)</span>
     <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
 </pre></div>
