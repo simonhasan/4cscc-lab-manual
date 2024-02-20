@@ -98,7 +98,7 @@ The circuit is complete.
 
 ---
 
-## Building an LED Circuit with the SpakFun Qwiic micro:bit Breakout Board (Or Similar Type)
+## Building an LED Circuit with the SparkFun Qwiic micro:bit Breakout Board (Or Similar Type)
 
 TODO
 
