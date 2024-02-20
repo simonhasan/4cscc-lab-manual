@@ -7,6 +7,29 @@ In programming, conditional statements are used to make decisions in code, allow
 ### 
 
 ```
+if <condition>:
+    <statement>
 ```
 
 ## 
+
+```python
+if <condition>:
+    <statement>
+elif:
+    <statement>
+    
+      
+```
+
+
+
+```python
+if <condition>:
+    <statement>
+elif:
+    <statement>
+else:
+    <statement>
+```
+

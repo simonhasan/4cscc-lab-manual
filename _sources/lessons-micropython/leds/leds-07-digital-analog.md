@@ -24,7 +24,6 @@ Are the inputs above examples of a digital or an analog signal?
 ```{admonition} Click here to reveal the solutions.
 :class: dropdown
 Solutions:
-![resistor-quiz-solutions](assets/resistor-quiz-solutions.png)
 **A**: ***Digital***. A button only has two values.<br>
 **B**: ***Analog***. A temperature has more than two values.<br>
 **C**: ***Analog***. A light level sensor has more than two values.<br>
