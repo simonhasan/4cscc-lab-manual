@@ -1,3 +1,0 @@
-# RGB Color Codes
-
-TODO

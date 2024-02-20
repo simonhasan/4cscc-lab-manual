@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>RGB Color Codes &#8212; Four Corners Science and Computing Club Lab Notebook</title>
+    <title>Building an RGB LED Circuit &#8212; Four Corners Science and Computing Club Lab Notebook</title>
   
   
   
@@ -62,11 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'lessons-micropython/rgb-led/rgb-led-04-rgb-colors';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lessons-micropython/rgb-led/rgb-led-05-building-rgb-led-circuit';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Collection Types: Dictionary (dict)" href="rgb-led-05-dicts.html" />
-    <link rel="prev" title="Bits and Bytes" href="rgb-led-03-bits-and-bytes.html" />
+    <link rel="next" title="Lab: TODO" href="../../labs/rgb-led-lab.html" />
+    <link rel="prev" title="Functions in Python" href="rgb-led-04-functions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -305,14 +305,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../intros/rgb-led-intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../objectives/rgb-led-objectives.html">Objectives</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../materials/rgb-led-materials.html">Materials</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../lessons/rgb-led-micropython.html">RGB LEDs</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../lessons/rgb-led-micropython.html">Using RGB LEDS with Python</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="rgb-led-00-intro.html">RGB LEDs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rgb-led-01-rgb-led.html">RGB LEDs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rgb-led-02-binary.html">Binary Numbers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rgb-led-03-bits-and-bytes.html">Bits and Bytes</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">RGB Color Codes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rgb-led-05-dicts.html">Collection Types: Dictionary (<code class="docutils literal notranslate"><span class="pre">dict</span></code>)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rgb-led-06-building-rgb-led-circuit.html">Building an RGB LED Circuit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rgb-led-02-binary-bits-and-bytes.html">Binary, Bits and Bytes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rgb-led-03-rgb-colors.html">RGB Color Codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rgb-led-04-functions.html">Functions in Python</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Building an RGB LED Circuit</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../labs/rgb-led-lab.html">Lab: TODO</a></li>
@@ -387,7 +386,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/simonhasan/4cscc-lab-manual/issues/new?title=Issue%20on%20page%20%2Flessons-micropython/rgb-led/rgb-led-04-rgb-colors.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/simonhasan/4cscc-lab-manual/issues/new?title=Issue%20on%20page%20%2Flessons-micropython/rgb-led/rgb-led-05-building-rgb-led-circuit.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -417,7 +416,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/lessons-micropython/rgb-led/rgb-led-04-rgb-colors.md" target="_blank"
+      <li><a href="../../_sources/lessons-micropython/rgb-led/rgb-led-05-building-rgb-led-circuit.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -488,7 +487,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -499,11 +500,21 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>RGB Color Codes</h1>
+    <h1>Building an RGB LED Circuit</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-an-rgb-led-circuit-with-the-adafruit-dragontail-or-similar-type">Building an RGB LED Circuit with the Adafruit Dragontail (Or Similar Type)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-an-rgb-led-circuit-with-an-elecfreaks-micro-bit-breakout-board-or-similar-type">Building an RGB LED Circuit with an ELECFREAKS micro:bit Breakout Board (Or Similar Type)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-an-rgb-led-circuit-with-the-sparkfun-qwiic-micro-bit-breakout-board-or-similar-type">Building an RGB LED Circuit with the SparkFun Qwiic micro:bit Breakout Board (Or Similar Type)</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -513,9 +524,77 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="rgb-color-codes">
-<h1>RGB Color Codes<a class="headerlink" href="#rgb-color-codes" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="building-an-rgb-led-circuit">
+<h1>Building an RGB LED Circuit<a class="headerlink" href="#building-an-rgb-led-circuit" title="Permalink to this heading">#</a></h1>
 <p>TODO</p>
+<section id="building-an-rgb-led-circuit-with-the-adafruit-dragontail-or-similar-type">
+<h2>Building an RGB LED Circuit with the Adafruit Dragontail (Or Similar Type)<a class="headerlink" href="#building-an-rgb-led-circuit-with-the-adafruit-dragontail-or-similar-type" title="Permalink to this heading">#</a></h2>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-adafruit-00" src="../../_images/rgb-led-diagram-adafruit-00.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-adafruit-01" src="../../_images/rgb-led-diagram-adafruit-01.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-adafruit-02" src="../../_images/rgb-led-diagram-adafruit-02.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-adafruit-03" src="../../_images/rgb-led-diagram-adafruit-03.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-adafruit-04" src="../../_images/rgb-led-diagram-adafruit-04.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-adafruit-05" src="../../_images/rgb-led-diagram-adafruit-05.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-adafruit-06" src="../../_images/rgb-led-diagram-adafruit-06.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-adafruit-07" src="../../_images/rgb-led-diagram-adafruit-07.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-adafruit-08" src="../../_images/rgb-led-diagram-adafruit-08.png" /></p>
+<p>TODO</p>
+</section>
+<hr class="docutils" />
+<section id="building-an-rgb-led-circuit-with-an-elecfreaks-micro-bit-breakout-board-or-similar-type">
+<h2>Building an RGB LED Circuit with an ELECFREAKS micro:bit Breakout Board (Or Similar Type)<a class="headerlink" href="#building-an-rgb-led-circuit-with-an-elecfreaks-micro-bit-breakout-board-or-similar-type" title="Permalink to this heading">#</a></h2>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-elecfreaks-00" src="../../_images/rgb-led-diagram-elecfreaks-00.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-elecfreaks-01" src="../../_images/rgb-led-diagram-elecfreaks-01.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-elecfreaks-02" src="../../_images/rgb-led-diagram-elecfreaks-02.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-elecfreaks-03" src="../../_images/rgb-led-diagram-elecfreaks-03.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-elecfreaks-04" src="../../_images/rgb-led-diagram-elecfreaks-04.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-elecfreaks-05" src="../../_images/rgb-led-diagram-elecfreaks-05.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-elecfreaks-06" src="../../_images/rgb-led-diagram-elecfreaks-06.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-elecfreaks-07" src="../../_images/rgb-led-diagram-elecfreaks-07.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-elecfreaks-08" src="../../_images/rgb-led-diagram-elecfreaks-08.png" /></p>
+<p>TODO</p>
+</section>
+<hr class="docutils" />
+<section id="building-an-rgb-led-circuit-with-the-sparkfun-qwiic-micro-bit-breakout-board-or-similar-type">
+<h2>Building an RGB LED Circuit with the SparkFun Qwiic micro:bit Breakout Board (Or Similar Type)<a class="headerlink" href="#building-an-rgb-led-circuit-with-the-sparkfun-qwiic-micro-bit-breakout-board-or-similar-type" title="Permalink to this heading">#</a></h2>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-sparkfun-00" src="../../_images/rgb-led-diagram-sparkfun-00.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-sparkfun-01" src="../../_images/rgb-led-diagram-sparkfun-01.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-sparkfun-02" src="../../_images/rgb-led-diagram-sparkfun-02.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-sparkfun-03" src="../../_images/rgb-led-diagram-sparkfun-03.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-sparkfun-04" src="../../_images/rgb-led-diagram-sparkfun-04.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-sparkfun-05" src="../../_images/rgb-led-diagram-sparkfun-05.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-sparkfun-06" src="../../_images/rgb-led-diagram-sparkfun-06.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-sparkfun-07" src="../../_images/rgb-led-diagram-sparkfun-07.png" /></p>
+<p>TODO</p>
+<p><img alt="rgb-led-diagram-sparkfun-08" src="../../_images/rgb-led-diagram-sparkfun-08.png" /></p>
+<p>TODO</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -549,20 +628,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rgb-led-03-bits-and-bytes.html"
+       href="rgb-led-04-functions.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Bits and Bytes</p>
+        <p class="prev-next-title">Functions in Python</p>
       </div>
     </a>
     <a class="right-next"
-       href="rgb-led-05-dicts.html"
+       href="../../labs/rgb-led-lab.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Collection Types: Dictionary (<code class="docutils literal notranslate"><span class="pre">dict</span></code>)</p>
+        <p class="prev-next-title">Lab: TODO</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -573,7 +652,22 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-an-rgb-led-circuit-with-the-adafruit-dragontail-or-similar-type">Building an RGB LED Circuit with the Adafruit Dragontail (Or Similar Type)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-an-rgb-led-circuit-with-an-elecfreaks-micro-bit-breakout-board-or-similar-type">Building an RGB LED Circuit with an ELECFREAKS micro:bit Breakout Board (Or Similar Type)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-an-rgb-led-circuit-with-the-sparkfun-qwiic-micro-bit-breakout-board-or-similar-type">Building an RGB LED Circuit with the SparkFun Qwiic micro:bit Breakout Board (Or Similar Type)</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

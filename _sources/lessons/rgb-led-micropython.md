@@ -1,3 +1,3 @@
-# RGB LEDs
+# Using RGB LEDS with Python
 
 TODO
