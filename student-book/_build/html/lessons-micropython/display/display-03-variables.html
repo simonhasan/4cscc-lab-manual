@@ -288,9 +288,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-06-complete-and-incomplete.html">Complete and Incomplete Circuits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-07-digital-analog.html">Digital and Analog Signals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-08-blink-led.html">Blinking an LED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../leds/leds-09-conditionals.html">Conditionals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../leds/leds-09-conditionals.html">Conditional Statements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-10-bools.html">The Boolean (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) Data Type</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../leds/leds-11-on-off-led.html">Turing an LED on and Off with the micro:bit Buttons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../leds/leds-11-on-off-led.html">Turning an LED on and Off with the micro:bit Buttons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-12-brightness-led.html">Varying the Brightness of an LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-13-light-led.html">Using an LED with the Light Sensor</a></li>
 </ul>
@@ -494,11 +494,11 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-variables">Naming Variables</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-cannot-start-with-a-number">Variable names cannot start with a number</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-can-only-use-alphanumeric-characters">Variable names can only use alphanumeric characters</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-have-whitespace-spaces">Variables cannot have whitespace (spaces)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-can-contain-an-underscore">Variables can contain an underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-be-a-python-or-micro-bit-micropython-keywords">Variables cannot be a Python or micro:bit MicroPython keywords</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-cannot-start-with-a-number">Variable Names Cannot Start with a Number</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-can-only-use-alphanumeric-characters">Variable Names Can Only Use Alphanumeric Characters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-have-whitespace">Variables Cannot Have Whitespace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-contain-special-characters-other-than-an-underscore">Variables Cannot Contain Special Characters Other Than an Underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-be-python-or-micro-bit-micropython-keywords">Variables Cannot Be Python or micro:bit MicroPython Keywords</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-and-control-flow-keywords">Logical and Control Flow Keywords:</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types-and-constants">Data Types and Constants:</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#function-and-class-keywords">Function and Class Keywords:</a></li>
@@ -508,6 +508,7 @@ document.write(`
 </li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-behavior-of-variables">The Behavior of Variables</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkpoint-identify-the-valid-and-invalid-variable-names">Checkpoint: Identify the Valid and Invalid variable names.</a></li>
 </ul>
             </nav>
@@ -523,21 +524,27 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="variables">
 <h1>Variables<a class="headerlink" href="#variables" title="Permalink to this heading">#</a></h1>
 <p><strong>NEEDS REVISION</strong></p>
-<p>Variables in computer science are similar to variables in mathematics. In mathematics, variables represent a numerical value. In Python, variables can represent almost anything, such as strings, numbers, pins on the micro:bit, sensor values, etc.</p>
+<p>In mathematics, variables represent unknown quantities or values that can change within a mathematical equation or expression, serving as placeholders for numbers. In computer science, variables are named storage locations in a program’s memory used to hold data, such as numbers, text, or objects, enabling manipulation and dynamic behavior within the code. While both involve the concept of variability, their applications and contexts differ significantly.</p>
 <p>Variables must be declared or assigned a name. To declare a variable, you use the assignment operator <code class="docutils literal notranslate"><span class="pre">=</span></code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The assignment operator <code class="docutils literal notranslate"><span class="pre">=</span></code> does not represent equality as it does in mathematics. To represent equality, see section TODO.</p>
 </div>
+<p>Here are some examples:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">led_pin</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="n">sensor_val</span> <span class="o">=</span> 
+</pre></div>
+</div>
 <section id="naming-variables">
 <h2>Naming Variables<a class="headerlink" href="#naming-variables" title="Permalink to this heading">#</a></h2>
 <p>Variable names come with some constraints:</p>
 <section id="variable-names-cannot-start-with-a-number">
-<h3>Variable names cannot start with a number<a class="headerlink" href="#variable-names-cannot-start-with-a-number" title="Permalink to this heading">#</a></h3>
+<h3>Variable Names Cannot Start with a Number<a class="headerlink" href="#variable-names-cannot-start-with-a-number" title="Permalink to this heading">#</a></h3>
 <p>Starting a variable with a number is not valid. If a number is needed to index the variable name, place the number after the variable name.</p>
 </section>
 <section id="variable-names-can-only-use-alphanumeric-characters">
-<h3>Variable names can only use alphanumeric characters<a class="headerlink" href="#variable-names-can-only-use-alphanumeric-characters" title="Permalink to this heading">#</a></h3>
+<h3>Variable Names Can Only Use Alphanumeric Characters<a class="headerlink" href="#variable-names-can-only-use-alphanumeric-characters" title="Permalink to this heading">#</a></h3>
 <p>Variable names can contain characters <code class="docutils literal notranslate"><span class="pre">a-z</span></code>, <code class="docutils literal notranslate"><span class="pre">A-Z</span></code>, and <code class="docutils literal notranslate"><span class="pre">0-9</span></code> (as long as it is not at the beginning of the variable name).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -571,16 +578,16 @@ document.write(`
 <p>Naming convensions may differ depending on the company or the project. It may be possible that a naming convension is set. To read more about the naming convensions in Python see <a class="reference external" href="https://peps.python.org/pep-0008/#naming-conventions">PEP 8 – Style Guide for Python Code</a>.</p>
 </div>
 </section>
-<section id="variables-cannot-have-whitespace-spaces">
-<h3>Variables cannot have whitespace (spaces)<a class="headerlink" href="#variables-cannot-have-whitespace-spaces" title="Permalink to this heading">#</a></h3>
+<section id="variables-cannot-have-whitespace">
+<h3>Variables Cannot Have Whitespace<a class="headerlink" href="#variables-cannot-have-whitespace" title="Permalink to this heading">#</a></h3>
 <p>Whitespace is a character such as spaces or tabs.</p>
 </section>
-<section id="variables-can-contain-an-underscore">
-<h3>Variables can contain an underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>.<a class="headerlink" href="#variables-can-contain-an-underscore" title="Permalink to this heading">#</a></h3>
+<section id="variables-cannot-contain-special-characters-other-than-an-underscore">
+<h3>Variables Cannot Contain Special Characters Other Than an Underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>.<a class="headerlink" href="#variables-cannot-contain-special-characters-other-than-an-underscore" title="Permalink to this heading">#</a></h3>
 <p>An underscore (<code class="docutils literal notranslate"><span class="pre">_</span></code>) is the only valid special or non-alphanumeric character allowed in variable names. This may make the variable more readable <code class="docutils literal notranslate"><span class="pre">myname</span></code> vs <code class="docutils literal notranslate"><span class="pre">my_name</span></code>.</p>
 </section>
-<section id="variables-cannot-be-a-python-or-micro-bit-micropython-keywords">
-<h3>Variables cannot be a Python or micro:bit MicroPython keywords<a class="headerlink" href="#variables-cannot-be-a-python-or-micro-bit-micropython-keywords" title="Permalink to this heading">#</a></h3>
+<section id="variables-cannot-be-python-or-micro-bit-micropython-keywords">
+<h3>Variables Cannot Be Python or micro:bit MicroPython Keywords<a class="headerlink" href="#variables-cannot-be-python-or-micro-bit-micropython-keywords" title="Permalink to this heading">#</a></h3>
 <section id="logical-and-control-flow-keywords">
 <h4>Logical and Control Flow Keywords:<a class="headerlink" href="#logical-and-control-flow-keywords" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
@@ -627,6 +634,10 @@ document.write(`
 </ul>
 </section>
 </section>
+</section>
+<section id="the-behavior-of-variables">
+<h2>The Behavior of Variables<a class="headerlink" href="#the-behavior-of-variables" title="Permalink to this heading">#</a></h2>
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=x%20%3D%201%0Aprint%28'x%20id%3A',%20id%28x%29%29%0A%0Ay%20%3D%202%0Aprint%28'y%20id%3A',%20id%28y%29%29%0A%0Az%20%3D%20y%0Aprint%28'z%20id%3A',%20id%28z%29%29%0A%0Ay%20%3D%20x%0Aprint%28'x%20id%3A',%20id%28x%29%29%0Aprint%28'y%20id%3A',%20id%28y%29%29%0Aprint%28'z%20id%3A',%20id%28z%29%29%0A%0Ax%20%3D%20'1'%0Aprint%28'x%20id%3A',%20id%28x%29%29%0Aprint%28'y%20id%3A',%20id%28y%29%29%0Aprint%28'z%20id%3A',%20id%28z%29%29&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 </section>
 <section id="checkpoint-identify-the-valid-and-invalid-variable-names">
 <h2>Checkpoint: Identify the Valid and Invalid variable names.<a class="headerlink" href="#checkpoint-identify-the-valid-and-invalid-variable-names" title="Permalink to this heading">#</a></h2>
@@ -764,11 +775,11 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-variables">Naming Variables</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-cannot-start-with-a-number">Variable names cannot start with a number</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-can-only-use-alphanumeric-characters">Variable names can only use alphanumeric characters</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-have-whitespace-spaces">Variables cannot have whitespace (spaces)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-can-contain-an-underscore">Variables can contain an underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-be-a-python-or-micro-bit-micropython-keywords">Variables cannot be a Python or micro:bit MicroPython keywords</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-cannot-start-with-a-number">Variable Names Cannot Start with a Number</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-can-only-use-alphanumeric-characters">Variable Names Can Only Use Alphanumeric Characters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-have-whitespace">Variables Cannot Have Whitespace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-contain-special-characters-other-than-an-underscore">Variables Cannot Contain Special Characters Other Than an Underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-be-python-or-micro-bit-micropython-keywords">Variables Cannot Be Python or micro:bit MicroPython Keywords</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-and-control-flow-keywords">Logical and Control Flow Keywords:</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types-and-constants">Data Types and Constants:</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#function-and-class-keywords">Function and Class Keywords:</a></li>
@@ -778,6 +789,7 @@ document.write(`
 </li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-behavior-of-variables">The Behavior of Variables</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkpoint-identify-the-valid-and-invalid-variable-names">Checkpoint: Identify the Valid and Invalid variable names.</a></li>
 </ul>
   </nav></div>

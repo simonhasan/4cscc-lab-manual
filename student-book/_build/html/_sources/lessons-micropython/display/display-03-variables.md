@@ -2,7 +2,7 @@
 
 **NEEDS REVISION** 
 
-Variables in computer science are similar to variables in mathematics. In mathematics, variables represent a numerical value. In Python, variables can represent almost anything, such as strings, numbers, pins on the micro:bit, sensor values, etc.
+In mathematics, variables represent unknown quantities or values that can change within a mathematical equation or expression, serving as placeholders for numbers. In computer science, variables are named storage locations in a program's memory used to hold data, such as numbers, text, or objects, enabling manipulation and dynamic behavior within the code. While both involve the concept of variability, their applications and contexts differ significantly.
 
 Variables must be declared or assigned a name. To declare a variable, you use the assignment operator `=`.
 
@@ -11,15 +11,26 @@ Variables must be declared or assigned a name. To declare a variable, you use th
 The assignment operator `=` does not represent equality as it does in mathematics. To represent equality, see section TODO.
 ```
 
+Here are some examples:
+
+```python
+led_pin = 1
+name = ''
+sensor_val = 
+```
+
+
+
+
 
  ## Naming Variables
 
 Variable names come with some constraints:
 
-### Variable names cannot start with a number
+### Variable Names Cannot Start with a Number
 Starting a variable with a number is not valid. If a number is needed to index the variable name, place the number after the variable name.
 
-### Variable names can only use alphanumeric characters
+### Variable Names Can Only Use Alphanumeric Characters
 Variable names can contain characters `a-z`, `A-Z`, and `0-9` (as long as it is not at the beginning of the variable name).
 
 ```{note}
@@ -36,16 +47,16 @@ Naming convensions may differ depending on the company or the project. It may be
 
 ```
 
-### Variables cannot have whitespace (spaces)
+### Variables Cannot Have Whitespace
 Whitespace is a character such as spaces or tabs.
 
 
-### Variables can contain an underscore `_`. 
+### Variables Cannot Contain Special Characters Other Than an Underscore `_`. 
 An underscore (`_`) is the only valid special or non-alphanumeric character allowed in variable names. This may make the variable more readable `myname` vs `my_name`.
 
 
 
-### Variables cannot be a Python or micro:bit MicroPython keywords
+### Variables Cannot Be Python or micro:bit MicroPython Keywords
 
 #### Logical and Control Flow Keywords:
 - **`and`**: Used for logical AND operations.
@@ -71,11 +82,16 @@ An underscore (`_`) is the only valid special or non-alphanumeric character allo
 `global`: Used to declare global variables.
 `lambda`: Used to create anonymous functions.
 `yield`: Used in generator functions.
+
 #### micro:bit Keywords (Some are legal, but should be avoided)
 - `microbit`: The micro:bit module name.
 - TODO
 
+## The Behavior of Variables
 
+
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=x%20%3D%201%0Aprint%28'x%20id%3A',%20id%28x%29%29%0A%0Ay%20%3D%202%0Aprint%28'y%20id%3A',%20id%28y%29%29%0A%0Az%20%3D%20y%0Aprint%28'z%20id%3A',%20id%28z%29%29%0A%0Ay%20%3D%20x%0Aprint%28'x%20id%3A',%20id%28x%29%29%0Aprint%28'y%20id%3A',%20id%28y%29%29%0Aprint%28'z%20id%3A',%20id%28z%29%29%0A%0Ax%20%3D%20'1'%0Aprint%28'x%20id%3A',%20id%28x%29%29%0Aprint%28'y%20id%3A',%20id%28y%29%29%0Aprint%28'z%20id%3A',%20id%28z%29%29&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 ## Checkpoint: Identify the Valid and Invalid variable names.
 

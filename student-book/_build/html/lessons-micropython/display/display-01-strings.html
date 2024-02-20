@@ -288,9 +288,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-06-complete-and-incomplete.html">Complete and Incomplete Circuits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-07-digital-analog.html">Digital and Analog Signals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-08-blink-led.html">Blinking an LED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../leds/leds-09-conditionals.html">Conditionals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../leds/leds-09-conditionals.html">Conditional Statements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-10-bools.html">The Boolean (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) Data Type</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../leds/leds-11-on-off-led.html">Turing an LED on and Off with the micro:bit Buttons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../leds/leds-11-on-off-led.html">Turning an LED on and Off with the micro:bit Buttons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-12-brightness-led.html">Varying the Brightness of an LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-13-light-led.html">Using an LED with the Light Sensor</a></li>
 </ul>
@@ -500,7 +500,11 @@ document.write(`
 <p>Computers manipulate data. Data can come in several forms. Not all data is handled the same way, so information is organized into different types. The same operations can be used to manipulate the data within data types. Consider the following examples:</p>
 <p><code class="docutils literal notranslate"><span class="pre">100</span></code> is a number that can be used in mathematical computations. The <code class="docutils literal notranslate"><span class="pre">'100'</span></code> in the sentence, <code class="docutils literal notranslate"><span class="pre">I</span> <span class="pre">have</span> <span class="pre">100</span> <span class="pre">things</span> <span class="pre">in</span> <span class="pre">my</span> <span class="pre">mind.'</span> </code> Is part of a sequence of characters. A series of characters in computer science is called a <strong>string</strong>.</p>
 <p>In Python, strings are characters between single <code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span></code> or double <code class="docutils literal notranslate"><span class="pre">&quot;</span> <span class="pre">&quot;</span></code> quotes.</p>
-<p>The three examples below the three examples below demonstrate how a numeric data type differs from a string:</p>
+<p>The three examples below demonstrate how a numeric data type differs from a string.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The examples below use the <code class="docutils literal notranslate"><span class="pre">print()</span></code> function. This will be covered in TODO:SECTION LINK</p>
+</div>
 <p><strong>Example 1:</strong></p>
 <iframe src="https://trinket.io/embed/python3/f10fdf980c" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 <p>In Example 1, the numeric data type and the string data type can use the <code class="docutils literal notranslate"><span class="pre">+</span></code> operator, but the output is very different. In <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">+</span> <span class="pre">2</span></code>, the <code class="docutils literal notranslate"><span class="pre">+</span></code> works as expected with numbers and functions as an addition operator, returning <code class="docutils literal notranslate"><span class="pre">3</span></code> . In <code class="docutils literal notranslate"><span class="pre">'1'</span> <span class="pre">+</span> <span class="pre">'2'</span></code>, the result is <code class="docutils literal notranslate"><span class="pre">12</span></code>. This is because with strings the <code class="docutils literal notranslate"><span class="pre">+</span></code> is what is known as a concatenation operator, meaning it links sequences of strings together. In <code class="docutils literal notranslate"><span class="pre">'1</span> <span class="pre">+</span> <span class="pre">2'</span></code>, the <code class="docutils literal notranslate"><span class="pre">+</span></code> is a character in the string.</p>

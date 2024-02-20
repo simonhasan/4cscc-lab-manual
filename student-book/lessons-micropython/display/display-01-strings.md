@@ -6,7 +6,13 @@ Computers manipulate data. Data can come in several forms. Not all data is handl
 
 In Python, strings are characters between single `' '` or double `" "` quotes.
 
-The three examples below the three examples below demonstrate how a numeric data type differs from a string:
+The three examples below demonstrate how a numeric data type differs from a string.
+
+```{note}
+The examples below use the `print()` function. This will be covered in TODO:SECTION LINK
+```
+
+
 
 **Example 1:**
 

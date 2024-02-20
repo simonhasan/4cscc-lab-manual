@@ -4,6 +4,8 @@ The previous section introduced writing analog values to an LED to control the b
 
 
 
+As mentioned in section TODO:LINK TO LESSON, the light sensor returns an `int` value between `0` and `255.`
+
 
 
 

@@ -288,9 +288,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="leds-06-complete-and-incomplete.html">Complete and Incomplete Circuits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-07-digital-analog.html">Digital and Analog Signals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-08-blink-led.html">Blinking an LED</a></li>
-<li class="toctree-l2"><a class="reference internal" href="leds-09-conditionals.html">Conditionals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="leds-09-conditionals.html">Conditional Statements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-10-bools.html">The Boolean (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) Data Type</a></li>
-<li class="toctree-l2"><a class="reference internal" href="leds-11-on-off-led.html">Turing an LED on and Off with the micro:bit Buttons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="leds-11-on-off-led.html">Turning an LED on and Off with the micro:bit Buttons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="leds-12-brightness-led.html">Varying the Brightness of an LED</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Using an LED with the Light Sensor</a></li>
 </ul>
@@ -498,6 +498,7 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="using-an-led-with-the-light-sensor">
 <h1>Using an LED with the Light Sensor<a class="headerlink" href="#using-an-led-with-the-light-sensor" title="Permalink to this heading">#</a></h1>
 <p>The previous section introduced writing analog values to an LED to control the brightness. In this section, the brightness of an LED will be controlled by the input of the on-board light sensor.</p>
+<p>As mentioned in section TODO:LINK TO LESSON, the light sensor returns an <code class="docutils literal notranslate"><span class="pre">int</span></code> value between <code class="docutils literal notranslate"><span class="pre">0</span></code> and <code class="docutils literal notranslate"><span class="pre">255.</span></code></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
 <span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 
