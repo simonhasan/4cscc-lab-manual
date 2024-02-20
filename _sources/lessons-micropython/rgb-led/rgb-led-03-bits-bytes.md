@@ -1,3 +1,0 @@
-# Bits and Bytes
-
-TODO
