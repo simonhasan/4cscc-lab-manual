@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Functions in Python &#8212; Four Corners Science and Computing Club Lab Notebook</title>
+    <title>Functions &#8212; Four Corners Science and Computing Club Lab Notebook</title>
   
   
   
@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Building an RGB LED Circuit" href="rgb-led-05-building-rgb-led-circuit.html" />
-    <link rel="prev" title="RGB Color Codes" href="rgb-led-03-rgb-colors.html" />
+    <link rel="prev" title="RGB Color Codes (Part 1)" href="rgb-led-03-rgb-colors-01.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -309,9 +309,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="rgb-led-00-intro.html">RGB LEDs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rgb-led-01-rgb-led.html">RGB LEDs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rgb-led-02-binary-bits-and-bytes.html">Binary, Bits and Bytes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rgb-led-03-rgb-colors.html">RGB Color Codes</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Functions in Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rgb-led-03-rgb-colors-01.html">RGB Color Codes (Part 1)</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rgb-led-05-building-rgb-led-circuit.html">Building an RGB LED Circuit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rgb-led-06-flashing-colors.html">Flashing Colors on an RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rgb-led-07-dictionaries.html">Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rgb-led-08-rgb-colors-02.html">RGB Color Codes (Part 2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rgb-led-09-flashing-custom-colors.html">Flashing Custom Colors on a RGB LED</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../labs/rgb-led-lab.html">Lab: TODO</a></li>
@@ -487,7 +491,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -498,11 +504,26 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Functions in Python</h1>
+    <h1>Functions</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-in-mathematics">Functions in Mathematics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-in-computer-science">Functions in Computer Science</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-in-mathematics-vs-functions-in-computer-science">Functions in Mathematics Vs. Functions in Computer Science</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#similarities">Similarities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#differences">Differences</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-functions-in-python">Defining Functions in Python</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -512,12 +533,142 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="functions-in-python">
-<h1>Functions in Python<a class="headerlink" href="#functions-in-python" title="Permalink to this heading">#</a></h1>
-<p>TODO</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="functions">
+<h1>Functions<a class="headerlink" href="#functions" title="Permalink to this heading">#</a></h1>
+<p>Functions are essential concepts in mathematics and computer science, but they differ in how they are defined and used.</p>
+<section id="functions-in-mathematics">
+<h2>Functions in Mathematics<a class="headerlink" href="#functions-in-mathematics" title="Permalink to this heading">#</a></h2>
+<p>In mathematics, a function is a rule that assigns a unique output to each input from a given set. The input is the <strong>independent variable</strong>, and the output is the <strong>dependent variable</strong>. A formula, a table, a graph, or a set of ordered pairs can represent a function.</p>
+</section>
+<section id="functions-in-computer-science">
+<h2>Functions in Computer Science<a class="headerlink" href="#functions-in-computer-science" title="Permalink to this heading">#</a></h2>
+<p>In computer science, a <strong>function</strong> is a routine that takes some data as input and returns an answer based on that data. The input is called the <strong>argument</strong>, and the output is called the <strong>return value</strong>.</p>
+</section>
+<section id="functions-in-mathematics-vs-functions-in-computer-science">
+<h2>Functions in Mathematics Vs. Functions in Computer Science<a class="headerlink" href="#functions-in-mathematics-vs-functions-in-computer-science" title="Permalink to this heading">#</a></h2>
+<section id="similarities">
+<h3>Similarities<a class="headerlink" href="#similarities" title="Permalink to this heading">#</a></h3>
+<p>One similarity between mathematics and computer science functions is that they describe relationships between variables.
+$$
+\begin{align}
+f(x) &amp;= x + 1 \
+\
+f(-1) &amp;= -1 + 1 \
+&amp;= 0 \
+\
+f(0) &amp;= 0 + 1 \
+&amp;= 1 \
+\
+f(1) &amp;= 1 + 1 \
+&amp;= 2</p>
+<p>\end{align}
+$$</p>
+<iframe src="https://trinket.io/embed/python3/99ff3f8142?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</section>
+<section id="differences">
+<h3>Differences<a class="headerlink" href="#differences" title="Permalink to this heading">#</a></h3>
+<p>Functions do not need to be numeric in Python.</p>
+</section>
+</section>
+<section id="defining-functions-in-python">
+<h2>Defining Functions in Python<a class="headerlink" href="#defining-functions-in-python" title="Permalink to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
+<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Set the LED pins</span>
+<span class="n">red_pin</span> <span class="o">=</span> <span class="n">pin1</span>   <span class="c1"># pin1 is the red pin</span>
+<span class="n">green_pin</span> <span class="o">=</span> <span class="n">pin2</span> <span class="c1"># pin2 is the green pin</span>
+<span class="n">blue_pin</span> <span class="o">=</span> <span class="n">pin3</span>  <span class="c1"># pin3 is the blue pin</span>
+
+<span class="c1"># Set the LED to the color red</span>
+<span class="k">def</span> <span class="nf">set_red</span><span class="p">():</span>
+    <span class="n">red_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># Set the red pin to 1</span>
+    <span class="n">green_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># Set the green pin to 0</span>
+    <span class="n">blue_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># Set the blue pin to 0</span>
+
+<span class="c1"># Set the LED to the color green</span>
+<span class="k">def</span> <span class="nf">set_green</span><span class="p">():</span>
+    <span class="n">red_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>   <span class="c1"># Set the red pin to 0</span>
+    <span class="n">green_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Set the green pin to 1</span>
+    <span class="n">blue_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># Set the blue pin to 0</span>
+
+<span class="c1"># Set the LED to the color blue</span>
+<span class="k">def</span> <span class="nf">set_blue</span><span class="p">():</span>
+    <span class="n">red_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>   <span class="c1"># Set the red pin to 0</span>
+    <span class="n">green_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># Set the green pin to 0</span>
+    <span class="n">blue_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Set the blue pin to 1</span>
+
+<span class="c1"># Set the LED to the color yellow</span>
+<span class="k">def</span> <span class="nf">set_yellow</span><span class="p">():</span>
+    <span class="n">red_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># Set the red pin to 1</span>
+    <span class="n">green_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Set the green pin to 1</span>
+    <span class="n">blue_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># Set the blue pin to 0</span>
+
+<span class="c1"># Set the LED to the color magenta</span>
+<span class="k">def</span> <span class="nf">set_magenta</span><span class="p">():</span>
+    <span class="n">red_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># Set the red pin to 1</span>
+    <span class="n">green_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># Set the green pin to 0</span>
+    <span class="n">blue_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Set the blue pin to 1</span>
+
+<span class="c1"># Set the LED to the color cyan</span>
+<span class="k">def</span> <span class="nf">set_cyan</span><span class="p">():</span>
+    <span class="n">red_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>   <span class="c1"># Set the red pin to 0</span>
+    <span class="n">green_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Set the green pin to 1</span>
+    <span class="n">blue_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Set the blue pin to 1</span>
+
+<span class="c1"># Set the LED to the color white</span>
+<span class="k">def</span> <span class="nf">set_white</span><span class="p">():</span>
+    <span class="n">red_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># Set the red pin to 1</span>
+    <span class="n">green_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Set the green pin to 1</span>
+    <span class="n">blue_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Set the blue pin to 1</span>
+
+<span class="c1"># Set the LED to the color off</span>
+<span class="k">def</span> <span class="nf">set_off</span><span class="p">():</span>
+    <span class="n">red_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>   <span class="c1"># Set the red pin to 0</span>
+    <span class="n">green_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># Set the green pin to 0</span>
+    <span class="n">blue_pin</span><span class="o">.</span><span class="n">write_digital</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># Set the blue pin to 0</span>
+
+<span class="c1"># Code in a &#39;while True:&#39; loop repeats forever</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># Set the LED to the color red</span>
+    <span class="n">set_red</span><span class="p">()</span>
+    <span class="c1"># Wait for 500ms (0.5 seconds)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+    <span class="c1"># Set the LED to the color green</span>
+    <span class="n">set_green</span><span class="p">()</span>
+    <span class="c1"># Wait for 500ms (0.5 seconds)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+    <span class="c1"># Set the LED to the color blue</span>
+    <span class="n">set_blue</span><span class="p">()</span>
+    <span class="c1"># Wait for 500ms (0.5 seconds)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+    <span class="c1"># Set the LED to the color yellow</span>
+    <span class="n">set_yellow</span><span class="p">()</span>
+    <span class="c1"># Wait for 500ms (0.5 seconds)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+    <span class="c1"># Set the LED to the color magenta</span>
+    <span class="n">set_magenta</span><span class="p">()</span>
+    <span class="c1"># Wait for 500ms (0.5 seconds)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+    <span class="c1"># Set the LED to the color cyan</span>
+    <span class="n">set_cyan</span><span class="p">()</span>
+    <span class="c1"># Wait for 500ms (0.5 seconds)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+    <span class="c1"># Set the LED to the color white</span>
+    <span class="n">set_white</span><span class="p">()</span>
+    <span class="c1"># Wait for 500ms (0.5 seconds)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+    <span class="c1"># Set the LED to the color off</span>
+    <span class="n">set_off</span><span class="p">()</span>
+    <span class="c1"># Wait for 500ms (0.5 seconds)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><img alt="animation-rgb-led" src="../../_images/animation-rgb-led.gif" /></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -551,12 +702,12 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="rgb-led-03-rgb-colors.html"
+       href="rgb-led-03-rgb-colors-01.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">RGB Color Codes</p>
+        <p class="prev-next-title">RGB Color Codes (Part 1)</p>
       </div>
     </a>
     <a class="right-next"
@@ -575,7 +726,27 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-in-mathematics">Functions in Mathematics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-in-computer-science">Functions in Computer Science</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#functions-in-mathematics-vs-functions-in-computer-science">Functions in Mathematics Vs. Functions in Computer Science</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#similarities">Similarities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#differences">Differences</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-functions-in-python">Defining Functions in Python</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

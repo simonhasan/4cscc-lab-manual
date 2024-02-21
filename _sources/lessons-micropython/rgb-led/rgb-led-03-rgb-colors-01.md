@@ -1,4 +1,4 @@
-# RGB Color Codes
+# RGB Color Codes (Part 1)
 
 TODO
 
