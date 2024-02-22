@@ -1,8 +1,10 @@
 # Light-emitting Diodes (LEDs)
 
-An LED (light-emitting diode) is a semiconductor device that emits light when an electric current passes through it, commonly used in various electronic displays and lighting applications.
+A **light-emitting diode (LED)** is a semiconductor device that emits light when an electric current passes through it, commonly used in various electronic displays and lighting applications.
 
 ## Parts of an LED
+
+TODO:EXPLAIN THE PARTS
 
 
 
@@ -10,9 +12,9 @@ An LED (light-emitting diode) is a semiconductor device that emits light when an
 
 In an LED, the anode and cathode are the two terminals through which electricity flows to make the LED emit light. 
 
-The anode is the positive terminal, connected to the longer leg of the LED (usually indicated by a notch on the LED casing).
+The anode is the **positive terminal**, connected to the longer leg of the LED (usually indicated by a notch on the LED casing).
 
-The cathode is the negative terminal, connected to the shorter leg (usually indicated by a flat edge on the LED casing).
+The cathode is the **negative terminal**, connected to the shorter leg (usually indicated by a flat edge on the LED casing).
 
 ## Checkpoint: Anode or Cathode
 

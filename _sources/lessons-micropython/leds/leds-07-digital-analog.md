@@ -1,6 +1,8 @@
 # Digital and Analog Signals
 
-Digital signals represent data as discrete binary values (0s and 1s). Analog signals represent data as continuous waves of varying amplitude or frequency. In the case of a micro:bit an analog signal can be within the range of 0 and 1023. 
+TODO
+
+**Digital signals** represent data as discrete binary values (0s and 1s). **Analog signals** represent data as continuous waves of varying amplitude or frequency. In the case of a micro:bit, an analog signal can be within the range of 0 and 1023 or between 0 and 255 (in certain circumstances). 
 
 Possible plots for digital and analog signals are displayed below:
 

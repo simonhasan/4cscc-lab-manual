@@ -2,7 +2,7 @@
 
 The micro:bit display is an excellent way to display data, but sometimes data changes faster than the `display.scroll()` method. There is another way to display data using the `print()` function. 
 
-TODO
+TODO:EXPLAIN SERIAL COMMUNICATION
 
 ![serial-demo-01](assets/serial-demo-01.png)
 
