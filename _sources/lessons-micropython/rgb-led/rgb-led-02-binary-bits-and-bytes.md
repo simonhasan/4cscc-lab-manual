@@ -67,13 +67,13 @@ Calculate the binary expansion of the following byte:
 ```{admonition} Click here to reveal the solutions.
 :class: dropdown
 Solution:
-![quiz-binary-expansion](assets/quiz-binary-expansion.png)
+![quiz-binary-expansion](assets/quiz-binary-expansion-solution.png)
 
 $$
-\begin{alignment}
+\begin{align}
 (1000 \space 1100)_2 &= 1 \cdot 2^7 + 0 \cdot 2^6 + 0 \cdot 2^5 + 0 \cdot 2^4 + 1 \cdot 2^3 + 1 \cdot 2^2 + 0 \cdot 2^1 + 0 \cdot 1^0 \\
 &= 1 \cdot 128 + 0\cdot 64 + 0 \cdot 32 + 0 \cdot 12 + 1 \cdot 8 + 1 \cdot 4 + 0 \cdot 2 + 0 \cdot 1 \\
 &= 128 + 0 + 0 + 0 + 8 + 4 + 0 + 0 \\
-&= 140\end{alignment}
+&= 140\end{align}
 $$
 ```
