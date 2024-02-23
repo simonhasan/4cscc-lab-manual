@@ -4,11 +4,20 @@ Binary numbers are the cornerstone of digital computing, serving as the fundamen
 
 ## Binary Numbers
 
+![light-switch](assets/light-switch.gif)
+
 Binary numbers are the cornerstone of digital computing, serving as the fundamental language of modern computers. Unlike the base-10 decimal system we commonly use, which relies on 10 digits (0 through 9), binary operates with just two digits: 0 and 1. This simplicity makes it ideal for representing and manipulating data in electronic circuits, where signals are either "on" (1) or "off" (0). 
 
-Binary numbers work on the principle of representing numbers using only two digits: 0 and 1. In the binary system, each digit's position represents a power of 2, starting from the rightmost digit, which represents
+Binary numbers work on the principle of representing numbers using only two digits: 0 and 1. In the binary system, each digit's position represents a power of 2, starting from the rightmost digit, which represents:
 
- $2^0=1$​ (1), then 2^1 (2), 2^2 (4), 2^3 (8), and so on.
+- $2^0=1$
+- $2^1=2$ 
+- $2^2=4$
+- $2^3=8$
+- $2^4=16$
+- $2^5=32$
+- $2^6=64$
+- $2^7=128$
 
 Here are the binary numbers and there base-10 equivalents from 0 - 99:
 
