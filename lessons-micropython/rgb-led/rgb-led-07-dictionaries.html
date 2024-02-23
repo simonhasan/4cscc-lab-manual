@@ -525,6 +525,12 @@ document.write(`
 <h1>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this heading">#</a></h1>
 <p>TODO</p>
 <p><img alt="dictionaries" src="../../_images/dictionaries.png" /></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Dictionary with RGB values for red</span>
+<span class="n">red</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Here is an example of a program that flashes TODO</p>
+<p><img alt="animation-rgb-led" src="../../_images/animation-rgb-led.gif" /></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
 <span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 
@@ -534,14 +540,14 @@ document.write(`
 <span class="n">blue_pin</span> <span class="o">=</span> <span class="n">pin3</span>  <span class="c1"># pin3 is the blue pin</span>
 
 <span class="c1"># Define the colors as dictionaries</span>
-<span class="n">red</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span> 
-<span class="n">green</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
-<span class="n">blue</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">}</span>
-<span class="n">yellow</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
-<span class="n">magenta</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">}</span>
-<span class="n">cyan</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">}</span>
-<span class="n">white</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">}</span>
-<span class="n">off</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+<span class="n">red</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>       <span class="c1"># Red</span>
+<span class="n">green</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>     <span class="c1"># Green</span>
+<span class="n">blue</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>        <span class="c1"># Blue</span>
+<span class="n">yellow</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>  <span class="c1"># Yellow</span>
+<span class="n">magenta</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">}</span> <span class="c1"># Magenta</span>
+<span class="n">cyan</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">}</span>    <span class="c1"># Cyan</span>
+<span class="n">white</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">255</span>  <span class="c1"># White</span>
+<span class="n">off</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>         <span class="c1"># Off</span>
 
 <span class="c1"># Define a function to set the color</span>
 <span class="k">def</span> <span class="nf">set_color</span><span class="p">(</span><span class="n">color</span><span class="p">):</span>
@@ -551,6 +557,86 @@ document.write(`
 
 
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># Flash the LED in different colors</span>
+    <span class="n">set_color</span><span class="p">(</span><span class="n">red</span><span class="p">)</span>     <span class="c1"># Set the LED to the color red</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>         <span class="c1"># Wait for 500ms (0.5 seconds)</span>
+    <span class="n">set_color</span><span class="p">(</span><span class="n">green</span><span class="p">)</span>   <span class="c1"># Set the LED to the color green</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>         <span class="c1"># Wait for 500ms (0.5 seconds)</span>
+    <span class="n">set_color</span><span class="p">(</span><span class="n">blue</span><span class="p">)</span>    <span class="c1"># Set the LED to the color blue</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>         <span class="c1"># Wait for 500ms (0.5 seconds)</span>
+    <span class="n">set_color</span><span class="p">(</span><span class="n">yellow</span><span class="p">)</span>  <span class="c1"># Set the LED to the color yellow</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>         <span class="c1"># Wait for 500ms (0.5 seconds)</span>
+    <span class="n">set_color</span><span class="p">(</span><span class="n">magenta</span><span class="p">)</span> <span class="c1"># Set the LED to the color magenta</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>         <span class="c1"># Wait for 500ms (0.5 seconds)</span>
+    <span class="n">set_color</span><span class="p">(</span><span class="n">cyan</span><span class="p">)</span>    <span class="c1"># Set the LED to the color cyan</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>         <span class="c1"># Wait for 500ms (0.5 seconds)</span>
+    <span class="n">set_color</span><span class="p">(</span><span class="n">white</span><span class="p">)</span>   <span class="c1"># Set the LED to the color white</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>         <span class="c1"># Wait for 500ms (0.5 seconds)</span>
+    <span class="n">set_color</span><span class="p">(</span><span class="n">off</span><span class="p">)</span>     <span class="c1"># Set the LED to the color off</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>         <span class="c1"># Wait for 500ms (0.5 seconds)</span>
+</pre></div>
+</div>
+<p>Key-value pairs in dictionaries can be on separate lines. This may lead to greater readability and allow the use of comments after each key-value pair:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Dictionary with RGB key-value pairs for red</span>
+<span class="n">red</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+
+<span class="c1"># Dictionary with RGB key-value pairs for red on separate lines with comments</span>
+<span class="n">red</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>   <span class="c1"># Set the red value to 1</span>
+       <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="c1"># Set the green value to 0</span>
+       <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>  <span class="c1"># Set the blue value to 0</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
+<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Set the LED pins</span>
+<span class="n">red_pin</span> <span class="o">=</span> <span class="n">pin1</span>   <span class="c1"># pin1 is the red pin</span>
+<span class="n">green_pin</span> <span class="o">=</span> <span class="n">pin2</span> <span class="c1"># pin2 is the green pin</span>
+<span class="n">blue_pin</span> <span class="o">=</span> <span class="n">pin3</span>  <span class="c1"># pin3 is the blue pin</span>
+
+<span class="c1"># Define the colors as dictionaries</span>
+<span class="c1"># Red</span>
+<span class="n">red</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>       <span class="c1"># Set the red value to 1</span>
+       <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>     <span class="c1"># Set the green value to 0</span>
+       <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>      <span class="c1"># Set the blue value to 0</span>
+<span class="c1"># Green</span>
+<span class="n">green</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>     <span class="c1"># Set the red value to 0</span>
+         <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>   <span class="c1"># Set the green value to 1</span>
+         <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>    <span class="c1"># Set the blue value to 0</span>
+<span class="c1"># Blue</span>
+<span class="n">blue</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>      <span class="c1"># Set the red value to 0</span>
+        <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>    <span class="c1"># Set the green value to 0</span>
+        <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>     <span class="c1"># Set the blue value to 1</span>
+<span class="c1"># Yellow</span>
+<span class="n">yellow</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>    <span class="c1"># Set the red value to 1</span>
+          <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>  <span class="c1"># Set the green value to 1</span>
+          <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>   <span class="c1"># Set the blue value to 0</span>
+<span class="c1"># Magenta</span>
+<span class="n">magenta</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>   <span class="c1"># Set the red value to 1</span>
+           <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="c1"># Set the green value to 0</span>
+           <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>  <span class="c1"># Set the blue value to 1</span>
+<span class="c1"># Cyan</span>
+<span class="n">cyan</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>      <span class="c1"># Set the red value to 0</span>
+        <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>    <span class="c1"># Set the green value to 1</span>
+        <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>     <span class="c1"># Set the blue value to 1</span>
+<span class="c1"># White</span>
+<span class="n">white</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>     <span class="c1"># Set the red value to 1</span>
+         <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>   <span class="c1"># Set the green value to 1</span>
+         <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>    <span class="c1"># Set the blue value to 1</span>
+<span class="c1"># Off</span>
+<span class="n">off</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>       <span class="c1"># Set the red value to 0</span>
+       <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>     <span class="c1"># Set the green value to 0</span>
+       <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>      <span class="c1"># Set the blue value to 0</span>
+
+<span class="c1"># Define a function to set the color</span>
+<span class="k">def</span> <span class="nf">set_color</span><span class="p">(</span><span class="n">color</span><span class="p">):</span>
+    <span class="n">red_pin</span><span class="o">.</span><span class="n">write_analog</span><span class="p">(</span><span class="n">color</span><span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">])</span>     <span class="c1"># Set red_pin to the red value</span>
+    <span class="n">green_pin</span><span class="o">.</span><span class="n">write_analog</span><span class="p">(</span><span class="n">color</span><span class="p">[</span><span class="s1">&#39;green&#39;</span><span class="p">])</span> <span class="c1"># Set green_pin to the green value</span>
+    <span class="n">blue_pin</span><span class="o">.</span><span class="n">write_analog</span><span class="p">(</span><span class="n">color</span><span class="p">[</span><span class="s1">&#39;blue&#39;</span><span class="p">])</span>   <span class="c1"># Set blue_pin to the blue value</span>
+
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># Flash the LED in different colors</span>
     <span class="n">set_color</span><span class="p">(</span><span class="n">red</span><span class="p">)</span>     <span class="c1"># Set the LED to the color red</span>
     <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>         <span class="c1"># Wait for 500ms (0.5 seconds)</span>
     <span class="n">set_color</span><span class="p">(</span><span class="n">green</span><span class="p">)</span>   <span class="c1"># Set the LED to the color green</span>
