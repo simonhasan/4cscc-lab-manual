@@ -1,12 +1,18 @@
 # Binary, Bits, and Bytes
 
-Binary numbers are the cornerstone of digital computing, serving as the fundamental language of modern computers. Unlike the base-10 decimal system we commonly use, which relies on 10 digits (0 through 9), binary operates with just two digits: 0 and 1. This simplicity makes it ideal for representing and manipulating data in electronic circuits, where signals are either "on" (1) or "off" (0). 
+Binary numbers are the cornerstone of digital computing, serving as the fundamental language of modern computers. 
 
 ## Binary Numbers
 
+Unlike the base-10 decimal system that is commonly used, which relies on 10 digits (0 through 9), binary operates with just two digits: 0 and 1. This simplicity makes it ideal for representing and manipulating data in electronic circuits, where signals are either "on" (1) or "off" (0). 
+
+The animation below demonstrates the 256 possible combinations with eight light switches .
+
+
+
 ![light-switch](assets/light-switch.gif)
 
-Binary numbers are the cornerstone of digital computing, serving as the fundamental language of modern computers. Unlike the base-10 decimal system we commonly use, which relies on 10 digits (0 through 9), binary operates with just two digits: 0 and 1. This simplicity makes it ideal for representing and manipulating data in electronic circuits, where signals are either "on" (1) or "off" (0). 
+
 
 Binary numbers work on the principle of representing numbers using only two digits: 0 and 1. In the binary system, each digit's position represents a power of 2, starting from the rightmost digit, which represents:
 
@@ -41,7 +47,9 @@ $(1001)_2 = 9$ or $1001_2 = 9$
 | 1000  | 10010   | 11100   | 100110  | 110000  | 111010  | 1000100 | 1001110 | 1011000 | 1100010 |
 | 1001  | 10011   | 11101   | 100111  | 110001  | 111011  | 1000101 | 1001111 | 1011001 | 1100011 |
 
-![binary](assets/binary.gif)
+
+
+![light-switch](assets/light-switch.gif)![binary](assets/binary.gif)
 
 ## Bits and Bytes
 

@@ -10,7 +10,7 @@ As mentioned above, some of the pins on the micro:bit were designed to be used w
 
 ![microbit-alligator-input-output](assets/microbit-alligator-input-output.png)
 
-One of the pins can be used to power devices 3.3 volts (3v3).
+One of the pins can power sensors with 3.3 volts (3v3).
 
 ![microbit-alligator-3v3](assets/microbit-alligator-3v3.png)
 

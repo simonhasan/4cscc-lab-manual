@@ -496,7 +496,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -512,6 +514,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-anode-and-common-cathode-rgb-leds">Common Anode and Common Cathode RGB LEDs</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -524,7 +534,14 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="rgb-leds">
 <h1>RGB LEDs<a class="headerlink" href="#rgb-leds" title="Permalink to this heading">#</a></h1>
 <p>TODO</p>
+<section id="common-anode-and-common-cathode-rgb-leds">
+<h2>Common Anode and Common Cathode RGB LEDs<a class="headerlink" href="#common-anode-and-common-cathode-rgb-leds" title="Permalink to this heading">#</a></h2>
+<p>Common anode and common cathode RGB LEDs are both types of RGB LEDs used in electronic devices for color mixing and illumination.</p>
+<p>In a <strong>common anode</strong> RGB LED, the anode (positive terminal) of all three individual LEDs (Red, Green, and Blue) are connected, while each cathode (negative terminal) is separate. This means that to illuminate a specific color, the cathodes of the desired LEDs are grounded, allowing current to flow through them and emit light.</p>
+<p>On the other hand, in a <strong>common cathode</strong> RGB LED, the cathode of all three individual LEDs is connected, while each anode is separate. To produce a color, the anodes of the desired LEDs are connected to a voltage source, allowing current to flow and illuminate them.</p>
+<p>In both types, the intensity of each color (Red, Green, and Blue) can be controlled independently to produce a wide range of colors by varying the amount of current flowing through each LED. Choosing between a common anode and a common cathode depends on the circuit design and compatibility with other components.</p>
 <p><img alt="diagram-rgb-led" src="../../_images/diagram-rgb-led.png" /></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -582,7 +599,20 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-anode-and-common-cathode-rgb-leds">Common Anode and Common Cathode RGB LEDs</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
