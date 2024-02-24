@@ -232,24 +232,22 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-05-temperature.html">The Temperature Sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-06-light.html">The Light Sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-07-accelerometer.html">The Accelerometer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-08-compass.html">The Compass</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-09-sound.html">MakeCode: The Sound Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-10-buzzer.html">MakeCode: The Buzzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-08-sound.html">MakeCode: The Sound Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-09-buzzer.html">MakeCode: The Buzzer</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/onboard-components-micropython.html">Onboard Components with Python</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-00-intro.html">Introduction to the Onboard Components</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-01-integers.html">The Integer (<code class="docutils literal notranslate"><span class="pre">int</span></code>) Data Type</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-02-serial.html">Serial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-01-integers.html">Numeric Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-02-serial.html">Serial Communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-03-buttons.html">The A and B Buttons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-04-logo.html">The Captive Touch Logo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-05-touch-pins.html">The Captive Touch Pins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-06-temperature.html">The Temperature Sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-07-light.html">The Light Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-08-accelerometer.html">The Accelerometer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-09-compass.html">The Compass</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-10-sound.html">The Sound Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-11-buzzer.html">The Buzzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-08-accelerometer.html">The Accelerometer/Compass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-09-sound.html">The Sound Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-10-buzzer.html">The Buzzer/Speaker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../vocabulary-micropython/onboard-components-vocabulary.html">Vocabulary</a></li>
 </ul>
 </li>
@@ -525,7 +523,10 @@ document.write(`
 <h1>The String (<code class="docutils literal notranslate"><span class="pre">str</span></code>) Data Type<a class="headerlink" href="#the-string-str-data-type" title="Permalink to this heading">#</a></h1>
 <p>Computers manipulate data. Data can come in several forms. Not all data is handled the same way, so information is organized into different types. The same operations can be used to manipulate the data within data types. Consider the following examples:</p>
 <p><code class="docutils literal notranslate"><span class="pre">100</span></code> is a number that can be used in mathematical computations. The <code class="docutils literal notranslate"><span class="pre">'100'</span></code> in the sentence, <code class="docutils literal notranslate"><span class="pre">I</span> <span class="pre">have</span> <span class="pre">100</span> <span class="pre">things</span> <span class="pre">in</span> <span class="pre">my</span> <span class="pre">mind.'</span> </code> Is part of a sequence of characters. A series of characters in computer science is called a <strong>string</strong>.</p>
-<p>In Python, strings are characters between single <code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span></code> or double <code class="docutils literal notranslate"><span class="pre">&quot;</span> <span class="pre">&quot;</span></code> quotes.</p>
+<p>In Python, strings are sequences of characters enclosed within either single (<code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span></code>) or double (<code class="docutils literal notranslate"><span class="pre">&quot;</span> <span class="pre">&quot;</span></code>) quotation marks. They are one of the most commonly used data types in Python and are used to represent text-based data.</p>
+<p>Strings in Python are <strong>immutable</strong>, meaning once created, their contents cannot be modified. However, you can create new strings by combining or manipulating existing ones. This immutability ensures the integrity of strings, preventing unintended changes to their values after creation.</p>
+<p>Strings support various operations and methods for manipulation, including concatenation (joining two strings together), slicing (extracting portions of a string), indexing (accessing individual characters by their position), and formatting (inserting values into a string). Additionally, Python provides a rich set of string manipulation functions and methods for tasks such as searching, replacing, and formatting strings.</p>
+<p>Python’s string handling capabilities and immutability make them versatile and efficient for tasks ranging from simple text processing to complex data manipulation and formatting.</p>
 <p>The three examples below demonstrate how a numeric data type differs from a string.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>

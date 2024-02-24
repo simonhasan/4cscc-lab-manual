@@ -1,6 +1,6 @@
 # Light-emitting Diodes (LEDs)
 
-A **light-emitting diode (LED)** is a semiconductor device that emits light when an electric current passes through it, commonly used in various electronic displays and lighting applications.
+As mentioned in the introduction, **light-emitting diode (LED)** is a semiconductor device that emits light when an electric current passes through it, commonly used in various electronic displays and lighting applications.
 
 ## Parts of an LED
 

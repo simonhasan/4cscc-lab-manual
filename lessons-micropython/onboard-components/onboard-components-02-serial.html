@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Serial &#8212; Four Corners Science and Computing Club Lab Notebook</title>
+    <title>Serial Communication &#8212; Four Corners Science and Computing Club Lab Notebook</title>
   
   
   
@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="The A and B Buttons" href="onboard-components-03-buttons.html" />
-    <link rel="prev" title="The Integer (int) Data Type" href="onboard-components-01-integers.html" />
+    <link rel="prev" title="Numeric Data Types" href="onboard-components-01-integers.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -232,24 +232,22 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-05-temperature.html">The Temperature Sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-06-light.html">The Light Sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-07-accelerometer.html">The Accelerometer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-08-compass.html">The Compass</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-09-sound.html">MakeCode: The Sound Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-10-buzzer.html">MakeCode: The Buzzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-08-sound.html">MakeCode: The Sound Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-09-buzzer.html">MakeCode: The Buzzer</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../lessons/onboard-components-micropython.html">Onboard Components with Python</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="onboard-components-00-intro.html">Introduction to the Onboard Components</a></li>
-<li class="toctree-l2"><a class="reference internal" href="onboard-components-01-integers.html">The Integer (<code class="docutils literal notranslate"><span class="pre">int</span></code>) Data Type</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Serial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="onboard-components-01-integers.html">Numeric Data Types</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Serial Communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="onboard-components-03-buttons.html">The A and B Buttons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="onboard-components-04-logo.html">The Captive Touch Logo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="onboard-components-05-touch-pins.html">The Captive Touch Pins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="onboard-components-06-temperature.html">The Temperature Sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="onboard-components-07-light.html">The Light Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="onboard-components-08-accelerometer.html">The Accelerometer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="onboard-components-09-compass.html">The Compass</a></li>
-<li class="toctree-l2"><a class="reference internal" href="onboard-components-10-sound.html">The Sound Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="onboard-components-11-buzzer.html">The Buzzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="onboard-components-08-accelerometer.html">The Accelerometer/Compass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="onboard-components-09-sound.html">The Sound Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="onboard-components-10-buzzer.html">The Buzzer/Speaker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../vocabulary-micropython/onboard-components-vocabulary.html">Vocabulary</a></li>
 </ul>
 </li>
@@ -507,7 +505,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Serial</h1>
+    <h1>Serial Communication</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -521,10 +519,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="serial">
-<h1>Serial<a class="headerlink" href="#serial" title="Permalink to this heading">#</a></h1>
-<p>The micro:bit display is an excellent way to display data, but sometimes data changes faster than the <code class="docutils literal notranslate"><span class="pre">display.scroll()</span></code> method. There is another way to display data using the <code class="docutils literal notranslate"><span class="pre">print()</span></code> function.</p>
-<p>TODO:EXPLAIN SERIAL COMMUNICATION</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="serial-communication">
+<h1>Serial Communication<a class="headerlink" href="#serial-communication" title="Permalink to this heading">#</a></h1>
+<p>Serial communication is a method of transferring data between two or more devices over a serial interface, typically using a single communication line.</p>
+<p>Using serial communication with the micro:bit is using its built-in USB interface as a serial port. When connected to a computer via USB, the micro:bit appears as a virtual serial port, allowing data to be sent and received using serial communication protocols. This enables bi-directional communication between the micro:bit and the computer, facilitating tasks such as programming, data logging, and interaction with user input.</p>
+<p>The micro:bit display is an excellent way to display data, but sometimes data changes faster than the <code class="docutils literal notranslate"><span class="pre">display.scroll()</span></code> method. There is an efficien way to display data using the <code class="docutils literal notranslate"><span class="pre">print()</span></code> function using serial communication.</p>
 <p><img alt="serial-demo-01" src="../../_images/serial-demo-01.png" /></p>
 <p>TODO</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
@@ -594,7 +593,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">The Integer (<code class="docutils literal notranslate"><span class="pre">int</span></code>) Data Type</p>
+        <p class="prev-next-title">Numeric Data Types</p>
       </div>
     </a>
     <a class="right-next"

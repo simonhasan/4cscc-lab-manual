@@ -1,6 +1,14 @@
 # Dictionaries
 
-TODO
+Python dictionaries are a fundamental data structure that stores and organizes data in key-value pairs. Each key in a dictionary maps to a corresponding value, allowing for efficient retrieval and manipulation of data. Dictionaries are versatile and commonly used in Python for tasks like mapping unique identifiers to associated values or storing configurations and settings. They provide a flexible way to structure and access data, making them an essential tool in Python programming.
+
+## Key-Value Pairs
+
+A **key-value pair** is a fundamental concept in computer science and data structures. In the context of dictionaries, it refers to two associated pieces of data: a key and a value.
+
+A **key** is a unique identifier within the dictionary. It serves as the reference point for accessing the associated value. Keys are typically **immutable** objects such as strings, integers, or tuples, meaning they cannot be changed after creation.
+
+A **value** is the data associated with a specific key in the dictionary. It can be of any data type, including strings, integers, floats, lists, tuples, dictionaries, or even custom objects. Each key in a dictionary maps to exactly one value.
 
 ![dictionaries](assets/dictionaries.png)
 

@@ -232,24 +232,22 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-05-temperature.html">The Temperature Sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-06-light.html">The Light Sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-07-accelerometer.html">The Accelerometer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-08-compass.html">The Compass</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-09-sound.html">MakeCode: The Sound Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-10-buzzer.html">MakeCode: The Buzzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-08-sound.html">MakeCode: The Sound Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-09-buzzer.html">MakeCode: The Buzzer</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../lessons/onboard-components-micropython.html">Onboard Components with Python</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="onboard-components-00-intro.html">Introduction to the Onboard Components</a></li>
-<li class="toctree-l2"><a class="reference internal" href="onboard-components-01-integers.html">The Integer (<code class="docutils literal notranslate"><span class="pre">int</span></code>) Data Type</a></li>
-<li class="toctree-l2"><a class="reference internal" href="onboard-components-02-serial.html">Serial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="onboard-components-01-integers.html">Numeric Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="onboard-components-02-serial.html">Serial Communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="onboard-components-03-buttons.html">The A and B Buttons</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">The Captive Touch Logo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="onboard-components-05-touch-pins.html">The Captive Touch Pins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="onboard-components-06-temperature.html">The Temperature Sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="onboard-components-07-light.html">The Light Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="onboard-components-08-accelerometer.html">The Accelerometer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="onboard-components-09-compass.html">The Compass</a></li>
-<li class="toctree-l2"><a class="reference internal" href="onboard-components-10-sound.html">The Sound Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="onboard-components-11-buzzer.html">The Buzzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="onboard-components-08-accelerometer.html">The Accelerometer/Compass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="onboard-components-09-sound.html">The Sound Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="onboard-components-10-buzzer.html">The Buzzer/Speaker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../vocabulary-micropython/onboard-components-vocabulary.html">Vocabulary</a></li>
 </ul>
 </li>
@@ -519,6 +517,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#displaying-the-state-of-the-captive-touch-logo-on-the-micro-bit-display">Displaying the State of the Captive Touch Logo on the micro:bit Display</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#printing-the-state-of-the-captive-touch-logo-to-serial">Printing the State of the Captive Touch Logo to Serial</a></li>
 </ul>
             </nav>
@@ -533,8 +532,14 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="the-captive-touch-logo">
 <h1>The Captive Touch Logo<a class="headerlink" href="#the-captive-touch-logo" title="Permalink to this heading">#</a></h1>
-<p>The micro:bit gas a captive touch logo that can be used similar to a button. The logo uses the electrical properties of the human body to TODO</p>
+<p>The micro:bit captive touch logo is a touch-sensitive pad located on the front of the microcontroller board, just below the LED matrix display. It uses the electrical properties of the human body to behave similarly to a button.</p>
+<p>The captive touch logo can be programmed to respond to touch events, enabling users to trigger actions, control functionality, or provide input to micro:bit programs. It offers a simple and intuitive way to interact with the device without the need for physical buttons or external sensors.</p>
+<p>The captive touch logo is displayed below:</p>
 <p><img alt="microbit-front-logo" src="../../_images/microbit-front-logo.png" /></p>
+<section id="displaying-the-state-of-the-captive-touch-logo-on-the-micro-bit-display">
+<h2>Displaying the State of the Captive Touch Logo on the micro:bit Display<a class="headerlink" href="#displaying-the-state-of-the-captive-touch-logo-on-the-micro-bit-display" title="Permalink to this heading">#</a></h2>
+<p>TODO</p>
+</section>
 <section id="printing-the-state-of-the-captive-touch-logo-to-serial">
 <h2>Printing the State of the Captive Touch Logo to Serial<a class="headerlink" href="#printing-the-state-of-the-captive-touch-logo-to-serial" title="Permalink to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
@@ -614,6 +619,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#displaying-the-state-of-the-captive-touch-logo-on-the-micro-bit-display">Displaying the State of the Captive Touch Logo on the micro:bit Display</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#printing-the-state-of-the-captive-touch-logo-to-serial">Printing the State of the Captive Touch Logo to Serial</a></li>
 </ul>
   </nav></div>
