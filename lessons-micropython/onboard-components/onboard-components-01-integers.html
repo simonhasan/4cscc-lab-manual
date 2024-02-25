@@ -551,13 +551,13 @@ document.write(`
 <section id="integers-in-mathematics">
 <h3>Integers in Mathematics<a class="headerlink" href="#integers-in-mathematics" title="Permalink to this heading">#</a></h3>
 <p>TODO:FIND OUT WHY INTEGER Z ISN’T RENDERING
-In mathematics, integers are positive and negative whole numbers, along with zero. They are represented without fractional or decimal points. The set of integers denoted by <span class="math notranslate nohighlight">\(\Z\)</span> includes all the negative and positive counting numbers:</p>
-<p><span class="math notranslate nohighlight">\(\Z = \{...-3, -2, 1, 0, 1, 2, 3 ...\}\)</span>​</p>
+In mathematics, integers are positive and negative whole numbers, along with zero. They are represented without fractional or decimal points. The set of integers denoted by ℤ includes all the negative and positive counting numbers:</p>
+<p>ℤ <span class="math notranslate nohighlight">\(= \{...-3, -2, 1, 0, 1, 2, 3 ...\}\)</span>​</p>
 <p>Integers represent quantities that can be counted, such as the number of objects in a collection or the position of an object in a sequence. They are essential in various mathematical operations, including addition, subtraction, multiplication, and division.</p>
 </section>
 <section id="integers-in-python">
 <h3>Integers in Python<a class="headerlink" href="#integers-in-python" title="Permalink to this heading">#</a></h3>
-<p>In Python, integers (<code class="docutils literal notranslate"><span class="pre">int)</span></code>are an immutable data type used to represent whole numbers, both positive and negative, without any fractional or decimal components, as they do in mathematics. Integers in Python can be of arbitrary size, representing very large or very small numbers.</p>
+<p>In Python, integers (<code class="docutils literal notranslate"><span class="pre">int)</span></code>are an immutable data type used to represent whole numbers, both positive and negative, without any fractional or decimal components, as they do in mathematics. Integers in Python can be arbitrary, representing very large or very small numbers.</p>
 <p>Integers are defined using numerical digits and can be assigned to variables or used directly in expressions. For example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">y</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span>
@@ -568,24 +568,60 @@ In mathematics, integers are positive and negative whole numbers, along with zer
 </section>
 <section id="floating-point-numbers">
 <h2>Floating-Point Numbers<a class="headerlink" href="#floating-point-numbers" title="Permalink to this heading">#</a></h2>
-<p>TODO</p>
+<p>Floating-point numbers in Python are a data type used to represent decimal numbers with fractional parts. They are typically used for representing real numbers in scientific calculations, financial applications, and other contexts where precision and accuracy are required.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Floating-Point Precision</strong><br>
+In Python, floating-point numbers have limited precision due to the finite number of bits used to represent them. This can sometimes lead to rounding errors and loss of precision, especially when performing arithmetic operations involving very large or very small numbers. It’s important to be aware of these limitations when working with floating-point numbers in Python.</p>
+</div>
+<iframe src="https://trinket.io/embed/python3/0e8062ea7a?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </section>
 <section id="operators">
 <h2>Operators<a class="headerlink" href="#operators" title="Permalink to this heading">#</a></h2>
-<p>An <strong>operator</strong> is</p>
+<p>A <strong>mathematical operator</strong> is a symbol or function that performs an operation on one or more <strong>operands</strong> (a value or variable that is manipulated by an operator in a mathematical or logical operation.) to produce a result. In mathematics and programming, operators perform arithmetic, logical, and relational operations, such as addition, subtraction, multiplication, division, equality testing, and comparison.</p>
+<p><strong>Python operators</strong> are symbols or functions that perform operations on one or more operands to produce a result, encompassing arithmetic, logical, assignment, comparison, membership, identity, and bitwise operations, among others, crucial for various computational tasks and programmatic logic.</p>
+<p>Mathematical operators and Python operators share similarities in that they both perform operations on operands to produce results, encompassing arithmetic, comparison, and logical operations. However, Python operators extend beyond traditional mathematical operators to include assignment, membership, identity, and bitwise operations, among others, tailored for programming tasks and data manipulation. Python operators also offer additional functionalities such as string concatenation and indexing, making them more versatile in handling complex data structures and programming logic compared to traditional mathematical operators.</p>
 <section id="the-addition-operator">
 <h3>The Addition Operator<a class="headerlink" href="#the-addition-operator" title="Permalink to this heading">#</a></h3>
-<p>TODO</p>
+<p>The <strong>addition operator</strong>, represented by the symbol <span class="math notranslate nohighlight">\(+\)</span>​ in mathematics and <code class="docutils literal notranslate"><span class="pre">+</span></code> in Python, is a mathematical operator used to combine two operands to produce their sum. In Python, it can be applied to numeric data types such as integers and floating-point numbers, as well as to concatenate strings (<strong>concatenation operator</strong>)</p>
+<p>TODO:ADD TRINKET HERE</p>
 </section>
 <section id="the-subtraction-operator">
 <h3>The Subtraction Operator<a class="headerlink" href="#the-subtraction-operator" title="Permalink to this heading">#</a></h3>
-<p>TODO</p>
+<p>The subtraction operator, represented by the symbol <span class="math notranslate nohighlight">\(-\)</span>​ in mathematics and <code class="docutils literal notranslate"><span class="pre">-</span></code> in Python, is a mathematical operator used to find the difference between two operands. In Python, it is commonly applied to numeric data types such as integers and floating-point numbers to calculate the result of subtracting one value from another.</p>
+<p>TODO:ADD TRINKET HERE</p>
 </section>
 <section id="the-multiplication-operator">
 <h3>The Multiplication Operator<a class="headerlink" href="#the-multiplication-operator" title="Permalink to this heading">#</a></h3>
 </section>
 <section id="the-division-operator">
 <h3>The Division Operator<a class="headerlink" href="#the-division-operator" title="Permalink to this heading">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Mathematical Operator</p></th>
+<th class="head"><p>Python Operator</p></th>
+<th class="head"><p>Use</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(+\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">+</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(-\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\times\)</span> or <span class="math notranslate nohighlight">\(\cdot\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">*</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\div\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/</span></code> or<code class="docutils literal notranslate"><span class="pre">//</span></code></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 </section>
