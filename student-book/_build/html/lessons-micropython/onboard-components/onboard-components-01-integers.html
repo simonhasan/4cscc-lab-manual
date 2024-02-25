@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>The Integer (int) Data Type &#8212; Four Corners Science and Computing Club Lab Notebook</title>
+    <title>Numeric Data Types &#8212; Four Corners Science and Computing Club Lab Notebook</title>
   
   
   
@@ -62,10 +62,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'lessons-micropython/onboard-components/onboard-components-01-integers';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Serial" href="onboard-components-02-serial.html" />
+    <link rel="next" title="Serial Communication" href="onboard-components-02-serial.html" />
     <link rel="prev" title="Introduction to the Onboard Components" href="onboard-components-00-intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -210,6 +212,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../display/display-05-display-image.html">Built-In Images</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../display/display-06-display-custom-image.html">Displaying Custom Images</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../display/display-07-animation.html">Displaying an Animation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vocabulary-micropython/display-vocabulary.html">Vocabulary</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../labs/display-lab.html">Lab: Creating a Digital Nametag with BBC micro:bit</a></li>
@@ -231,24 +234,23 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-05-temperature.html">The Temperature Sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-06-light.html">The Light Sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-07-accelerometer.html">The Accelerometer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-08-compass.html">The Compass</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-09-sound.html">MakeCode: The Sound Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-10-buzzer.html">MakeCode: The Buzzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-08-sound.html">MakeCode: The Sound Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-09-buzzer.html">MakeCode: The Buzzer</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../lessons/onboard-components-micropython.html">Onboard Components with Python</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="onboard-components-00-intro.html">Introduction to the Onboard Components</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">The Integer (<code class="docutils literal notranslate"><span class="pre">int</span></code>) Data Type</a></li>
-<li class="toctree-l2"><a class="reference internal" href="onboard-components-02-serial.html">Serial</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Numeric Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="onboard-components-02-serial.html">Serial Communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="onboard-components-03-buttons.html">The A and B Buttons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="onboard-components-04-logo.html">The Captive Touch Logo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="onboard-components-05-touch-pins.html">The Captive Touch Pins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="onboard-components-06-temperature.html">The Temperature Sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="onboard-components-07-light.html">The Light Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="onboard-components-08-accelerometer.html">The Accelerometer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="onboard-components-09-compass.html">The Compass</a></li>
-<li class="toctree-l2"><a class="reference internal" href="onboard-components-10-sound.html">The Sound Sensor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="onboard-components-11-buzzer.html">The Buzzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="onboard-components-08-accelerometer.html">The Accelerometer/Compass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="onboard-components-09-sound.html">The Sound Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="onboard-components-10-buzzer.html">The Buzzer/Speaker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vocabulary-micropython/onboard-components-vocabulary.html">Vocabulary</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../labs/onboard-components-lab.html">Lab: Building a Fidget Device with BBC micro:bit</a></li>
@@ -293,11 +295,35 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-11-on-off-led.html">Turning an LED on and Off with the micro:bit Buttons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-12-brightness-led.html">Varying the Brightness of an LED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-13-light-led.html">Using an LED with the Light Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vocabulary-micropython/leds-vocabulary.html">Vocabulary</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../labs/leds-lab.html">Lab: TODO</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../rubrics/leds-rubric.html">Rubric</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../resources/leds-resources.html">Resources</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">RGB LEDs</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../openers/rgb-led-opener.html">Opener</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intros/rgb-led-intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../objectives/rgb-led-objectives.html">Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../materials/rgb-led-materials.html">Materials</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/rgb-led-micropython.html">Using RGB LEDS with Python</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../rgb-led/rgb-led-00-intro.html">Introduction to RGB LEDs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rgb-led/rgb-led-01-rgb-led.html">RGB LEDs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rgb-led/rgb-led-02-binary-bits-and-bytes.html">Binary, Bits, and Bytes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rgb-led/rgb-led-03-rgb-colors-01.html">RGB Color Codes (Part 1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rgb-led/rgb-led-04-functions.html">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rgb-led/rgb-led-05-building-rgb-led-circuit.html">Building an RGB LED Circuit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rgb-led/rgb-led-06-flashing-colors.html">Flashing Colors on an RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rgb-led/rgb-led-07-dictionaries.html">Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rgb-led/rgb-led-08-rgb-colors-02.html">RGB Color Codes (Part 2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rgb-led/rgb-led-09-flashing-custom-colors.html">Flashing Custom Colors on a RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rgb-led/rgb-led-10-flashing-random-colors.html">Flashing Random Colors on an RGB LED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../vocabulary-micropython/rgb-led-vocabulary.html">Vocabulary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../labs/rgb-led-lab.html">Lab: TODO</a></li>
 </ul>
 
     </div>
@@ -483,7 +509,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>The Integer (int) Data Type</h1>
+    <h1>Numeric Data Types</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -493,8 +519,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integers-in-mathematics">Integers in Mathematics</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integers-in-python">Integers in Python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integers">Integers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integers-in-mathematics">Integers in Mathematics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integers-in-python">Integers in Python</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#floating-point-numbers">Floating-Point Numbers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operators">Operators</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-addition-operator">The Addition Operator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-subtraction-operator">The Subtraction Operator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-multiplication-operator">The Multiplication Operator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-division-operator">The Division Operator</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -506,14 +543,50 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="the-integer-int-data-type">
-<h1>The Integer (<code class="docutils literal notranslate"><span class="pre">int</span></code>) Data Type<a class="headerlink" href="#the-integer-int-data-type" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="numeric-data-types">
+<h1>Numeric Data Types<a class="headerlink" href="#numeric-data-types" title="Permalink to this heading">#</a></h1>
+<section id="integers">
+<h2>Integers<a class="headerlink" href="#integers" title="Permalink to this heading">#</a></h2>
+<p>TODO</p>
 <section id="integers-in-mathematics">
-<h2>Integers in Mathematics<a class="headerlink" href="#integers-in-mathematics" title="Permalink to this heading">#</a></h2>
-<p>$$</p>
+<h3>Integers in Mathematics<a class="headerlink" href="#integers-in-mathematics" title="Permalink to this heading">#</a></h3>
+<p>TODO:FIND OUT WHY INTEGER Z ISN’T RENDERING
+In mathematics, integers are positive and negative whole numbers, along with zero. They are represented without fractional or decimal points. The set of integers denoted by <span class="math notranslate nohighlight">\(\Z\)</span> includes all the negative and positive counting numbers:</p>
+<p><span class="math notranslate nohighlight">\(\Z = \{...-3, -2, 1, 0, 1, 2, 3 ...\}\)</span>​</p>
+<p>Integers represent quantities that can be counted, such as the number of objects in a collection or the position of an object in a sequence. They are essential in various mathematical operations, including addition, subtraction, multiplication, and division.</p>
 </section>
 <section id="integers-in-python">
-<h2>Integers in Python<a class="headerlink" href="#integers-in-python" title="Permalink to this heading">#</a></h2>
+<h3>Integers in Python<a class="headerlink" href="#integers-in-python" title="Permalink to this heading">#</a></h3>
+<p>In Python, integers (<code class="docutils literal notranslate"><span class="pre">int)</span></code>are an immutable data type used to represent whole numbers, both positive and negative, without any fractional or decimal components, as they do in mathematics. Integers in Python can be of arbitrary size, representing very large or very small numbers.</p>
+<p>Integers are defined using numerical digits and can be assigned to variables or used directly in expressions. For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">y</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span>
+<span class="n">number_of_students</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="floating-point-numbers">
+<h2>Floating-Point Numbers<a class="headerlink" href="#floating-point-numbers" title="Permalink to this heading">#</a></h2>
+<p>TODO</p>
+</section>
+<section id="operators">
+<h2>Operators<a class="headerlink" href="#operators" title="Permalink to this heading">#</a></h2>
+<p>An <strong>operator</strong> is</p>
+<section id="the-addition-operator">
+<h3>The Addition Operator<a class="headerlink" href="#the-addition-operator" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="the-subtraction-operator">
+<h3>The Subtraction Operator<a class="headerlink" href="#the-subtraction-operator" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="the-multiplication-operator">
+<h3>The Multiplication Operator<a class="headerlink" href="#the-multiplication-operator" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="the-division-operator">
+<h3>The Division Operator<a class="headerlink" href="#the-division-operator" title="Permalink to this heading">#</a></h3>
+</section>
 </section>
 </section>
 
@@ -561,7 +634,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Serial</p>
+        <p class="prev-next-title">Serial Communication</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -581,8 +654,19 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integers-in-mathematics">Integers in Mathematics</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integers-in-python">Integers in Python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integers">Integers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integers-in-mathematics">Integers in Mathematics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integers-in-python">Integers in Python</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#floating-point-numbers">Floating-Point Numbers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operators">Operators</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-addition-operator">The Addition Operator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-subtraction-operator">The Subtraction Operator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-multiplication-operator">The Multiplication Operator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-division-operator">The Division Operator</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

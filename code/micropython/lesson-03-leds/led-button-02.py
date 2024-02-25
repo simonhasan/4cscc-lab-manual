@@ -10,8 +10,8 @@ while True:
     if button_a.is_pressed():
         # Turn the LED on
         led_pin.write_digital(1)
-    # If button B is pressed
-    if button_b.is_pressed():
+    # Otherwise  
+    else:
         # Turn the LED off
         led_pin.write_digital(0)
     # Wait for 10ms (0.01 seconds)

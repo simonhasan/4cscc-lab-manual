@@ -1,8 +1,14 @@
 # The Light Sensor
 
-TODO
+The micro:bit features light sensing capability through the 5x5 LED matrix display. This light-sensing capability measures the intensity of ambient light in the surrounding environment.
+
+Using the light sensor, the micro:bit can detect changes in light levels, allowing it to respond to different lighting conditions. For example, in programming projects, the micro:bit can be programmed to adjust its behavior based on changes in light intensity, such as turning on an LED when it gets dark or changing the display brightness in response to ambient light.
 
 ![microbit-front-leds](assets/microbit-front-leds.png)
+
+## Displaying the Light Sensor Reading on the micro:bit Display
+
+TODO
 
 ## Printing the Light Sensor Reading to Serial
 

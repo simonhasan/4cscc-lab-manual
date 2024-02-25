@@ -1,8 +1,10 @@
 # Variables
 
-**NEEDS REVISION** 
+In mathematics, a **variable** is a symbol or letter used to represent an unknown quantity or a value that can change within a given context or equation. Variables are typically denoted by letters such as $x$, $y$, or $z$​, and their values can vary depending on the conditions or constraints of the problem being considered.  I
 
-In mathematics, variables represent unknown quantities or values that can change within a mathematical equation or expression, serving as placeholders for numbers. In computer science, variables are named storage locations in a program's memory used to hold data, such as numbers, text, or objects, enabling manipulation and dynamic behavior within the code. While both involve the concept of variability, their applications and contexts differ significantly.
+In computer science, a **variable** is a symbolic name associated with a memory location that stores data. Variables serve as placeholders for values that can change during the execution of a program. They represent and manipulate different data types, such as numbers, strings, or objects, allowing programmers to work with dynamic information and perform computations. 
+
+Variables allow programmers to store and manipulate data within a program. They can hold different data types, such as numbers, strings, lists, or more complex objects. Variables in Python are **dynamically typed**, meaning their type is determined at runtime based on the value assigned to them. This flexibility makes Python versatile for various programming tasks, as variables can be reassigned to different types of data as needed during execution.
 
 Variables must be declared or assigned a name. To declare a variable, you use the assignment operator `=`.
 

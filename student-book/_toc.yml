@@ -42,6 +42,7 @@ parts:
       - file: lessons-micropython/display/display-05-display-image
       - file: lessons-micropython/display/display-06-display-custom-image
       - file: lessons-micropython/display/display-07-animation 
+      - file: vocabulary-micropython/display-vocabulary
     - file: labs/display-lab
     - file: rubrics/display-rubric
     - file: resources/display-resources
@@ -61,9 +62,8 @@ parts:
       - file: lessons-makecode/onboard-components/onboard-components-05-temperature
       - file: lessons-makecode/onboard-components/onboard-components-06-light
       - file: lessons-makecode/onboard-components/onboard-components-07-accelerometer
-      - file: lessons-makecode/onboard-components/onboard-components-08-compass
-      - file: lessons-makecode/onboard-components/onboard-components-09-sound
-      - file: lessons-makecode/onboard-components/onboard-components-10-buzzer
+      - file: lessons-makecode/onboard-components/onboard-components-08-sound
+      - file: lessons-makecode/onboard-components/onboard-components-09-buzzer
     - file: lessons/onboard-components-micropython
       sections:
       - file: lessons-micropython/onboard-components/onboard-components-00-intro
@@ -75,9 +75,9 @@ parts:
       - file: lessons-micropython/onboard-components/onboard-components-06-temperature
       - file: lessons-micropython/onboard-components/onboard-components-07-light
       - file: lessons-micropython/onboard-components/onboard-components-08-accelerometer
-      - file: lessons-micropython/onboard-components/onboard-components-09-compass
-      - file: lessons-micropython/onboard-components/onboard-components-10-sound
-      - file: lessons-micropython/onboard-components/onboard-components-11-buzzer
+      - file: lessons-micropython/onboard-components/onboard-components-09-sound
+      - file: lessons-micropython/onboard-components/onboard-components-10-buzzer
+      - file: vocabulary-micropython/onboard-components-vocabulary
     - file: labs/onboard-components-lab
     - file: rubrics/onboard-components-rubric
     - file: resources/onboard-components-resources
@@ -119,7 +119,29 @@ parts:
       - file: lessons-micropython/leds/leds-11-on-off-led
       - file: lessons-micropython/leds/leds-12-brightness-led
       - file: lessons-micropython/leds/leds-13-light-led
+      - file: vocabulary-micropython/leds-vocabulary
     - file: labs/leds-lab
     - file: rubrics/leds-rubric
     - file: resources/leds-resources
+  - caption: "RGB LEDs"
+    chapters:
+    - file: openers/rgb-led-opener
+    - file: intros/rgb-led-intro
+    - file: objectives/rgb-led-objectives
+    - file: materials/rgb-led-materials
+    - file: lessons/rgb-led-micropython
+      sections:
+      - file: lessons-micropython/rgb-led/rgb-led-00-intro
+      - file: lessons-micropython/rgb-led/rgb-led-01-rgb-led
+      - file: lessons-micropython/rgb-led/rgb-led-02-binary-bits-and-bytes
+      - file: lessons-micropython/rgb-led/rgb-led-03-rgb-colors-01
+      - file: lessons-micropython/rgb-led/rgb-led-04-functions
+      - file: lessons-micropython/rgb-led/rgb-led-05-building-rgb-led-circuit
+      - file: lessons-micropython/rgb-led/rgb-led-06-flashing-colors
+      - file: lessons-micropython/rgb-led/rgb-led-07-dictionaries
+      - file: lessons-micropython/rgb-led/rgb-led-08-rgb-colors-02
+      - file: lessons-micropython/rgb-led/rgb-led-09-flashing-custom-colors
+      - file: lessons-micropython/rgb-led/rgb-led-10-flashing-random-colors
+      - file: vocabulary-micropython/rgb-led-vocabulary
+    - file: labs/rgb-led-lab
 

@@ -14,7 +14,7 @@ Insert the LED into the breadboard.
 - **Take note of which lead is the anode.**
 
 ```{tip}
-Chose a side that the LED lead will always be facing (right or left). This helps prevent incomplete circuits and makes it easier to remember which lead is the anode and which lead is the cathode. 
+Choose a side that the LED lead will always be facing (right or left). This helps prevent incomplete circuits and makes it easier to remember which lead is the anode and which lead is the cathode. 
 ```
 
 
@@ -98,7 +98,7 @@ The circuit is complete.
 
 ---
 
-## Building an LED Circuit with the SpakFun Qwiic micro:bit Breakout Board (Or Similar Type)
+## Building an LED Circuit with the SparkFun Qwiic micro:bit Breakout Board (Or Similar Type)
 
 TODO
 

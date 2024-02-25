@@ -14,17 +14,17 @@ Resistors are used in circuits to control the current or voltage flow through di
 
 ## Ohm's Law
 
-Ohm's Law is the general rule for understanding how an electrical circuit's voltage, current, and resistance are related. It says that the current ($I$) flowing through a conductor between two points is directly proportional to the voltage ($V$) across the two points and inversely proportional to the resistance ($R$) between them.
+**Ohm's Law** is the general rule for understanding how an electrical circuit's **voltage**, **current**, and **resistance** are related. It says that the current ($I$) flowing through a conductor between two points is directly proportional to the voltage ($V$) across the two points and inversely proportional to the resistance ($R$) between them.
 
 ![ohms-law](assets/ohms-law.png)
 
 Returning to the water pipe analogy mentioned above, Ohm's Law helps us understand how this flow works in circuits with resistors.
 
-- Voltage ($V$) is like the pressure pushing the water through the pipe. Imagine it's the force behind the water moving.
+- **Voltage** ($V$) is like the pressure pushing the water through the pipe. Imagine it's the force behind the water moving.
 
-- Current ($I$) is like the amount of water flowing through the pipe. It's how much water passes a certain point in a given time.
+- **Current** ($I$) is like the amount of water flowing through the pipe. It's how much water passes a certain point in a given time.
 
-- Resistance ($R$) is like the width of the pipe. A wider pipe allows more water to flow through, while a narrower one restricts the flow.
+- **Resistance** ($R$) is like the width of the pipe. A wider pipe allows more water to flow through, while a narrower one restricts the flow.
 
 ![water-analogy-02](assets/water-analogy-02.png)
 
@@ -52,7 +52,13 @@ TODO:EXPLAIN 1ST DIGIT, 2ND DIGIT, AND MULTIPLIER
 
 ## Checkpoint: Interpreting Resistor Values  
 
+Use the resistor chart to interpret the resistor codes below:
+
+![resistor-chart](assets/resistor-chart.png)
+
 ![resistor-quiz](assets/quiz-resistor.png)
+
+
 
 ```{admonition} Click here to reveal the solutions.
 :class: dropdown
