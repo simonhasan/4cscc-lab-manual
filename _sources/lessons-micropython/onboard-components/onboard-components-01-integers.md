@@ -14,7 +14,7 @@ Integers represent quantities that can be counted, such as the number of objects
 
 ### Integers in Python
 
-In Python, integers (`int)`are an immutable data type used to represent whole numbers, both positive and negative, without any fractional or decimal components, as they do in mathematics. Integers in Python can be arbitrary, representing very large or very small numbers.
+In Python, integers (`int`)are an immutable data type used to represent whole numbers, both positive and negative, without any fractional or decimal components, as they do in mathematics. Integers in Python can be arbitrary, representing very large or very small numbers.
 
 Integers are defined using numerical digits and can be assigned to variables or used directly in expressions. For example:
 
@@ -30,9 +30,9 @@ number_of_students = 5
 
 Floating-point numbers in Python are a data type used to represent decimal numbers with fractional parts. They are typically used for representing real numbers in scientific calculations, financial applications, and other contexts where precision and accuracy are required. 
 
-```{note}
-**Floating-Point Precision**<br>
-In Python, floating-point numbers have limited precision due to the finite number of bits used to represent them. This can sometimes lead to rounding errors and loss of precision, especially when performing arithmetic operations involving very large or very small numbers. It's important to be aware of these limitations when working with floating-point numbers in Python.
+```{admonition}Floating-Point Precision
+:class: note
+In Python, floating-point numbers have limited precision due to the finite number of bits used to represent them. This can sometimes lead to rounding errors and loss of precision, especially when performing arithmetic operations involving very large or very small numbers. It is important to be aware of these limitations when working with floating-point numbers in Python.
 ```
 
 <iframe src="https://trinket.io/embed/python3/0e8062ea7a?runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
