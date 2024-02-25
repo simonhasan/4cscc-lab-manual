@@ -1,5 +1,9 @@
 # Python: The `while` Loop
 
+In Python, a `while` loop is a control flow statement that repeatedly executes a code block if a specified condition remains `True`. It provides a way to create iterative processes in your code, allowing you to repeat instructions until a specific condition is met or becomes `False`.
+
+The syntax of a `while` loop consists of the keyword `while`, followed by a condition, and a colon `:`. The code block to be executed repeatedly is indented underneath the `while` statement. Inside the code block, you typically include statements that update the variables involved in the condition, ensuring that the loop eventually terminates when the condition evaluates to `False`.
+
 ```py
 # Imports go at the top
 from microbit import *

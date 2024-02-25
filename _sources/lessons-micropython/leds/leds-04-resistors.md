@@ -52,7 +52,13 @@ TODO:EXPLAIN 1ST DIGIT, 2ND DIGIT, AND MULTIPLIER
 
 ## Checkpoint: Interpreting Resistor Values  
 
+Use the resistor chart to interpret the resistor codes below:
+
+![resistor-chart](assets/resistor-chart.png)
+
 ![resistor-quiz](assets/quiz-resistor.png)
+
+
 
 ```{admonition} Click here to reveal the solutions.
 :class: dropdown

@@ -5,7 +5,7 @@
 TODO
 
 ### Integers in Mathematics
-
+TODO:FIND OUT WHY INTEGER Z ISN'T RENDERING
 In mathematics, integers are positive and negative whole numbers, along with zero. They are represented without fractional or decimal points. The set of integers denoted by $\Z$ includes all the negative and positive counting numbers:
 
 $\Z = \{...-3, -2, 1, 0, 1, 2, 3 ...\}$​

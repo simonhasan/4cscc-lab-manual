@@ -517,11 +517,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-statements"><code class="docutils literal notranslate"><span class="pre">if</span></code> Statements</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-statements"><code class="docutils literal notranslate"><span class="pre">if</span></code> Statements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-else-statements"><code class="docutils literal notranslate"><span class="pre">if</span></code>…<code class="docutils literal notranslate"><span class="pre">else</span></code> Statements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-elif-else-statements"><code class="docutils literal notranslate"><span class="pre">if</span></code>…<code class="docutils literal notranslate"><span class="pre">elif</span></code>…<code class="docutils literal notranslate"><span class="pre">else</span></code> Statements</a></li>
 </ul>
             </nav>
         </div>
@@ -535,35 +533,55 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="conditional-statements">
 <h1>Conditional Statements<a class="headerlink" href="#conditional-statements" title="Permalink to this heading">#</a></h1>
-<p>In programming, <strong>conditional statements</strong> are used to make decisions in code, allowing programs to choose between different actions based on certain conditions being met or not. In essence, conditional statements are used to control the flow of programs.</p>
+<p><strong>Conditional statements</strong> in Python are programming constructs that allow you to execute different blocks of code based on whether certain conditions are <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.  They are used to make decisions in code, allowing programs to choose between different actions based on certain conditions being met or not. In essence, conditional statements are used to control the flow of programs.</p>
 <section id="if-statements">
 <h2><code class="docutils literal notranslate"><span class="pre">if</span></code> Statements<a class="headerlink" href="#if-statements" title="Permalink to this heading">#</a></h2>
-<section id="id1">
-<h3><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<p>In Python, an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement is a conditional statement that allows executing a code block only if a specified condition evaluates to <code class="docutils literal notranslate"><span class="pre">True</span></code>. It is the most basic form of conditional execution in Python.</p>
+<p>The syntax of an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement typically consists of the keyword <code class="docutils literal notranslate"><span class="pre">if</span></code>, followed by a condition, and a colon <code class="docutils literal notranslate"><span class="pre">:</span></code>. A code block of one or more statements is executed if the condition is <code class="docutils literal notranslate"><span class="pre">True</span></code>. The code block is indented underneath the <code class="docutils literal notranslate"><span class="pre">if</span></code> statement with four spaces.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">&lt;</span><span class="n">condition</span><span class="o">&gt;</span><span class="p">:</span>
     <span class="o">&lt;</span><span class="n">statement</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">statement</span><span class="o">&gt;</span>
 </pre></div>
 </div>
+<p>Here is a flow chart of an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement:</p>
+<p>TODO:IF STATEMENT FLOWCHART</p>
+<p>Here are some examples of an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement:</p>
+<p>TODO:TRINKET BLOCKS</p>
 </section>
-</section>
-<section id="id2">
-<h2><a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<section id="if-else-statements">
+<h2><code class="docutils literal notranslate"><span class="pre">if</span></code>…<code class="docutils literal notranslate"><span class="pre">else</span></code> Statements<a class="headerlink" href="#if-else-statements" title="Permalink to this heading">#</a></h2>
+<p>An <code class="docutils literal notranslate"><span class="pre">if</span></code>…<code class="docutils literal notranslate"><span class="pre">else</span></code> statement is a conditional statement that allows you to execute one block of code if a specified condition evaluates to <code class="docutils literal notranslate"><span class="pre">True</span></code>, and a different block of code if the condition evaluates to `False. It provides a way to create branches in the flow of execution based on the outcome of a condition.</p>
+<p>The syntax is identical to an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement  Optionally, the “if” statement can be followed by an “else” statement, which contains another code block to be executed if the condition is false.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">&lt;</span><span class="n">condition</span><span class="o">&gt;</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">statement</span><span class="o">&gt;</span>
     <span class="o">&lt;</span><span class="n">statement</span><span class="o">&gt;</span>
 <span class="k">elif</span><span class="p">:</span>
     <span class="o">&lt;</span><span class="n">statement</span><span class="o">&gt;</span>
-    
-      
+    <span class="o">&lt;</span><span class="n">statement</span><span class="o">&gt;</span>
 </pre></div>
 </div>
+<p>Here is a flow chart of an <code class="docutils literal notranslate"><span class="pre">if</span></code>…<code class="docutils literal notranslate"><span class="pre">else</span></code> statement:</p>
+<p>TODO:IF…ELSE STATEMENT FLOWCHART</p>
+<p>Here are some examples of an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement:</p>
+<p>TODO:TRINKET BLOCKS</p>
+</section>
+<section id="if-elif-else-statements">
+<h2><code class="docutils literal notranslate"><span class="pre">if</span></code>…<code class="docutils literal notranslate"><span class="pre">elif</span></code>…<code class="docutils literal notranslate"><span class="pre">else</span></code> Statements<a class="headerlink" href="#if-elif-else-statements" title="Permalink to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">&lt;</span><span class="n">condition</span><span class="o">&gt;</span><span class="p">:</span>
     <span class="o">&lt;</span><span class="n">statement</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">statement</span><span class="o">&gt;</span>
 <span class="k">elif</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">statement</span><span class="o">&gt;</span>
     <span class="o">&lt;</span><span class="n">statement</span><span class="o">&gt;</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="o">&lt;</span><span class="n">statement</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">statement</span><span class="o">&gt;</span>
 </pre></div>
 </div>
+<p>Here is a flow chart of an <code class="docutils literal notranslate"><span class="pre">if</span></code>…<code class="docutils literal notranslate"><span class="pre">else</span></code> statement:</p>
+<p>TODO:IF…ELIF…ELSE STATEMENT FLOWCHART</p>
+<p>Here are some examples of an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement:</p>
+<p>TODO:TRINKET BLOCKS</p>
 </section>
 </section>
 
@@ -631,11 +649,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-statements"><code class="docutils literal notranslate"><span class="pre">if</span></code> Statements</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-statements"><code class="docutils literal notranslate"><span class="pre">if</span></code> Statements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-else-statements"><code class="docutils literal notranslate"><span class="pre">if</span></code>…<code class="docutils literal notranslate"><span class="pre">else</span></code> Statements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-elif-else-statements"><code class="docutils literal notranslate"><span class="pre">if</span></code>…<code class="docutils literal notranslate"><span class="pre">elif</span></code>…<code class="docutils literal notranslate"><span class="pre">else</span></code> Statements</a></li>
 </ul>
   </nav></div>
 
