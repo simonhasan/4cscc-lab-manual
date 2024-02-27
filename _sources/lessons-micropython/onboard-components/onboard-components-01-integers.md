@@ -67,8 +67,8 @@ TODO:ADD TRINKET HERE
 
 | Mathematical Operator | Python Operator | Use  |
 | --------------------- | --------------- | ---- |
-| $+$                   | `+`             |      |
-| $-$                   | `-`             |      |
-| $\times$ or $\cdot$   | `*`             |      |
-| $\div$                | `/` or`//`      |      |
+| $+$                   | `+`             | TODO |
+| $-$                   | `-`             | TODO |
+| $\times$ or $\cdot$   | `*`             | TODO |
+| $\div$                | `/` or`//`      | TODO |
 

@@ -1,6 +1,6 @@
 # The Temperature Sensor
 
-The micro:bit uses the temperature sensor on the processor to sense the temperature. The accuracy of the temperature sensor ±5℃.
+The micro:bit has a built-in temperature sensor located inside its processor. It's not a dedicated sensor for precise measurements, but it can give you a good approximation of the ambient temperature around the micro:bit. It measures temperature in degrees Celsius (°C) with ±5℃ accuracy.
 
 ![microbit-back-processor](assets/microbit-back-processor.png)
 
