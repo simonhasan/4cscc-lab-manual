@@ -1,11 +1,11 @@
 # The Captive Touch Pins
 
-The captive touch pins 0, 1, and 2 on the micro:bit are touch-sensitive input pins located along the edge of the microcontroller board similar to the captive touch logo. These pins allow users to detect touch input by capacitive sensing.
+The captive touch pins 0, 1, and 2 on the micro:bit are touch-sensitive input pins located along the edge of the microcontroller board, similar to the captive touch logo. These pins allow users to detect touch input by capacitive sensing.
 
 Users can connect conductive materials, such as wires, foil, or conductive thread, to these pins to create touch-sensitive interfaces for their micro:bit projects. When a user touches or comes into close proximity to the connected conductive material, the capacitive touch sensing circuit detects the change in capacitance and registers it as a touch event.
 
 ```{note}
-Unlike the captive touch logo, the captive touch pins need to make contact with the GND pin to complete the circuit.
+Unlike the captive touch logo, the captive touch pins must make contact with the GND pin to complete the circuit.
 ```
 
 The captive touch pins are displayed below:
@@ -14,7 +14,10 @@ The captive touch pins are displayed below:
 
 ## Displaying the State of the Captive Touch Buttons on the micro:bit Display
 
-TODO
+```python
+```
+
+
 
 ## Printing the State of the Captive Touch Pins to Serial
 

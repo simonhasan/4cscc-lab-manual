@@ -8,6 +8,8 @@ The micro:bit sound sensor is displayed below:
 
 ![microbit-front-microphone](assets/microbit-front-microphone.png)
 
+
+
 ## Printing the Sound Level to Serial
 
 
