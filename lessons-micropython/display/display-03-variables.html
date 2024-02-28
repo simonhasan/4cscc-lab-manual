@@ -534,6 +534,10 @@ document.write(`
 </li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-naming-conventions">Python Naming Conventions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#constants">Constants</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-behavior-of-variables">The Behavior of Variables</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkpoint-identify-the-valid-and-invalid-variable-names">Checkpoint: Identify the Valid and Invalid variable names.</a></li>
 </ul>
@@ -559,8 +563,8 @@ document.write(`
 </div>
 <p>Here are some examples:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">led_pin</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-<span class="n">sensor_val</span> <span class="o">=</span> 
+<span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Oscar&#39;</span>
+<span class="n">sensor_val</span> <span class="o">=</span> <span class="n">analog_read</span><span class="p">(</span><span class="n">sensor_pin</span><span class="p">)</span>
 </pre></div>
 </div>
 <section id="naming-variables">
@@ -621,45 +625,51 @@ document.write(`
 <li><p><strong><code class="docutils literal notranslate"><span class="pre">and</span></code></strong>: Used for logical AND operations.</p></li>
 <li><p><strong><code class="docutils literal notranslate"><span class="pre">or</span></code></strong>: Used for logical OR operations.</p></li>
 <li><p><strong><code class="docutils literal notranslate"><span class="pre">not</span></code></strong>: Used for logical NOT operations.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">elif</span></code>, <code class="docutils literal notranslate"><span class="pre">else</span></code>: Used for conditional statements.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">while</span></code>: Used for creating loops.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">for</span></code>: Used for iterating over sequences.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">break</span></code>: Used to exit a loop prematurely.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">continue</span></code>: Used to skip the current iteration and proceed to the next one.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pass</span></code>: A placeholder statement that does nothing.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">return</span></code>: Used to exit a function and return a value.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">try</span></code>, <code class="docutils literal notranslate"><span class="pre">except</span></code>, <code class="docutils literal notranslate"><span class="pre">finally</span></code>: Used for exception handling.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">assert</span></code>: Used for debugging and ensuring conditions are met.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">with</span></code>: Used for context management (e.g., file handling).</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">if</span></code></strong>, <strong><code class="docutils literal notranslate"><span class="pre">elif</span></code></strong>, <strong><code class="docutils literal notranslate"><span class="pre">else</span></code></strong>: Used for conditional statements.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">while</span></code></strong>: Used for creating loops.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">for</span></code></strong>: Used for iterating over sequences.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">break</span></code></strong>: Used to exit a loop prematurely.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">continue</span></code></strong>: Used to skip the current iteration and proceed to the next one.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">pass</span></code></strong>: A placeholder statement that does nothing.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">return</span></code></strong>: Used to exit a function and return a value.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">try</span></code></strong>, <strong><code class="docutils literal notranslate"><span class="pre">except</span></code></strong>, <strong><code class="docutils literal notranslate"><span class="pre">finally</span></code></strong>: Used for exception handling.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">assert</span></code></strong>: Used for debugging and ensuring conditions are met.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">with</span></code></strong>: Used for context management (e.g., file handling).</p></li>
 </ul>
 </section>
 <section id="data-types-and-constants">
 <h4>Data Types and Constants:<a class="headerlink" href="#data-types-and-constants" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code>, <code class="docutils literal notranslate"><span class="pre">False</span></code>: Boolean constants.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">None</span></code>: Represents the absence of a value (similar to null in other languages).</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">True</span></code></strong>, <strong><code class="docutils literal notranslate"><span class="pre">False</span></code></strong>: Boolean constants.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">None</span></code></strong>: Represents the absence of a value (similar to null in other languages).</p></li>
 </ul>
 </section>
 <section id="function-and-class-keywords">
 <h4>Function and Class Keywords:<a class="headerlink" href="#function-and-class-keywords" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">def</span></code>: Used to define functions.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">class</span></code>: Used to define classes.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">def</span></code></strong>: Used to define functions.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">class</span></code></strong>: Used to define classes.</p></li>
 </ul>
 </section>
 <section id="other-keywords">
 <h4>Other Keywords:<a class="headerlink" href="#other-keywords" title="Permalink to this heading">#</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">global</span></code>: Used to declare global variables.
-<code class="docutils literal notranslate"><span class="pre">lambda</span></code>: Used to create anonymous functions.
-<code class="docutils literal notranslate"><span class="pre">yield</span></code>: Used in generator functions.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">global</span></code></strong>: Used to declare global variables.
+<strong><code class="docutils literal notranslate"><span class="pre">lambda</span></code></strong>: Used to create anonymous functions.
+<strong><code class="docutils literal notranslate"><span class="pre">yield</span></code></strong>: Used in generator functions.</p>
 </section>
 <section id="micro-bit-keywords-some-are-legal-but-should-be-avoided">
 <h4>micro:bit Keywords (Some are legal, but should be avoided)<a class="headerlink" href="#micro-bit-keywords-some-are-legal-but-should-be-avoided" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">microbit</span></code>: The micro:bit module name.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">microbit</span></code></strong>: The micro:bit module name.</p></li>
 <li><p>TODO</p></li>
 </ul>
 </section>
+</section>
+</section>
+<section id="python-naming-conventions">
+<h2>Python Naming Conventions<a class="headerlink" href="#python-naming-conventions" title="Permalink to this heading">#</a></h2>
+<section id="constants">
+<h3>Constants<a class="headerlink" href="#constants" title="Permalink to this heading">#</a></h3>
 </section>
 </section>
 <section id="the-behavior-of-variables">
@@ -694,8 +704,8 @@ document.write(`
 <tbody>
 <tr class="row-even"><td><p><strong>A</strong></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">sensor</span> <span class="pre">1</span> <span class="pre">val</span></code></p></td>
-<td><p><strong>Invalid</strong></p></td>
-<td><p>The variable name has whitespace</p></td>
+<td><p><em><strong>Invalid</strong></em></p></td>
+<td><p>The variable name has whitespace.</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>B</strong></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">sensor1_val</span></code></p></td>
@@ -704,17 +714,17 @@ document.write(`
 </tr>
 <tr class="row-even"><td><p><strong>C</strong></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">1sensor_val</span></code></p></td>
-<td><p><strong>Invalid</strong></p></td>
-<td><p>The variable name starts with a number</p></td>
+<td><p><em><strong>Invalid</strong></em></p></td>
+<td><p>The variable name starts with a number.</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>D</strong></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">sensor1-val</span></code></p></td>
-<td><p><strong>Invalid</strong></p></td>
+<td><p><em><strong>Invalid</strong></em></p></td>
 <td><p>The variable name has a special character <code class="docutils literal notranslate"><span class="pre">-</span></code> other than <code class="docutils literal notranslate"><span class="pre">_</span></code>.</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>E</strong></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">sensor_v&#64;l</span></code></p></td>
-<td><p><strong>Invalid</strong></p></td>
+<td><p><em><strong>Invalid</strong></em></p></td>
 <td><p>The variable name has a special character <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> other than <code class="docutils literal notranslate"><span class="pre">_</span></code>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>F</strong></p></td>
@@ -814,6 +824,10 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#micro-bit-keywords-some-are-legal-but-should-be-avoided">micro:bit Keywords (Some are legal, but should be avoided)</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-naming-conventions">Python Naming Conventions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#constants">Constants</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-behavior-of-variables">The Behavior of Variables</a></li>
