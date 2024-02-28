@@ -10,12 +10,26 @@ A **key** is a unique identifier within the dictionary. It serves as the referen
 
 A **value** is the data associated with a specific key in the dictionary. It can be of any data type, including strings, integers, floats, lists, tuples, dictionaries, or even custom objects. Each key in a dictionary maps to exactly one value.
 
-![dictionaries](assets/dictionaries.png)
+
+
+## Anatomy of a Dictionary
+
+![structure-dict](assets/structure-dict.png)
+
+## Creating Dictionaries
+
+
+
+
 
 ```python
 # Dictionary with RGB values for red
 red = {'red': 1, 'green': 0, 'blue': 0}
 ```
+
+
+
+
 
 Here is an example of a program that flashes TODO
 

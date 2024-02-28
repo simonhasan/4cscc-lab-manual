@@ -4,7 +4,11 @@
 
 ![snake-animation](assets/snake-animation.gif)
 
-TODO
+The animation of the snake above is produced using the code for custom images. Each image is slightly different than the next image, and the sequence of images is repeated indefinitely in a `while` loop. Below are three equivalent programs that display the animation. 
+
+- The first program uses the multi-lined custom image style and displays each image with a delay in the `while` loop.
+- The second program uses the single-lined custom image style and displays each image with a delay in the `while` loop.
+- The third program uses the single-lined custom image style and collects them in a
 
 ```python
 # Imports go at the top

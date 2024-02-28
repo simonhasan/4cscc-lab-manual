@@ -213,10 +213,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../display/display-01-strings.html">The String (<code class="docutils literal notranslate"><span class="pre">str</span></code>) Data Type</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../display/display-02-display-text.html">Displaying Strings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../display/display-03-variables.html">Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../display/display-04-while-loop.html">Python: The <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../display/display-04-loops.html">Loops</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../display/display-05-display-image.html">Built-In Images</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../display/display-06-display-custom-image.html">Displaying Custom Images</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../display/display-07-animation.html">Displaying an Animation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../vocabulary-micropython/display-vocabulary.html">Vocabulary</a></li>
 </ul>
 </li>
@@ -525,6 +524,8 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-value-pairs">Key-Value Pairs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anatomy-of-a-dictionary">Anatomy of a Dictionary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-dictionaries">Creating Dictionaries</a></li>
 </ul>
             </nav>
         </div>
@@ -544,7 +545,13 @@ document.write(`
 <p>A <strong>key-value pair</strong> is a fundamental concept in computer science and data structures. In the context of dictionaries, it refers to two associated pieces of data: a key and a value.</p>
 <p>A <strong>key</strong> is a unique identifier within the dictionary. It serves as the reference point for accessing the associated value. Keys are typically <strong>immutable</strong> objects such as strings, integers, or tuples, meaning they cannot be changed after creation.</p>
 <p>A <strong>value</strong> is the data associated with a specific key in the dictionary. It can be of any data type, including strings, integers, floats, lists, tuples, dictionaries, or even custom objects. Each key in a dictionary maps to exactly one value.</p>
-<p><img alt="dictionaries" src="../../_images/dictionaries.png" /></p>
+</section>
+<section id="anatomy-of-a-dictionary">
+<h2>Anatomy of a Dictionary<a class="headerlink" href="#anatomy-of-a-dictionary" title="Permalink to this heading">#</a></h2>
+<p><img alt="structure-dict" src="../../_images/structure-dict.png" /></p>
+</section>
+<section id="creating-dictionaries">
+<h2>Creating Dictionaries<a class="headerlink" href="#creating-dictionaries" title="Permalink to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Dictionary with RGB values for red</span>
 <span class="n">red</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;red&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
 </pre></div>
@@ -743,6 +750,8 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-value-pairs">Key-Value Pairs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anatomy-of-a-dictionary">Anatomy of a Dictionary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-dictionaries">Creating Dictionaries</a></li>
 </ul>
   </nav></div>
 
