@@ -62,6 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'vocabulary-micropython/leds-vocabulary';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -522,28 +524,33 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="vocabulary">
 <h1>Vocabulary<a class="headerlink" href="#vocabulary" title="Permalink to this heading">#</a></h1>
 <p>TODO</p>
-<p><strong>analog signal</strong>: a signal that represents data as a continuous values.</p>
-<p><strong>anode</strong>:</p>
-<p><strong>breadboard</strong>:</p>
-<p><strong>breakout board</strong>:</p>
-<p><strong>Boolean</strong>:</p>
-<p><strong>cathode</strong>:</p>
-<p><strong>circuit</strong>:</p>
-<p><strong>conditional statement</strong>:</p>
-<p><strong>continuous values</strong>:</p>
-<p><strong>current</strong>:</p>
-<p><strong>debug</strong>:</p>
-<p><strong>digital signal</strong>: a signal that represents data as discrete values.</p>
-<p><strong>diode</strong>:</p>
-<p><strong>discrete values</strong>:</p>
-<p><strong>general-purpose input/output (GPIO)</strong>:</p>
-<p><strong>light-emitting diode (LED)</strong>:</p>
-<p><strong>negative terminal</strong>:</p>
-<p><strong>Ohm’s Law</strong>:</p>
-<p><strong>positive terminal</strong>:</p>
-<p><strong>resistance</strong>:</p>
-<p><strong>resistor</strong>:</p>
-<p><strong>voltage</strong>:</p>
+<p><strong>analog signal</strong>: a continuous representation of data, typically in the form of a continuously varying voltage or current, used to convey information such as sound, temperature, or light intensity.</p>
+<p><strong>anode</strong>: The electrode through which electric current flows out of a polarized electrical device.</p>
+<p><strong>breadboard</strong>: a solderless prototyping tool used to create temporary electrical connections for building and testing electronic circuits.</p>
+<p><strong>breakout board</strong>: an accessory for the BBC micro:bit that expands the micro:bit’s capabilities by providing additional pins and connectors, making it easier to connect external components such as sensors, actuators, and displays.</p>
+<p><strong>Boolean</strong>: a data type representing <code class="docutils literal notranslate"><span class="pre">True</span></code> (1) or <code class="docutils literal notranslate"><span class="pre">False</span></code> (0),  values.</p>
+<p><strong>cathode</strong>: The electrode through which electric current flows out of a polarized electrical device.</p>
+<p><strong>circuit</strong>:a closed loop or path through which electrical current can flow.</p>
+<p><strong>conditional statement</strong>: a programming construct that allows a program to execute specific instructions only if a specified condition is true.</p>
+<p><strong>current</strong>: the flow of electric charge through a conductor or circuit. It is typically measured in amperes (A) and represents the flow rate of electric charge past a given point in a circuit per unit of time.</p>
+<p><strong>debug</strong>: to identify and correct errors or defects in software code or hardware components, typically to ensure proper functionality or performance.</p>
+<p><strong>digital signal</strong>: A digital signal is a discrete representation of data, typically in binary values 0 and 1, used to convey information in digital systems such as computers, electronic devices, and switches.</p>
+<p><strong>diode</strong>: a semiconductor device that allows current to flow in one direction only.</p>
+<p><strong>electrode</strong>: is a conductor through which electrical current enters or leaves a medium.</p>
+<p><strong>general-purpose input/output (GPIO)</strong>: refers to pins on a microcontroller or single-board computer that can be programmed to serve as digital input or output pins.</p>
+<p><strong>light-emitting diode (LED)</strong>: a semiconductor device that emits light when an electric current passes through it.</p>
+<p><strong>negative terminal</strong>: the electrode through which electrons flow into the device, completing the circuit. It typically has a surplus of electrons, which are negatively charged particles, and is indicated by a minus (-) sign.</p>
+<p><strong>Ohm’s Law</strong>: a fundamental principle states that the current flowing through a conductor between two points is directly proportional to the voltage across the two points and inversely proportional to the resistance of the conductor.</p>
+<blockquote>
+<div><p>Where:</p>
+<p><span class="math notranslate nohighlight">\(V\)</span> is the voltage in volts (V), and <span class="math notranslate nohighlight">\(V=IR\)</span>.
+<span class="math notranslate nohighlight">\(I\)</span> is the current in amperes (A), and <span class="math notranslate nohighlight">\(I = \frac{V}{R}\)</span>
+<span class="math notranslate nohighlight">\(R\)</span> is the resistance in ohms (Ω), and <span class="math notranslate nohighlight">\(R = \frac{V}{I}\)</span></p>
+</div></blockquote>
+<p><strong>positive terminal</strong>: the electrode that has a higher voltage potential relative to the negative terminal. It is typically indicated by a plus sign (+) and is where current flows into the component or system.</p>
+<p><strong>resistance</strong>: the property of a material or component that opposes the flow of electric current. It is measured in ohms (Ω) and quantifies the difficulty of current passing through a given material or circuit element.</p>
+<p><strong>resistor</strong>: A resistor is an electronic component designed to introduce resistance into an electrical circuit, limiting the flow of electric current.</p>
+<p><strong>voltage</strong>: a measure of the electrical potential energy per unit charge between two points in an electrical circuit. It is typically measured in volts (V) and represents the force that drives electric current through a circuit.</p>
 </section>
 
     <script type="text/x-thebe-config">
