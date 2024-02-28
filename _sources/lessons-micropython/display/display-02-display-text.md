@@ -14,7 +14,7 @@ Delete all the lines of code from the default starter code on the start screen e
 
 ![micropython-display-scroll-01](assets/micropython-display-scroll-01.gif)
 
-Change the string from `'Hello'` to `'Python'`
+Change the string from `'Hello'` to `'Python'`.
 
 ![micropython-display-scroll-02](assets/micropython-display-scroll-02.png)
 
