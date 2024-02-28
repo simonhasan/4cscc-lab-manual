@@ -1,4 +1,4 @@
-# Connecting the micro:bit to a Computer
+# Connecting the micro:bit to a Computer with MakeCode
 
 Click on the button with three dots to start connecting the micro:bit.
 
