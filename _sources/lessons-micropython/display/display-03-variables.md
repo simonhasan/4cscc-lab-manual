@@ -101,7 +101,7 @@ An underscore (`_`) is the only valid special or non-alphanumeric character allo
 
 
 
-<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=x%20%3D%201%0Aprint%28'x%20id%3A',%20id%28x%29%29%0A%0Ay%20%3D%202%0Aprint%28'y%20id%3A',%20id%28y%29%29%0A%0Az%20%3D%20y%0Aprint%28'z%20id%3A',%20id%28z%29%29%0A%0Ay%20%3D%20x%0Aprint%28'x%20id%3A',%20id%28x%29%29%0Aprint%28'y%20id%3A',%20id%28y%29%29%0Aprint%28'z%20id%3A',%20id%28z%29%29%0A%0Ax%20%3D%20'1'%0Aprint%28'x%20id%3A',%20id%28x%29%29%0Aprint%28'y%20id%3A',%20id%28y%29%29%0Aprint%28'z%20id%3A',%20id%28z%29%29&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<iframe width="800" height="800" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=x%20%3D%201%0Aprint%28'x%20id%3A',%20id%28x%29%29%0A%0Ay%20%3D%202%0Aprint%28'y%20id%3A',%20id%28y%29%29%0A%0Az%20%3D%20y%0Aprint%28'z%20id%3A',%20id%28z%29%29%0A%0Ay%20%3D%20x%0Aprint%28'x%20id%3A',%20id%28x%29%29%0Aprint%28'y%20id%3A',%20id%28y%29%29%0Aprint%28'z%20id%3A',%20id%28z%29%29%0A%0Ax%20%3D%20'1'%0Aprint%28'x%20id%3A',%20id%28x%29%29%0Aprint%28'y%20id%3A',%20id%28y%29%29%0Aprint%28'z%20id%3A',%20id%28z%29%29&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 ## Checkpoint: Identify the Valid and Invalid variable names.
 

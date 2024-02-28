@@ -1,8 +1,6 @@
 # Displaying Strings
 
-To display a string on the micro:bit 5x5 LED matrix using Python, there are two methods.
-
-The string `"Python"` will be displayed on the 5x5 LED matrix in the following examples.
+To display a string on the micro:bit 5x5 LED matrix using Python, there are two methods. The string `'Python'` will be displayed on the 5x5 LED matrix in the following examples using both methods.
 
 ## Displaying Strings with Python
 
