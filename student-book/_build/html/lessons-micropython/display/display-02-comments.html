@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Loops &#8212; Four Corners Science and Computing Club Lab Notebook</title>
+    <title>Comments &#8212; Four Corners Science and Computing Club Lab Notebook</title>
   
   
   
@@ -62,11 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'lessons-micropython/display/display-04-loops';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lessons-micropython/display/display-02-comments';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Built-In Images" href="display-05-display-image.html" />
-    <link rel="prev" title="Variables" href="display-03-variables.html" />
+    <link rel="next" title="Displaying Strings" href="display-03-display-text.html" />
+    <link rel="prev" title="The String (str) Data Type" href="display-01-strings.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -211,11 +211,14 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../lessons/display-micropython.html">The micro:bit Display with Python</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="display-00-intro.html">The micro:bit Display</a></li>
 <li class="toctree-l2"><a class="reference internal" href="display-01-strings.html">The String (<code class="docutils literal notranslate"><span class="pre">str</span></code>) Data Type</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-02-display-text.html">Displaying Strings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-03-variables.html">Variables</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Loops</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-05-display-image.html">Built-In Images</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-06-display-custom-image.html">Displaying Custom Images</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-03-display-text.html">Displaying Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-04-variables.html">Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-05-loops.html">Loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-06-display-image.html">Built-In Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-07-display-custom-image.html">Displaying Custom Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-08-lists.html">Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-09-animation.html">Displaying an Animation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../vocabulary-micropython/display-vocabulary.html">Vocabulary</a></li>
 </ul>
 </li>
@@ -399,7 +402,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/simonhasan/4cscc-lab-manual/issues/new?title=Issue%20on%20page%20%2Flessons-micropython/display/display-04-loops.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/simonhasan/4cscc-lab-manual/issues/new?title=Issue%20on%20page%20%2Flessons-micropython/display/display-02-comments.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -429,7 +432,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/lessons-micropython/display/display-04-loops.md" target="_blank"
+      <li><a href="../../_sources/lessons-micropython/display/display-02-comments.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -500,9 +503,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -513,24 +514,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Loops</h1>
+    <h1>Comments</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-while-loop">The <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-simple-while-loop">A Simple <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-typical-micro-bit-while-loop">A Typical micro:bit <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-for-loop">The <code class="docutils literal notranslate"><span class="pre">for</span></code> Loop</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -540,63 +528,27 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="loops">
-<h1>Loops<a class="headerlink" href="#loops" title="Permalink to this heading">#</a></h1>
-<p>The following section explores the concept of loops, which are essential constructs used in programming to execute a block of code repeatedly. By understanding how loops function in Python, one can efficiently automate tasks, iterate through data structures, and streamline the execution of repetitive operations within a program.</p>
-<section id="the-while-loop">
-<h2>The <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop<a class="headerlink" href="#the-while-loop" title="Permalink to this heading">#</a></h2>
-<p>In Python, a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop is a control flow statement that repeatedly executes a code block if a specified condition remains <code class="docutils literal notranslate"><span class="pre">True</span></code>. It provides a way to create iterative processes in your code, allowing you to repeat instructions until a specific condition is met or becomes <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
-<p>The syntax of a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop consists of the keyword <code class="docutils literal notranslate"><span class="pre">while</span></code>, followed by a condition, and a colon <code class="docutils literal notranslate"><span class="pre">:</span></code>. The code block to be executed repeatedly is indented underneath the <code class="docutils literal notranslate"><span class="pre">while</span></code> statement. Inside the code block, you typically include statements that update the variables involved in the condition, ensuring that the loop eventually terminates when the condition evaluates to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
-<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
-<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-
-<span class="c1"># Scroll &quot;Python&quot; on the display</span>
-<span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s1">&#39;Python&#39;</span><span class="p">)</span> 
+  <section class="tex2jax_ignore mathjax_ignore" id="comments">
+<h1>Comments<a class="headerlink" href="#comments" title="Permalink to this heading">#</a></h1>
+<p>Comments in programming languages are like silent narrators, providing insight and clarity to the code without actually being executed. These annotations serve as textual explanations or reminders within the source code, aiding developers in understanding, maintaining, and collaborating on software projects. Comments can range from simple explanations of code logic to detailed documentation of complex algorithms. Comments can also be used to annotate code to</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># This is a comment.</span>
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
-<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># This is a single-lined comment.</span>
 
-
-<span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;Python&#39;</span>
-
-<span class="c1"># Scroll &quot;Python&quot; on the display</span>
-<span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">message</span><span class="p">)</span> 
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">This </span>
+<span class="sd">is </span>
+<span class="sd">a </span>
+<span class="sd">multi-lined</span>
+<span class="sd">comment</span>
+<span class="sd">&#39;&#39;&#39;</span>
 </pre></div>
 </div>
-<section id="a-simple-while-loop">
-<h3>A Simple <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop<a class="headerlink" href="#a-simple-while-loop" title="Permalink to this heading">#</a></h3>
-<p><img alt="while-flowchart-generic" src="../../_images/while-flowchart-generic.png" /></p>
-</section>
-<section id="a-typical-micro-bit-while-loop">
-<h3>A Typical micro:bit <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop<a class="headerlink" href="#a-typical-micro-bit-while-loop" title="Permalink to this heading">#</a></h3>
-<p><img alt="while-flowchart-infinite" src="../../_images/while-flowchart-infinite.png" /></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
-<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-
-<span class="c1"># Code in a &#39;while True:&#39; loop repeats forever</span>
-<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="c1"># Scroll &quot;Python&quot; on the display</span>
-    <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s1">&#39;Python&#39;</span><span class="p">)</span> 
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="c1">#print(&#39;&#39;)</span>
 </pre></div>
 </div>
-<p><img alt="while-flowchart-microbit" src="../../_images/while-flowchart-microbit.png" /></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
-<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
-
-<span class="c1"># Code in a &#39;while True:&#39; loop repeats forever</span>
-<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="c1"># Show each character of &quot;Python&quot; individually on the display</span>
-    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s1">&#39;Python&#39;</span><span class="p">)</span> 
-</pre></div>
-</div>
-<p>TODO</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="the-for-loop">
-<h2>The <code class="docutils literal notranslate"><span class="pre">for</span></code> Loop<a class="headerlink" href="#the-for-loop" title="Permalink to this heading">#</a></h2>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -630,20 +582,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="display-03-variables.html"
+       href="display-01-strings.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Variables</p>
+        <p class="prev-next-title">The String (<code class="docutils literal notranslate"><span class="pre">str</span></code>) Data Type</p>
       </div>
     </a>
     <a class="right-next"
-       href="display-05-display-image.html"
+       href="display-03-display-text.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Built-In Images</p>
+        <p class="prev-next-title">Displaying Strings</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -654,25 +606,7 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-while-loop">The <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-simple-while-loop">A Simple <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-typical-micro-bit-while-loop">A Typical micro:bit <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-for-loop">The <code class="docutils literal notranslate"><span class="pre">for</span></code> Loop</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
+                <div class="bd-sidebar-secondary bd-toc"></div>
               
             
           </div>
