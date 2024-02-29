@@ -1,4 +1,8 @@
-# Python: The `while` Loop
+# Loops
+
+The following section explores the concept of loops, which are essential constructs used in programming to execute a block of code repeatedly. By understanding how loops function in Python, one can efficiently automate tasks, iterate through data structures, and streamline the execution of repetitive operations within a program. 
+
+## The `while` Loop
 
 In Python, a `while` loop is a control flow statement that repeatedly executes a code block if a specified condition remains `True`. It provides a way to create iterative processes in your code, allowing you to repeat instructions until a specific condition is met or becomes `False`.
 
@@ -29,11 +33,11 @@ display.scroll(message)
 
 
 
-## A Simple `while` Loop
+### A Simple `while` Loop
 
 ![while-flowchart-generic](assets/while-flowchart-generic.png)
 
-## A Typical micro:bit `while` Loop
+### A Typical micro:bit `while` Loop
 
 ![while-flowchart-infinite](assets/while-flowchart-infinite.png)
 
@@ -62,3 +66,7 @@ while True:
 ```
 
 TODO
+
+---
+
+## The `for` Loop

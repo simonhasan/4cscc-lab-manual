@@ -11,3 +11,5 @@ Key onboard components of the micro:bit include:
 5. **Compass**: A sensor that detects the direction of the Earth's magnetic field, providing compass functionality and orientation sensing capabilities.
 6. **Light Sensor**: A sensor that measures the intensity of ambient light in the surrounding environment, enabling the micro:bit to respond to changes in lighting conditions.
 7. **Temperature Sensor**: A sensor that measures the ambient temperature, allowing the micro:bit to detect temperature changes and provide temperature-related functionality.
+
+In this season, the onboard components will be used to make a fidget device   TODO:EXPLAIN LAB

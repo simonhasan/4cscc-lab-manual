@@ -1,6 +1,9 @@
 # Imports go at the top
 from microbit import *
 
+# Turn off the display
+display.off() # This disables the display to access GPIO pins
+
 # Set the LED pins
 red_pin = pin1   # pin1 is the red pin
 green_pin = pin2 # pin2 is the green pin

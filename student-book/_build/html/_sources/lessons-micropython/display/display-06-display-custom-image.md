@@ -54,7 +54,7 @@ display.show(coyote)
 
 ![quiz-custom-image-microbit](assets/quiz-custom-image-microbit.png)
 
-Which of the snippets for a custom image is used for the image above?
+Which of the following code snippets is used to create the custom image above?
 
 
 

@@ -25,6 +25,7 @@ def set_random_blue():
     green_pin.write_analog(0)               # Set green_pin to 0
     blue_pin.write_analog(randint(0, 255))  # Set blue_pin to a random value
 
+# Define a function to set the LED to off
 def set_off():
     red_pin.write_analog(0)                 # Set red_pin to 0
     green_pin.write_analog(0)               # Set green_pin to 0
@@ -43,5 +44,6 @@ while True:
         set_random_blue()
     # If no buttons are pressed, set the LED to the color off
     else:
+        # Set the LED to off
         set_off()
     sleep(100) # Wait for 100ms (0.1 seconds)

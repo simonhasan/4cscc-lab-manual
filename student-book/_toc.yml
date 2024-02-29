@@ -16,6 +16,12 @@ parts:
       - file: lessons-makecode/introduction/introduction-01-makecode
       - file: lessons-makecode/introduction/introduction-02-connecting
       - file: lessons-makecode/introduction/introduction-03-running-code
+    - file: lessons/introduction-micropython
+      sections:
+      - file: lessons-micropython/introduction/introduction-00-microbit
+      - file: lessons-micropython/introduction/introduction-01-editor
+      - file: lessons-micropython/introduction/introduction-02-connecting
+      - file: lessons-micropython/introduction/introduction-03-running-code
     - file: labs/introduction-lab
   - caption: "The micro:bit Display"
     chapters:
@@ -36,12 +42,14 @@ parts:
       sections:
       - file: lessons-micropython/display/display-00-intro
       - file: lessons-micropython/display/display-01-strings
-      - file: lessons-micropython/display/display-02-display-text
-      - file: lessons-micropython/display/display-03-variables
-      - file: lessons-micropython/display/display-04-while-loop
-      - file: lessons-micropython/display/display-05-display-image
-      - file: lessons-micropython/display/display-06-display-custom-image
-      - file: lessons-micropython/display/display-07-animation 
+      - file: lessons-micropython/display/display-02-comments
+      - file: lessons-micropython/display/display-03-display-text
+      - file: lessons-micropython/display/display-04-variables
+      - file: lessons-micropython/display/display-05-loops
+      - file: lessons-micropython/display/display-06-display-image
+      - file: lessons-micropython/display/display-07-display-custom-image
+      - file: lessons-micropython/display/display-08-lists
+      - file: lessons-micropython/display/display-09-animation 
       - file: vocabulary-micropython/display-vocabulary
     - file: labs/display-lab
     - file: rubrics/display-rubric

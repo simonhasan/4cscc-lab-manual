@@ -1,5 +1,7 @@
 # The Buzzer/Speaker
 
+TODO:ASK IF THIS MAY BE DISRUPTIVE
+
 The micro:bit **piezoelectric buzzer** or sometimes called a speaker is a built-in output component that generates sound using a piezoelectric element. When an electric current is applied to the piezoelectric element, it vibrates at a high frequency, producing audible sound waves.
 
 Using the piezoelectric buzzer, the micro:bit can produce various sounds, tones, and melodies based on instructions provided in programmed applications. This allows for auditory feedback, alerts, or entertainment in interactive projects.

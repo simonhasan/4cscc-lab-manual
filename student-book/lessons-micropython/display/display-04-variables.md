@@ -17,8 +17,8 @@ Here are some examples:
 
 ```python
 led_pin = 1
-name = ''
-sensor_val = 
+name = 'Oscar'
+sensor_val = analog_read(sensor_pin)
 ```
 
 
@@ -64,36 +64,46 @@ An underscore (`_`) is the only valid special or non-alphanumeric character allo
 - **`and`**: Used for logical AND operations.
 - **`or`**: Used for logical OR operations.
 - **`not`**: Used for logical NOT operations.
-- `if`, `elif`, `else`: Used for conditional statements.
-- `while`: Used for creating loops.
-- `for`: Used for iterating over sequences.
-- `break`: Used to exit a loop prematurely.
-- `continue`: Used to skip the current iteration and proceed to the next one.
-- `pass`: A placeholder statement that does nothing.
-- `return`: Used to exit a function and return a value.
-- `try`, `except`, `finally`: Used for exception handling.
-- `assert`: Used for debugging and ensuring conditions are met.
-- `with`: Used for context management (e.g., file handling).
+- **`if`**, **`elif`**, **`else`**: Used for conditional statements.
+- **`while`**: Used for creating loops.
+- **`for`**: Used for iterating over sequences.
+- **`break`**: Used to exit a loop prematurely.
+- **`continue`**: Used to skip the current iteration and proceed to the next one.
+- **`pass`**: A placeholder statement that does nothing.
+- **`return`**: Used to exit a function and return a value.
+- **`try`**, **`except`**, **`finally`**: Used for exception handling.
+- **`assert`**: Used for debugging and ensuring conditions are met.
+- **`with`**: Used for context management (e.g., file handling).
 #### Data Types and Constants:
-- `True`, `False`: Boolean constants.
-- `None`: Represents the absence of a value (similar to null in other languages).
+- **`True`**, **`False`**: Boolean constants.
+- **`None`**: Represents the absence of a value (similar to null in other languages).
 #### Function and Class Keywords:
-- `def`: Used to define functions.
-- `class`: Used to define classes.
+- **`def`**: Used to define functions.
+- **`class`**: Used to define classes.
 #### Other Keywords:
-`global`: Used to declare global variables.
-`lambda`: Used to create anonymous functions.
-`yield`: Used in generator functions.
+**`global`**: Used to declare global variables.
+**`lambda`**: Used to create anonymous functions.
+**`yield`**: Used in generator functions.
 
 #### micro:bit Keywords (Some are legal, but should be avoided)
-- `microbit`: The micro:bit module name.
+- **`microbit`**: The micro:bit module name.
 - TODO
+
+## Python Naming Conventions
+
+
+
+### Constants
+
+
 
 ## The Behavior of Variables
 
+TODO
 
 
-<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=x%20%3D%201%0Aprint%28'x%20id%3A',%20id%28x%29%29%0A%0Ay%20%3D%202%0Aprint%28'y%20id%3A',%20id%28y%29%29%0A%0Az%20%3D%20y%0Aprint%28'z%20id%3A',%20id%28z%29%29%0A%0Ay%20%3D%20x%0Aprint%28'x%20id%3A',%20id%28x%29%29%0Aprint%28'y%20id%3A',%20id%28y%29%29%0Aprint%28'z%20id%3A',%20id%28z%29%29%0A%0Ax%20%3D%20'1'%0Aprint%28'x%20id%3A',%20id%28x%29%29%0Aprint%28'y%20id%3A',%20id%28y%29%29%0Aprint%28'z%20id%3A',%20id%28z%29%29&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+<iframe width="800" height="800" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=x%20%3D%201%0Aprint%28'x%20id%3A',%20id%28x%29%29%0A%0Ay%20%3D%202%0Aprint%28'y%20id%3A',%20id%28y%29%29%0A%0Az%20%3D%20y%0Aprint%28'z%20id%3A',%20id%28z%29%29%0A%0Ay%20%3D%20x%0Aprint%28'x%20id%3A',%20id%28x%29%29%0Aprint%28'y%20id%3A',%20id%28y%29%29%0Aprint%28'z%20id%3A',%20id%28z%29%29%0A%0Ax%20%3D%20'1'%0Aprint%28'x%20id%3A',%20id%28x%29%29%0Aprint%28'y%20id%3A',%20id%28y%29%29%0Aprint%28'z%20id%3A',%20id%28z%29%29&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 ## Checkpoint: Identify the Valid and Invalid variable names.
 
@@ -119,11 +129,11 @@ Discuss the following:
 Solution:
 |     |Variable Name |Valid or Invalid|Reason                                                       |
 |-----|--------------|----------------|-------------------------------------------------------------|
-|**A**|`sensor 1 val`|**Invalid**     |The variable name has whitespace                             |
+|**A**|`sensor 1 val`|***Invalid***   |The variable name has whitespace.                            |
 |**B**|`sensor1_val` |**Valid**       |                                                             |
-|**C**|`1sensor_val` |**Invalid**     |The variable name starts with a number                       |
-|**D**|`sensor1-val` |**Invalid**     |The variable name has a special character `-` other than `_`.|
-|**E**|`sensor_v@l`  |**Invalid**     |The variable name has a special character `@` other than `_`.|
+|**C**|`1sensor_val` |***Invalid***   |The variable name starts with a number.                      |
+|**D**|`sensor1-val` |***Invalid***   |The variable name has a special character `-` other than `_`.|
+|**E**|`sensor_v@l`  |***Invalid***   |The variable name has a special character `@` other than `_`.|
 |**F**|`SENSOR_VAL`  |**Valid**       |                                                             |
 
 ```

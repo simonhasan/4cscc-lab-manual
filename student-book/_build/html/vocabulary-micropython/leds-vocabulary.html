@@ -62,6 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'vocabulary-micropython/leds-vocabulary';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -179,8 +181,15 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="../lessons/introduction-makecode.html">Introduction to Using the micro:bit with MakeCode</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-makecode/introduction/introduction-00-microbit.html">What is the BBC micro:bit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-makecode/introduction/introduction-01-makecode.html">The MakeCode Editor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lessons-makecode/introduction/introduction-02-connecting.html">Connecting the micro:bit to a Computer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lessons-makecode/introduction/introduction-03-running-code.html">Running Code on a micro:bit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lessons-makecode/introduction/introduction-02-connecting.html">Connecting the micro:bit to a Computer with MakeCode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lessons-makecode/introduction/introduction-03-running-code.html">Running Code on a micro:bit with MakeCode</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lessons/introduction-micropython.html">Introduction to Using the micro:bit with Python</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/introduction/introduction-00-microbit.html">What is the BBC micro:bit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/introduction/introduction-01-editor.html">The Python Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/introduction/introduction-02-connecting.html">Connecting the micro:bit to a Computer with the Python Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/introduction/introduction-03-running-code.html">Running Code on a micro:bit with the Python Editor</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../labs/introduction-lab.html">Lab: Tinkering with MakeCode and the micro:bit</a></li>
@@ -191,7 +200,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../intros/display-intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../objectives/display-objectives.html">Objectives</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../materials/display-materials.html">Materials</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../lessons/display-makecode.html">The micro:bit Display with MakeCode</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lessons/display-makecode.html">The micro:bit Display with MakeCode</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-makecode/display/display-00-intro.html">The micro:bit Display</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-makecode/display/display-01-strings.html">The String Basic Type</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-makecode/display/display-02-display-text.html">Displaying Strings</a></li>
@@ -201,15 +210,14 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../lessons-makecode/display/display-06-display-custom-image.html">Displaying Custom Images</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../lessons/display-micropython.html">The micro:bit Display with Python</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lessons/display-micropython.html">The micro:bit Display with Python</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/display/display-00-intro.html">The micro:bit Display</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/display/display-01-strings.html">The String (<code class="docutils literal notranslate"><span class="pre">str</span></code>) Data Type</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/display/display-02-display-text.html">Displaying Strings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/display/display-03-variables.html">Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/display/display-04-while-loop.html">Python: The <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/display/display-04-loops.html">Loops</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/display/display-05-display-image.html">Built-In Images</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/display/display-06-display-custom-image.html">Displaying Custom Images</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/display/display-07-animation.html">Displaying an Animation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="display-vocabulary.html">Vocabulary</a></li>
 </ul>
 </li>
@@ -223,7 +231,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../intros/onboard-components-intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../objectives/onboard-components-objectives.html">Objectives</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../materials/onboard-components-materials.html">Materials</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../lessons/onboard-components-makecode.html">Onboard Components with MakeCode</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lessons/onboard-components-makecode.html">Onboard Components with MakeCode</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-makecode/onboard-components/onboard-components-00-intro.html">An Introduction to the Onboard Components</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-makecode/onboard-components/onboard-components-01-number.html">The Basic Number Type</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-makecode/onboard-components/onboard-components-02-buttons.html">The A and B Buttons</a></li>
@@ -236,7 +244,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../lessons-makecode/onboard-components/onboard-components-09-buzzer.html">MakeCode: The Buzzer</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../lessons/onboard-components-micropython.html">Onboard Components with Python</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lessons/onboard-components-micropython.html">Onboard Components with Python</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/onboard-components/onboard-components-00-intro.html">Introduction to the Onboard Components</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/onboard-components/onboard-components-01-integers.html">Numeric Data Types</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/onboard-components/onboard-components-02-serial.html">Serial Communication</a></li>
@@ -261,7 +269,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../intros/leds-intro.html">Introduction to Light-Emitting Diodes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../objectives/leds-objectives.html">Objectives</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../materials/leds-materials.html">Materials</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../lessons/leds-makecode.html">Using LEDs with MakeCode</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lessons/leds-makecode.html">Using LEDs with MakeCode</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-makecode/leds/leds-00-intro.html">Introduction to LEDs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-makecode/leds/leds-01-microbit-pins.html">The micro:bit General-Purpose Input/Output (GPIO) Pins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-makecode/leds/leds-02-breadboard.html">Breadboards</a></li>
@@ -278,7 +286,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../lessons-makecode/leds/leds-13-light-led.html">Using an LED with the Light Sensor</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../lessons/leds-micropython.html">Using LEDS with Python</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../lessons/leds-micropython.html">Using LEDS with Python</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/leds/leds-00-intro.html">Introduction to LEDs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/leds/leds-01-microbit-pins.html">The micro:bit General-Purpose Input/Output (GPIO) Pins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/leds/leds-02-breadboard.html">Breadboards</a></li>
@@ -306,7 +314,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../intros/rgb-led-intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../objectives/rgb-led-objectives.html">Objectives</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../materials/rgb-led-materials.html">Materials</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../lessons/rgb-led-micropython.html">Using RGB LEDS with Python</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lessons/rgb-led-micropython.html">Using RGB LEDS with Python</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/rgb-led/rgb-led-00-intro.html">Introduction to RGB LEDs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/rgb-led/rgb-led-01-rgb-led.html">RGB LEDs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lessons-micropython/rgb-led/rgb-led-02-binary-bits-and-bytes.html">Binary, Bits, and Bytes</a></li>
@@ -522,28 +530,33 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="vocabulary">
 <h1>Vocabulary<a class="headerlink" href="#vocabulary" title="Permalink to this heading">#</a></h1>
 <p>TODO</p>
-<p><strong>analog signal</strong>: a signal that represents data as a continuous values.</p>
-<p><strong>anode</strong>:</p>
-<p><strong>breadboard</strong>:</p>
-<p><strong>breakout board</strong>:</p>
-<p><strong>Boolean</strong>:</p>
-<p><strong>cathode</strong>:</p>
-<p><strong>circuit</strong>:</p>
-<p><strong>conditional statement</strong>:</p>
-<p><strong>continuous values</strong>:</p>
-<p><strong>current</strong>:</p>
-<p><strong>debug</strong>:</p>
-<p><strong>digital signal</strong>: a signal that represents data as discrete values.</p>
-<p><strong>diode</strong>:</p>
-<p><strong>discrete values</strong>:</p>
-<p><strong>general-purpose input/output (GPIO)</strong>:</p>
-<p><strong>light-emitting diode (LED)</strong>:</p>
-<p><strong>negative terminal</strong>:</p>
-<p><strong>Ohm’s Law</strong>:</p>
-<p><strong>positive terminal</strong>:</p>
-<p><strong>resistance</strong>:</p>
-<p><strong>resistor</strong>:</p>
-<p><strong>voltage</strong>:</p>
+<p><strong>analog signal</strong>: a continuous representation of data, typically in the form of a continuously varying voltage or current, used to convey information such as sound, temperature, or light intensity.</p>
+<p><strong>anode</strong>: The electrode through which electric current flows out of a polarized electrical device.</p>
+<p><strong>breadboard</strong>: a solderless prototyping tool used to create temporary electrical connections for building and testing electronic circuits.</p>
+<p><strong>breakout board</strong>: an accessory for the BBC micro:bit that expands the micro:bit’s capabilities by providing additional pins and connectors, making it easier to connect external components such as sensors, actuators, and displays.</p>
+<p><strong>Boolean</strong>: a data type representing <code class="docutils literal notranslate"><span class="pre">True</span></code> (1) or <code class="docutils literal notranslate"><span class="pre">False</span></code> (0),  values.</p>
+<p><strong>cathode</strong>: The electrode through which electric current flows out of a polarized electrical device.</p>
+<p><strong>circuit</strong>:a closed loop or path through which electrical current can flow.</p>
+<p><strong>conditional statement</strong>: a programming construct that allows a program to execute specific instructions only if a specified condition is true.</p>
+<p><strong>current</strong>: the flow of electric charge through a conductor or circuit. It is typically measured in amperes (A) and represents the flow rate of electric charge past a given point in a circuit per unit of time.</p>
+<p><strong>debug</strong>: to identify and correct errors or defects in software code or hardware components, typically to ensure proper functionality or performance.</p>
+<p><strong>digital signal</strong>: A digital signal is a discrete representation of data, typically in binary values 0 and 1, used to convey information in digital systems such as computers, electronic devices, and switches.</p>
+<p><strong>diode</strong>: a semiconductor device that allows current to flow in one direction only.</p>
+<p><strong>electrode</strong>: is a conductor through which electrical current enters or leaves a medium.</p>
+<p><strong>general-purpose input/output (GPIO)</strong>: refers to pins on a microcontroller or single-board computer that can be programmed to serve as digital input or output pins.</p>
+<p><strong>light-emitting diode (LED)</strong>: a semiconductor device that emits light when an electric current passes through it.</p>
+<p><strong>negative terminal</strong>: the electrode through which electrons flow into the device, completing the circuit. It typically has a surplus of electrons, which are negatively charged particles, and is indicated by a minus (-) sign.</p>
+<p><strong>Ohm’s Law</strong>: a fundamental principle states that the current flowing through a conductor between two points is directly proportional to the voltage across the two points and inversely proportional to the resistance of the conductor.</p>
+<blockquote>
+<div><p>Where:</p>
+<p><span class="math notranslate nohighlight">\(V\)</span> is the voltage in volts (V), and <span class="math notranslate nohighlight">\(V=IR\)</span>.
+<span class="math notranslate nohighlight">\(I\)</span> is the current in amperes (A), and <span class="math notranslate nohighlight">\(I = \frac{V}{R}\)</span>
+<span class="math notranslate nohighlight">\(R\)</span> is the resistance in ohms (Ω), and <span class="math notranslate nohighlight">\(R = \frac{V}{I}\)</span></p>
+</div></blockquote>
+<p><strong>positive terminal</strong>: the electrode that has a higher voltage potential relative to the negative terminal. It is typically indicated by a plus sign (+) and is where current flows into the component or system.</p>
+<p><strong>resistance</strong>: the property of a material or component that opposes the flow of electric current. It is measured in ohms (Ω) and quantifies the difficulty of current passing through a given material or circuit element.</p>
+<p><strong>resistor</strong>: A resistor is an electronic component designed to introduce resistance into an electrical circuit, limiting the flow of electric current.</p>
+<p><strong>voltage</strong>: a measure of the electrical potential energy per unit charge between two points in an electrical circuit. It is typically measured in volts (V) and represents the force that drives electric current through a circuit.</p>
 </section>
 
     <script type="text/x-thebe-config">

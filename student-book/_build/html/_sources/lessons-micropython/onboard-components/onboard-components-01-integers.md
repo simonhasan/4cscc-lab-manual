@@ -61,14 +61,18 @@ TODO:ADD TRINKET HERE
 
 ### The Multiplication Operator
 
-
+TODO
 
 ### The Division Operator
 
+TODO
+
+## Comparison TODO
+
 | Mathematical Operator | Python Operator | Use  |
 | --------------------- | --------------- | ---- |
-| $+$                   | `+`             |      |
-| $-$                   | `-`             |      |
-| $\times$ or $\cdot$   | `*`             |      |
-| $\div$                | `/` or`//`      |      |
+| $+$                   | `+`             | TODO |
+| $-$                   | `-`             | TODO |
+| $\times$ or $\cdot$   | `*`             | TODO |
+| $\div$                | `/` or`//`      | TODO |
 

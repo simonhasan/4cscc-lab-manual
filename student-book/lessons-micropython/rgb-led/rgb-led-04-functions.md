@@ -41,6 +41,12 @@ $$
 
 Functions do not need to be numeric in Python.
 
+## Anatomy of a Function
+
+
+
+![structure-func](assets/structure-func.png)
+
 
 
 ## Defining Functions in Python

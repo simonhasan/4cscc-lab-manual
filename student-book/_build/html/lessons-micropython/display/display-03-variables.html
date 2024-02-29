@@ -67,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'lessons-micropython/display/display-03-variables';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Python: The while Loop" href="display-04-while-loop.html" />
+    <link rel="next" title="Loops" href="display-04-loops.html" />
     <link rel="prev" title="Displaying Strings" href="display-02-display-text.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -181,8 +181,15 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/introduction-makecode.html">Introduction to Using the micro:bit with MakeCode</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/introduction/introduction-00-microbit.html">What is the BBC micro:bit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/introduction/introduction-01-makecode.html">The MakeCode Editor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/introduction/introduction-02-connecting.html">Connecting the micro:bit to a Computer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/introduction/introduction-03-running-code.html">Running Code on a micro:bit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/introduction/introduction-02-connecting.html">Connecting the micro:bit to a Computer with MakeCode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/introduction/introduction-03-running-code.html">Running Code on a micro:bit with MakeCode</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/introduction-micropython.html">Introduction to Using the micro:bit with Python</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/introduction-00-microbit.html">What is the BBC micro:bit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/introduction-01-editor.html">The Python Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/introduction-02-connecting.html">Connecting the micro:bit to a Computer with the Python Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introduction/introduction-03-running-code.html">Running Code on a micro:bit with the Python Editor</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../labs/introduction-lab.html">Lab: Tinkering with MakeCode and the micro:bit</a></li>
@@ -193,7 +200,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../intros/display-intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../objectives/display-objectives.html">Objectives</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../materials/display-materials.html">Materials</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/display-makecode.html">The micro:bit Display with MakeCode</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/display-makecode.html">The micro:bit Display with MakeCode</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/display/display-00-intro.html">The micro:bit Display</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/display/display-01-strings.html">The String Basic Type</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/display/display-02-display-text.html">Displaying Strings</a></li>
@@ -203,15 +210,14 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/display/display-06-display-custom-image.html">Displaying Custom Images</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../lessons/display-micropython.html">The micro:bit Display with Python</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../lessons/display-micropython.html">The micro:bit Display with Python</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="display-00-intro.html">The micro:bit Display</a></li>
 <li class="toctree-l2"><a class="reference internal" href="display-01-strings.html">The String (<code class="docutils literal notranslate"><span class="pre">str</span></code>) Data Type</a></li>
 <li class="toctree-l2"><a class="reference internal" href="display-02-display-text.html">Displaying Strings</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-04-while-loop.html">Python: The <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-04-loops.html">Loops</a></li>
 <li class="toctree-l2"><a class="reference internal" href="display-05-display-image.html">Built-In Images</a></li>
 <li class="toctree-l2"><a class="reference internal" href="display-06-display-custom-image.html">Displaying Custom Images</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-07-animation.html">Displaying an Animation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../vocabulary-micropython/display-vocabulary.html">Vocabulary</a></li>
 </ul>
 </li>
@@ -225,7 +231,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../intros/onboard-components-intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../objectives/onboard-components-objectives.html">Objectives</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../materials/onboard-components-materials.html">Materials</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/onboard-components-makecode.html">Onboard Components with MakeCode</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/onboard-components-makecode.html">Onboard Components with MakeCode</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-00-intro.html">An Introduction to the Onboard Components</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-01-number.html">The Basic Number Type</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-02-buttons.html">The A and B Buttons</a></li>
@@ -238,7 +244,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/onboard-components/onboard-components-09-buzzer.html">MakeCode: The Buzzer</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/onboard-components-micropython.html">Onboard Components with Python</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/onboard-components-micropython.html">Onboard Components with Python</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-00-intro.html">Introduction to the Onboard Components</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-01-integers.html">Numeric Data Types</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../onboard-components/onboard-components-02-serial.html">Serial Communication</a></li>
@@ -263,7 +269,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../intros/leds-intro.html">Introduction to Light-Emitting Diodes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../objectives/leds-objectives.html">Objectives</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../materials/leds-materials.html">Materials</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/leds-makecode.html">Using LEDs with MakeCode</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/leds-makecode.html">Using LEDs with MakeCode</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-00-intro.html">Introduction to LEDs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-01-microbit-pins.html">The micro:bit General-Purpose Input/Output (GPIO) Pins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-02-breadboard.html">Breadboards</a></li>
@@ -280,7 +286,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../lessons-makecode/leds/leds-13-light-led.html">Using an LED with the Light Sensor</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/leds-micropython.html">Using LEDS with Python</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/leds-micropython.html">Using LEDS with Python</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-00-intro.html">Introduction to LEDs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-01-microbit-pins.html">The micro:bit General-Purpose Input/Output (GPIO) Pins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../leds/leds-02-breadboard.html">Breadboards</a></li>
@@ -308,7 +314,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../intros/rgb-led-intro.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../objectives/rgb-led-objectives.html">Objectives</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../materials/rgb-led-materials.html">Materials</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/rgb-led-micropython.html">Using RGB LEDS with Python</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../lessons/rgb-led-micropython.html">Using RGB LEDS with Python</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../rgb-led/rgb-led-00-intro.html">Introduction to RGB LEDs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../rgb-led/rgb-led-01-rgb-led.html">RGB LEDs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../rgb-led/rgb-led-02-binary-bits-and-bytes.html">Binary, Bits, and Bytes</a></li>
@@ -534,6 +540,10 @@ document.write(`
 </li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-naming-conventions">Python Naming Conventions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#constants">Constants</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-behavior-of-variables">The Behavior of Variables</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkpoint-identify-the-valid-and-invalid-variable-names">Checkpoint: Identify the Valid and Invalid variable names.</a></li>
 </ul>
@@ -559,8 +569,8 @@ document.write(`
 </div>
 <p>Here are some examples:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">led_pin</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-<span class="n">sensor_val</span> <span class="o">=</span> 
+<span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Oscar&#39;</span>
+<span class="n">sensor_val</span> <span class="o">=</span> <span class="n">analog_read</span><span class="p">(</span><span class="n">sensor_pin</span><span class="p">)</span>
 </pre></div>
 </div>
 <section id="naming-variables">
@@ -621,50 +631,57 @@ document.write(`
 <li><p><strong><code class="docutils literal notranslate"><span class="pre">and</span></code></strong>: Used for logical AND operations.</p></li>
 <li><p><strong><code class="docutils literal notranslate"><span class="pre">or</span></code></strong>: Used for logical OR operations.</p></li>
 <li><p><strong><code class="docutils literal notranslate"><span class="pre">not</span></code></strong>: Used for logical NOT operations.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">elif</span></code>, <code class="docutils literal notranslate"><span class="pre">else</span></code>: Used for conditional statements.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">while</span></code>: Used for creating loops.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">for</span></code>: Used for iterating over sequences.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">break</span></code>: Used to exit a loop prematurely.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">continue</span></code>: Used to skip the current iteration and proceed to the next one.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pass</span></code>: A placeholder statement that does nothing.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">return</span></code>: Used to exit a function and return a value.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">try</span></code>, <code class="docutils literal notranslate"><span class="pre">except</span></code>, <code class="docutils literal notranslate"><span class="pre">finally</span></code>: Used for exception handling.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">assert</span></code>: Used for debugging and ensuring conditions are met.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">with</span></code>: Used for context management (e.g., file handling).</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">if</span></code></strong>, <strong><code class="docutils literal notranslate"><span class="pre">elif</span></code></strong>, <strong><code class="docutils literal notranslate"><span class="pre">else</span></code></strong>: Used for conditional statements.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">while</span></code></strong>: Used for creating loops.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">for</span></code></strong>: Used for iterating over sequences.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">break</span></code></strong>: Used to exit a loop prematurely.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">continue</span></code></strong>: Used to skip the current iteration and proceed to the next one.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">pass</span></code></strong>: A placeholder statement that does nothing.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">return</span></code></strong>: Used to exit a function and return a value.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">try</span></code></strong>, <strong><code class="docutils literal notranslate"><span class="pre">except</span></code></strong>, <strong><code class="docutils literal notranslate"><span class="pre">finally</span></code></strong>: Used for exception handling.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">assert</span></code></strong>: Used for debugging and ensuring conditions are met.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">with</span></code></strong>: Used for context management (e.g., file handling).</p></li>
 </ul>
 </section>
 <section id="data-types-and-constants">
 <h4>Data Types and Constants:<a class="headerlink" href="#data-types-and-constants" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code>, <code class="docutils literal notranslate"><span class="pre">False</span></code>: Boolean constants.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">None</span></code>: Represents the absence of a value (similar to null in other languages).</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">True</span></code></strong>, <strong><code class="docutils literal notranslate"><span class="pre">False</span></code></strong>: Boolean constants.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">None</span></code></strong>: Represents the absence of a value (similar to null in other languages).</p></li>
 </ul>
 </section>
 <section id="function-and-class-keywords">
 <h4>Function and Class Keywords:<a class="headerlink" href="#function-and-class-keywords" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">def</span></code>: Used to define functions.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">class</span></code>: Used to define classes.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">def</span></code></strong>: Used to define functions.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">class</span></code></strong>: Used to define classes.</p></li>
 </ul>
 </section>
 <section id="other-keywords">
 <h4>Other Keywords:<a class="headerlink" href="#other-keywords" title="Permalink to this heading">#</a></h4>
-<p><code class="docutils literal notranslate"><span class="pre">global</span></code>: Used to declare global variables.
-<code class="docutils literal notranslate"><span class="pre">lambda</span></code>: Used to create anonymous functions.
-<code class="docutils literal notranslate"><span class="pre">yield</span></code>: Used in generator functions.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">global</span></code></strong>: Used to declare global variables.
+<strong><code class="docutils literal notranslate"><span class="pre">lambda</span></code></strong>: Used to create anonymous functions.
+<strong><code class="docutils literal notranslate"><span class="pre">yield</span></code></strong>: Used in generator functions.</p>
 </section>
 <section id="micro-bit-keywords-some-are-legal-but-should-be-avoided">
 <h4>micro:bit Keywords (Some are legal, but should be avoided)<a class="headerlink" href="#micro-bit-keywords-some-are-legal-but-should-be-avoided" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">microbit</span></code>: The micro:bit module name.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">microbit</span></code></strong>: The micro:bit module name.</p></li>
 <li><p>TODO</p></li>
 </ul>
 </section>
 </section>
 </section>
+<section id="python-naming-conventions">
+<h2>Python Naming Conventions<a class="headerlink" href="#python-naming-conventions" title="Permalink to this heading">#</a></h2>
+<section id="constants">
+<h3>Constants<a class="headerlink" href="#constants" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
 <section id="the-behavior-of-variables">
 <h2>The Behavior of Variables<a class="headerlink" href="#the-behavior-of-variables" title="Permalink to this heading">#</a></h2>
-<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=x%20%3D%201%0Aprint%28'x%20id%3A',%20id%28x%29%29%0A%0Ay%20%3D%202%0Aprint%28'y%20id%3A',%20id%28y%29%29%0A%0Az%20%3D%20y%0Aprint%28'z%20id%3A',%20id%28z%29%29%0A%0Ay%20%3D%20x%0Aprint%28'x%20id%3A',%20id%28x%29%29%0Aprint%28'y%20id%3A',%20id%28y%29%29%0Aprint%28'z%20id%3A',%20id%28z%29%29%0A%0Ax%20%3D%20'1'%0Aprint%28'x%20id%3A',%20id%28x%29%29%0Aprint%28'y%20id%3A',%20id%28y%29%29%0Aprint%28'z%20id%3A',%20id%28z%29%29&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<p>TODO</p>
+<iframe width="800" height="800" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=x%20%3D%201%0Aprint%28'x%20id%3A',%20id%28x%29%29%0A%0Ay%20%3D%202%0Aprint%28'y%20id%3A',%20id%28y%29%29%0A%0Az%20%3D%20y%0Aprint%28'z%20id%3A',%20id%28z%29%29%0A%0Ay%20%3D%20x%0Aprint%28'x%20id%3A',%20id%28x%29%29%0Aprint%28'y%20id%3A',%20id%28y%29%29%0Aprint%28'z%20id%3A',%20id%28z%29%29%0A%0Ax%20%3D%20'1'%0Aprint%28'x%20id%3A',%20id%28x%29%29%0Aprint%28'y%20id%3A',%20id%28y%29%29%0Aprint%28'z%20id%3A',%20id%28z%29%29&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 </section>
 <section id="checkpoint-identify-the-valid-and-invalid-variable-names">
 <h2>Checkpoint: Identify the Valid and Invalid variable names.<a class="headerlink" href="#checkpoint-identify-the-valid-and-invalid-variable-names" title="Permalink to this heading">#</a></h2>
@@ -694,8 +711,8 @@ document.write(`
 <tbody>
 <tr class="row-even"><td><p><strong>A</strong></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">sensor</span> <span class="pre">1</span> <span class="pre">val</span></code></p></td>
-<td><p><strong>Invalid</strong></p></td>
-<td><p>The variable name has whitespace</p></td>
+<td><p><em><strong>Invalid</strong></em></p></td>
+<td><p>The variable name has whitespace.</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>B</strong></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">sensor1_val</span></code></p></td>
@@ -704,17 +721,17 @@ document.write(`
 </tr>
 <tr class="row-even"><td><p><strong>C</strong></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">1sensor_val</span></code></p></td>
-<td><p><strong>Invalid</strong></p></td>
-<td><p>The variable name starts with a number</p></td>
+<td><p><em><strong>Invalid</strong></em></p></td>
+<td><p>The variable name starts with a number.</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>D</strong></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">sensor1-val</span></code></p></td>
-<td><p><strong>Invalid</strong></p></td>
+<td><p><em><strong>Invalid</strong></em></p></td>
 <td><p>The variable name has a special character <code class="docutils literal notranslate"><span class="pre">-</span></code> other than <code class="docutils literal notranslate"><span class="pre">_</span></code>.</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>E</strong></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">sensor_v&#64;l</span></code></p></td>
-<td><p><strong>Invalid</strong></p></td>
+<td><p><em><strong>Invalid</strong></em></p></td>
 <td><p>The variable name has a special character <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> other than <code class="docutils literal notranslate"><span class="pre">_</span></code>.</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>F</strong></p></td>
@@ -777,11 +794,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="display-04-while-loop.html"
+       href="display-04-loops.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Python: The <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</p>
+        <p class="prev-next-title">Loops</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -814,6 +831,10 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#micro-bit-keywords-some-are-legal-but-should-be-avoided">micro:bit Keywords (Some are legal, but should be avoided)</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-naming-conventions">Python Naming Conventions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#constants">Constants</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-behavior-of-variables">The Behavior of Variables</a></li>

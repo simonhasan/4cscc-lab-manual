@@ -2,7 +2,7 @@
 
 The micro:bit sound sensor (microphone) is a built-in sensor that detects sound levels in the surrounding environment. This sensor measures the intensity or amplitude of sound waves, allowing the micro:bit to respond to changes in sound levels.
 
-Using the sound sensor, the micro:bit can detect sound events, such as claps, music, or spoken words, and respond accordingly in programmed applications. For example, it can be used to trigger actions, control animations, or display visualizations in response to sound input.
+Using the sound sensor, the micro:bit can detect sound events, such as claps, music, or spoken words, and respond accordingly in programmed applications. For example, it can trigger actions, control animations, or display visualizations in response to sound input.
 
 The micro:bit sound sensor is displayed below:
 

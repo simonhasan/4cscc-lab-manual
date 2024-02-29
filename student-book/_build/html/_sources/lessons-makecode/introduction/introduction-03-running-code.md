@@ -1,4 +1,4 @@
-# Running Code on a micro:bit
+# Running Code on a micro:bit with MakeCode
 
 The code in this section describes how to create a first program. The program displays the text "Hello!" and displays it on the micro:bit display once.
 
