@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Lists &#8212; Four Corners Science and Computing Club Lab Notebook</title>
+    <title>Variables &#8212; Four Corners Science and Computing Club Lab Notebook</title>
   
   
   
@@ -62,11 +62,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'lessons-micropython/display/display-07-lists';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lessons-micropython/display/display-04-variables';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Displaying an Animation" href="display-08-animation.html" />
-    <link rel="prev" title="Displaying Custom Images" href="display-06-display-custom-image.html" />
+    <link rel="next" title="Loops" href="display-05-loops.html" />
+    <link rel="prev" title="Displaying Strings" href="display-03-display-text.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -211,13 +213,14 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../lessons/display-micropython.html">The micro:bit Display with Python</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="display-00-intro.html">The micro:bit Display</a></li>
 <li class="toctree-l2"><a class="reference internal" href="display-01-strings.html">The String (<code class="docutils literal notranslate"><span class="pre">str</span></code>) Data Type</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-02-display-text.html">Displaying Strings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-03-variables.html">Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-04-loops.html">Loops</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-05-display-image.html">Built-In Images</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-06-display-custom-image.html">Displaying Custom Images</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Lists</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-08-animation.html">Displaying an Animation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-02-comments.html">Comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-03-display-text.html">Displaying Strings</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-05-loops.html">Loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-06-display-image.html">Built-In Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-07-display-custom-image.html">Displaying Custom Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-08-lists.html">Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-09-animation.html">Displaying an Animation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../vocabulary-micropython/display-vocabulary.html">Vocabulary</a></li>
 </ul>
 </li>
@@ -401,7 +404,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/simonhasan/4cscc-lab-manual/issues/new?title=Issue%20on%20page%20%2Flessons-micropython/display/display-07-lists.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/simonhasan/4cscc-lab-manual/issues/new?title=Issue%20on%20page%20%2Flessons-micropython/display/display-04-variables.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -431,7 +434,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/lessons-micropython/display/display-07-lists.md" target="_blank"
+      <li><a href="../../_sources/lessons-micropython/display/display-04-variables.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -515,7 +518,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lists</h1>
+    <h1>Variables</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -525,11 +528,27 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anatomy-of-a-list">Anatomy of a List</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-lists">Creating Lists</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-data-in-a-list">Accessing Data in a List</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-items-in-a-list">Managing Items in a List</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterating-through-a-list-with-a-for-loop">Iterating Through a <code class="docutils literal notranslate"><span class="pre">list</span></code> with a <code class="docutils literal notranslate"><span class="pre">for</span></code> Loop</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-variables">Naming Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-cannot-start-with-a-number">Variable Names Cannot Start with a Number</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-can-only-use-alphanumeric-characters">Variable Names Can Only Use Alphanumeric Characters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-have-whitespace">Variables Cannot Have Whitespace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-contain-special-characters-other-than-an-underscore">Variables Cannot Contain Special Characters Other Than an Underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-be-python-or-micro-bit-micropython-keywords">Variables Cannot Be Python or micro:bit MicroPython Keywords</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-and-control-flow-keywords">Logical and Control Flow Keywords:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types-and-constants">Data Types and Constants:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#function-and-class-keywords">Function and Class Keywords:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#other-keywords">Other Keywords:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#micro-bit-keywords-some-are-legal-but-should-be-avoided">micro:bit Keywords (Some are legal, but should be avoided)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-naming-conventions">Python Naming Conventions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#constants">Constants</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-behavior-of-variables">The Behavior of Variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkpoint-identify-the-valid-and-invalid-variable-names">Checkpoint: Identify the Valid and Invalid variable names.</a></li>
 </ul>
             </nav>
         </div>
@@ -541,38 +560,200 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="lists">
-<h1>Lists<a class="headerlink" href="#lists" title="Permalink to this heading">#</a></h1>
-<p>This section delves into the fundamentals of Python lists, a versatile and essential data structure in the Python programming language. Lists are a collection type that allows for storing and manipulating items in the collection, providing flexibility and ease of use for a wide range of tasks, from simple data storage to complex algorithms. Understanding how to work with lists is crucial for any Python programmer aiming to manage and process data efficiently.</p>
-<section id="anatomy-of-a-list">
-<h2>Anatomy of a List<a class="headerlink" href="#anatomy-of-a-list" title="Permalink to this heading">#</a></h2>
-<p>TODO</p>
-</section>
-<section id="creating-lists">
-<h2>Creating Lists<a class="headerlink" href="#creating-lists" title="Permalink to this heading">#</a></h2>
-<p>TODO</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">people</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;Eve&#39;</span><span class="p">,</span> <span class="s1">&#39;Oscar&#39;</span><span class="p">]</span> <span class="c1"># List of strings </span>
-
+  <section class="tex2jax_ignore mathjax_ignore" id="variables">
+<h1>Variables<a class="headerlink" href="#variables" title="Permalink to this heading">#</a></h1>
+<p>In mathematics, a <strong>variable</strong> is a symbol or letter used to represent an unknown quantity or a value that can change within a given context or equation. Variables are typically denoted by letters such as <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, or <span class="math notranslate nohighlight">\(z\)</span>​, and their values can vary depending on the conditions or constraints of the problem being considered.  I</p>
+<p>In computer science, a <strong>variable</strong> is a symbolic name associated with a memory location that stores data. Variables serve as placeholders for values that can change during the execution of a program. They represent and manipulate different data types, such as numbers, strings, or objects, allowing programmers to work with dynamic information and perform computations.</p>
+<p>Variables allow programmers to store and manipulate data within a program. They can hold different data types, such as numbers, strings, lists, or more complex objects. Variables in Python are <strong>dynamically typed</strong>, meaning their type is determined at runtime based on the value assigned to them. This flexibility makes Python versatile for various programming tasks, as variables can be reassigned to different types of data as needed during execution.</p>
+<p>Variables must be declared or assigned a name. To declare a variable, you use the assignment operator <code class="docutils literal notranslate"><span class="pre">=</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The assignment operator <code class="docutils literal notranslate"><span class="pre">=</span></code> does not represent equality as it does in mathematics. To represent equality, see section TODO.</p>
+</div>
+<p>Here are some examples:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">led_pin</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Oscar&#39;</span>
+<span class="n">sensor_val</span> <span class="o">=</span> <span class="n">analog_read</span><span class="p">(</span><span class="n">sensor_pin</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>TODO</p>
+<section id="naming-variables">
+<h2>Naming Variables<a class="headerlink" href="#naming-variables" title="Permalink to this heading">#</a></h2>
+<p>Variable names come with some constraints:</p>
+<section id="variable-names-cannot-start-with-a-number">
+<h3>Variable Names Cannot Start with a Number<a class="headerlink" href="#variable-names-cannot-start-with-a-number" title="Permalink to this heading">#</a></h3>
+<p>Starting a variable with a number is not valid. If a number is needed to index the variable name, place the number after the variable name.</p>
 </section>
-<section id="accessing-data-in-a-list">
-<h2>Accessing Data in a List<a class="headerlink" href="#accessing-data-in-a-list" title="Permalink to this heading">#</a></h2>
-<p>TODO</p>
-<iframe src="https://trinket.io/embed/python3/22b91c41d1?runOption=run&start=result&showInstructions=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-<p>TODO</p>
+<section id="variable-names-can-only-use-alphanumeric-characters">
+<h3>Variable Names Can Only Use Alphanumeric Characters<a class="headerlink" href="#variable-names-can-only-use-alphanumeric-characters" title="Permalink to this heading">#</a></h3>
+<p>Variable names can contain characters <code class="docutils literal notranslate"><span class="pre">a-z</span></code>, <code class="docutils literal notranslate"><span class="pre">A-Z</span></code>, and <code class="docutils literal notranslate"><span class="pre">0-9</span></code> (as long as it is not at the beginning of the variable name).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There are different naming convensions for variable names.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Naming Convension</p></th>
+<th class="head"><p>Examples</p></th>
+<th class="head"><p>Explination</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Snake Case</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">led_pin</span></code><br> <code class="docutils literal notranslate"><span class="pre">sensor_val</span></code><br><code class="docutils literal notranslate"><span class="pre">number_of_students</span></code></p></td>
+<td><p>Words all lower case and separated by an underscore. <strong>This is the prefeded naming convension by many Python programmers.</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Camel Case</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ledPin</span></code><br> <code class="docutils literal notranslate"><span class="pre">sensorVal</span></code><br><code class="docutils literal notranslate"><span class="pre">numberOfStudents</span></code></p></td>
+<td><p>The first word is lower case, and all subsequent words are capitalized. This is valid but not seen as frequently as Snake Case.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Pascal Case</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">LedPin</span></code><br><code class="docutils literal notranslate"><span class="pre">SensorVal</span></code><br><code class="docutils literal notranslate"><span class="pre">NumberOfStudents</span></code></p></td>
+<td><p>The first letter of every word is capitalixed. This is valid but discouraged. Pascal Case is used to identify classes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Uppercase</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">LED_PIN</span></code><br><code class="docutils literal notranslate"><span class="pre">SENSOR_VAL</span></code><br><code class="docutils literal notranslate"><span class="pre">NUMBER_OF_STUDENTS</span></code></p></td>
+<td><p>All letters are capitalized. This is valid but discouraged. Uppercase is used to identify constants (variables that should not be changed or reassigned). Python does not have true constants and having uppercase variable names helps distinguish these variables for others.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Naming convensions may differ depending on the company or the project. It may be possible that a naming convension is set. To read more about the naming convensions in Python see <a class="reference external" href="https://peps.python.org/pep-0008/#naming-conventions">PEP 8 – Style Guide for Python Code</a>.</p>
+</div>
 </section>
-<section id="managing-items-in-a-list">
-<h2>Managing Items in a List<a class="headerlink" href="#managing-items-in-a-list" title="Permalink to this heading">#</a></h2>
-<p>TODO</p>
-<iframe width="800" height="600" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=names%20%3D%20%5B'Alice',%20'Bob',%20'Eve',%20'Oscar'%5D%0Anames%5B1%5D%20%3D%20'Trudy'%0Anames.pop%28%29%0Anames%20%3D%20names%20%2B%20%5B'Peggy',%20'Victor'%5D%0Anames.pop%282%29%0Adel%20names%5B1%5D&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<section id="variables-cannot-have-whitespace">
+<h3>Variables Cannot Have Whitespace<a class="headerlink" href="#variables-cannot-have-whitespace" title="Permalink to this heading">#</a></h3>
+<p>Whitespace is a character such as spaces or tabs.</p>
 </section>
-<section id="iterating-through-a-list-with-a-for-loop">
-<h2>Iterating Through a <code class="docutils literal notranslate"><span class="pre">list</span></code> with a <code class="docutils literal notranslate"><span class="pre">for</span></code> Loop<a class="headerlink" href="#iterating-through-a-list-with-a-for-loop" title="Permalink to this heading">#</a></h2>
-<iframe src="https://trinket.io/embed/python3/ae2bd601dc?runOption=run&start=result&showInstructions=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-<p>TODO:MOVE THIS</p>
-<iframe width="800" height="600" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=names%20%3D%20%5B'Alice',%20'Bob',%20'Eve',%20'Oscar'%5D%0Aages%20%3D%20%5B22,%2024,%2025,%2023%5D%0A%0Apeople%20%3D%20dict%28zip%28names,%20ages%29%29&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<section id="variables-cannot-contain-special-characters-other-than-an-underscore">
+<h3>Variables Cannot Contain Special Characters Other Than an Underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>.<a class="headerlink" href="#variables-cannot-contain-special-characters-other-than-an-underscore" title="Permalink to this heading">#</a></h3>
+<p>An underscore (<code class="docutils literal notranslate"><span class="pre">_</span></code>) is the only valid special or non-alphanumeric character allowed in variable names. This may make the variable more readable <code class="docutils literal notranslate"><span class="pre">myname</span></code> vs <code class="docutils literal notranslate"><span class="pre">my_name</span></code>.</p>
+</section>
+<section id="variables-cannot-be-python-or-micro-bit-micropython-keywords">
+<h3>Variables Cannot Be Python or micro:bit MicroPython Keywords<a class="headerlink" href="#variables-cannot-be-python-or-micro-bit-micropython-keywords" title="Permalink to this heading">#</a></h3>
+<section id="logical-and-control-flow-keywords">
+<h4>Logical and Control Flow Keywords:<a class="headerlink" href="#logical-and-control-flow-keywords" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">and</span></code></strong>: Used for logical AND operations.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">or</span></code></strong>: Used for logical OR operations.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">not</span></code></strong>: Used for logical NOT operations.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">if</span></code></strong>, <strong><code class="docutils literal notranslate"><span class="pre">elif</span></code></strong>, <strong><code class="docutils literal notranslate"><span class="pre">else</span></code></strong>: Used for conditional statements.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">while</span></code></strong>: Used for creating loops.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">for</span></code></strong>: Used for iterating over sequences.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">break</span></code></strong>: Used to exit a loop prematurely.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">continue</span></code></strong>: Used to skip the current iteration and proceed to the next one.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">pass</span></code></strong>: A placeholder statement that does nothing.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">return</span></code></strong>: Used to exit a function and return a value.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">try</span></code></strong>, <strong><code class="docutils literal notranslate"><span class="pre">except</span></code></strong>, <strong><code class="docutils literal notranslate"><span class="pre">finally</span></code></strong>: Used for exception handling.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">assert</span></code></strong>: Used for debugging and ensuring conditions are met.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">with</span></code></strong>: Used for context management (e.g., file handling).</p></li>
+</ul>
+</section>
+<section id="data-types-and-constants">
+<h4>Data Types and Constants:<a class="headerlink" href="#data-types-and-constants" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">True</span></code></strong>, <strong><code class="docutils literal notranslate"><span class="pre">False</span></code></strong>: Boolean constants.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">None</span></code></strong>: Represents the absence of a value (similar to null in other languages).</p></li>
+</ul>
+</section>
+<section id="function-and-class-keywords">
+<h4>Function and Class Keywords:<a class="headerlink" href="#function-and-class-keywords" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">def</span></code></strong>: Used to define functions.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">class</span></code></strong>: Used to define classes.</p></li>
+</ul>
+</section>
+<section id="other-keywords">
+<h4>Other Keywords:<a class="headerlink" href="#other-keywords" title="Permalink to this heading">#</a></h4>
+<p><strong><code class="docutils literal notranslate"><span class="pre">global</span></code></strong>: Used to declare global variables.
+<strong><code class="docutils literal notranslate"><span class="pre">lambda</span></code></strong>: Used to create anonymous functions.
+<strong><code class="docutils literal notranslate"><span class="pre">yield</span></code></strong>: Used in generator functions.</p>
+</section>
+<section id="micro-bit-keywords-some-are-legal-but-should-be-avoided">
+<h4>micro:bit Keywords (Some are legal, but should be avoided)<a class="headerlink" href="#micro-bit-keywords-some-are-legal-but-should-be-avoided" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">microbit</span></code></strong>: The micro:bit module name.</p></li>
+<li><p>TODO</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="python-naming-conventions">
+<h2>Python Naming Conventions<a class="headerlink" href="#python-naming-conventions" title="Permalink to this heading">#</a></h2>
+<section id="constants">
+<h3>Constants<a class="headerlink" href="#constants" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="the-behavior-of-variables">
+<h2>The Behavior of Variables<a class="headerlink" href="#the-behavior-of-variables" title="Permalink to this heading">#</a></h2>
+<p>TODO</p>
+<iframe width="800" height="800" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=x%20%3D%201%0Aprint%28'x%20id%3A',%20id%28x%29%29%0A%0Ay%20%3D%202%0Aprint%28'y%20id%3A',%20id%28y%29%29%0A%0Az%20%3D%20y%0Aprint%28'z%20id%3A',%20id%28z%29%29%0A%0Ay%20%3D%20x%0Aprint%28'x%20id%3A',%20id%28x%29%29%0Aprint%28'y%20id%3A',%20id%28y%29%29%0Aprint%28'z%20id%3A',%20id%28z%29%29%0A%0Ax%20%3D%20'1'%0Aprint%28'x%20id%3A',%20id%28x%29%29%0Aprint%28'y%20id%3A',%20id%28y%29%29%0Aprint%28'z%20id%3A',%20id%28z%29%29&codeDivHeight=400&codeDivWidth=350&cumulative=true&curInstr=0&heapPrimitives=true&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+</section>
+<section id="checkpoint-identify-the-valid-and-invalid-variable-names">
+<h2>Checkpoint: Identify the Valid and Invalid variable names.<a class="headerlink" href="#checkpoint-identify-the-valid-and-invalid-variable-names" title="Permalink to this heading">#</a></h2>
+<p>Discuss the following:</p>
+<ul class="simple">
+<li><p>Which variable names are valid?</p></li>
+<li><p>Which variable names are invalid?</p></li>
+<li><p>If the variable names are invalid, describe the reasoning.</p></li>
+</ul>
+<p><strong>A</strong>. <code class="docutils literal notranslate"><span class="pre">sensor</span> <span class="pre">1</span> <span class="pre">val</span></code></p>
+<p><strong>B</strong>. <code class="docutils literal notranslate"><span class="pre">sensor1_val</span></code></p>
+<p><strong>C</strong>. <code class="docutils literal notranslate"><span class="pre">1sensor_val</span></code></p>
+<p><strong>D</strong>. <code class="docutils literal notranslate"><span class="pre">sensor1-val</span></code></p>
+<p><strong>E</strong>. <code class="docutils literal notranslate"><span class="pre">sensor_v&#64;l</span></code></p>
+<p><strong>F</strong>. <code class="docutils literal notranslate"><span class="pre">SENSOR_VAL</span></code></p>
+<div class="dropdown admonition">
+<p class="admonition-title">Click here to reveal the solutions.</p>
+<p>Solution:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Variable Name</p></th>
+<th class="head"><p>Valid or Invalid</p></th>
+<th class="head"><p>Reason</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>A</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sensor</span> <span class="pre">1</span> <span class="pre">val</span></code></p></td>
+<td><p><em><strong>Invalid</strong></em></p></td>
+<td><p>The variable name has whitespace.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>B</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sensor1_val</span></code></p></td>
+<td><p><strong>Valid</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>C</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1sensor_val</span></code></p></td>
+<td><p><em><strong>Invalid</strong></em></p></td>
+<td><p>The variable name starts with a number.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>D</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sensor1-val</span></code></p></td>
+<td><p><em><strong>Invalid</strong></em></p></td>
+<td><p>The variable name has a special character <code class="docutils literal notranslate"><span class="pre">-</span></code> other than <code class="docutils literal notranslate"><span class="pre">_</span></code>.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>E</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sensor_v&#64;l</span></code></p></td>
+<td><p><em><strong>Invalid</strong></em></p></td>
+<td><p>The variable name has a special character <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> other than <code class="docutils literal notranslate"><span class="pre">_</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>F</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SENSOR_VAL</span></code></p></td>
+<td><p><strong>Valid</strong></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
+<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;This is a Python string.&#39;</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 </section>
 
@@ -607,20 +788,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="display-06-display-custom-image.html"
+       href="display-03-display-text.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Displaying Custom Images</p>
+        <p class="prev-next-title">Displaying Strings</p>
       </div>
     </a>
     <a class="right-next"
-       href="display-08-animation.html"
+       href="display-05-loops.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Displaying an Animation</p>
+        <p class="prev-next-title">Loops</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -640,11 +821,27 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anatomy-of-a-list">Anatomy of a List</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-lists">Creating Lists</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accessing-data-in-a-list">Accessing Data in a List</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-items-in-a-list">Managing Items in a List</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterating-through-a-list-with-a-for-loop">Iterating Through a <code class="docutils literal notranslate"><span class="pre">list</span></code> with a <code class="docutils literal notranslate"><span class="pre">for</span></code> Loop</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-variables">Naming Variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-cannot-start-with-a-number">Variable Names Cannot Start with a Number</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-names-can-only-use-alphanumeric-characters">Variable Names Can Only Use Alphanumeric Characters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-have-whitespace">Variables Cannot Have Whitespace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-contain-special-characters-other-than-an-underscore">Variables Cannot Contain Special Characters Other Than an Underscore <code class="docutils literal notranslate"><span class="pre">_</span></code>.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-cannot-be-python-or-micro-bit-micropython-keywords">Variables Cannot Be Python or micro:bit MicroPython Keywords</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-and-control-flow-keywords">Logical and Control Flow Keywords:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types-and-constants">Data Types and Constants:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#function-and-class-keywords">Function and Class Keywords:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#other-keywords">Other Keywords:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#micro-bit-keywords-some-are-legal-but-should-be-avoided">micro:bit Keywords (Some are legal, but should be avoided)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python-naming-conventions">Python Naming Conventions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#constants">Constants</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-behavior-of-variables">The Behavior of Variables</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkpoint-identify-the-valid-and-invalid-variable-names">Checkpoint: Identify the Valid and Invalid variable names.</a></li>
 </ul>
   </nav></div>
 

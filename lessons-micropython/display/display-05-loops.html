@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Built-In Images &#8212; Four Corners Science and Computing Club Lab Notebook</title>
+    <title>Loops &#8212; Four Corners Science and Computing Club Lab Notebook</title>
   
   
   
@@ -62,11 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'lessons-micropython/display/display-05-display-image';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lessons-micropython/display/display-05-loops';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Displaying Custom Images" href="display-06-display-custom-image.html" />
-    <link rel="prev" title="Loops" href="display-04-loops.html" />
+    <link rel="next" title="Built-In Images" href="display-06-display-image.html" />
+    <link rel="prev" title="Variables" href="display-04-variables.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -211,11 +211,14 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../lessons/display-micropython.html">The micro:bit Display with Python</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="display-00-intro.html">The micro:bit Display</a></li>
 <li class="toctree-l2"><a class="reference internal" href="display-01-strings.html">The String (<code class="docutils literal notranslate"><span class="pre">str</span></code>) Data Type</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-02-display-text.html">Displaying Strings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-03-variables.html">Variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-04-loops.html">Loops</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Built-In Images</a></li>
-<li class="toctree-l2"><a class="reference internal" href="display-06-display-custom-image.html">Displaying Custom Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-02-comments.html">Comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-03-display-text.html">Displaying Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-04-variables.html">Variables</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-06-display-image.html">Built-In Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-07-display-custom-image.html">Displaying Custom Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-08-lists.html">Lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display-09-animation.html">Displaying an Animation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../vocabulary-micropython/display-vocabulary.html">Vocabulary</a></li>
 </ul>
 </li>
@@ -399,7 +402,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/simonhasan/4cscc-lab-manual/issues/new?title=Issue%20on%20page%20%2Flessons-micropython/display/display-05-display-image.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/simonhasan/4cscc-lab-manual/issues/new?title=Issue%20on%20page%20%2Flessons-micropython/display/display-05-loops.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -429,7 +432,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/lessons-micropython/display/display-05-display-image.md" target="_blank"
+      <li><a href="../../_sources/lessons-micropython/display/display-05-loops.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -513,7 +516,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Built-In Images</h1>
+    <h1>Loops</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -523,22 +526,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#displaying-built-in-image">Displaying Built-In Image</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-show-image-enter-image"><code class="docutils literal notranslate"><span class="pre">display.show(Image.ENTER_IMAGE)</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-while-loop">The <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-simple-while-loop">A Simple <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-typical-micro-bit-while-loop">A Typical micro:bit <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#built-in-image-inventory">Built-In Image Inventory</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#affirmations">Affirmations</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arrows">Arrows</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#animals">Animals</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clocks">Clocks</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#faces">Faces</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#music-notes">Music Notes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shapes">Shapes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#miscellaneous">Miscellaneous</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#debugging">Debugging</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-for-loop">The <code class="docutils literal notranslate"><span class="pre">for</span></code> Loop</a></li>
 </ul>
             </nav>
         </div>
@@ -550,348 +543,62 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="built-in-images">
-<h1>Built-In Images<a class="headerlink" href="#built-in-images" title="Permalink to this heading">#</a></h1>
-<p>TODO</p>
-<p>The BBC micro:bit has 64 built-in images that can be displayed using Python on the 5x5 LED matrix display.</p>
-<section id="displaying-built-in-image">
-<h2>Displaying Built-In Image<a class="headerlink" href="#displaying-built-in-image" title="Permalink to this heading">#</a></h2>
-<p>To display a built-in image, the following line of code is used:</p>
-<section id="display-show-image-enter-image">
-<h3><code class="docutils literal notranslate"><span class="pre">display.show(Image.ENTER_IMAGE)</span></code><a class="headerlink" href="#display-show-image-enter-image" title="Permalink to this heading">#</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The image name is always in uppercase.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="loops">
+<h1>Loops<a class="headerlink" href="#loops" title="Permalink to this heading">#</a></h1>
+<p>The following section explores the concept of loops, which are essential constructs used in programming to execute a block of code repeatedly. By understanding how loops function in Python, one can efficiently automate tasks, iterate through data structures, and streamline the execution of repetitive operations within a program.</p>
+<section id="the-while-loop">
+<h2>The <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop<a class="headerlink" href="#the-while-loop" title="Permalink to this heading">#</a></h2>
+<p>In Python, a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop is a control flow statement that repeatedly executes a code block if a specified condition remains <code class="docutils literal notranslate"><span class="pre">True</span></code>. It provides a way to create iterative processes in your code, allowing you to repeat instructions until a specific condition is met or becomes <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>The syntax of a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop consists of the keyword <code class="docutils literal notranslate"><span class="pre">while</span></code>, followed by a condition, and a colon <code class="docutils literal notranslate"><span class="pre">:</span></code>. The code block to be executed repeatedly is indented underneath the <code class="docutils literal notranslate"><span class="pre">while</span></code> statement. Inside the code block, you typically include statements that update the variables involved in the condition, ensuring that the loop eventually terminates when the condition evaluates to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
+<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Scroll &quot;Python&quot; on the display</span>
+<span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s1">&#39;Python&#39;</span><span class="p">)</span> 
+</pre></div>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
 <span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
 
-<span class="c1"># Display the heart image</span>
-<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HEART</span><span class="p">)</span>       
 
+<span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;Python&#39;</span>
+
+<span class="c1"># Scroll &quot;Python&quot; on the display</span>
+<span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">message</span><span class="p">)</span> 
 </pre></div>
 </div>
-<p><img alt="built-in-heart-example" src="../../_images/built-in-heart-example.png" /></p>
+<section id="a-simple-while-loop">
+<h3>A Simple <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop<a class="headerlink" href="#a-simple-while-loop" title="Permalink to this heading">#</a></h3>
+<p><img alt="while-flowchart-generic" src="../../_images/while-flowchart-generic.png" /></p>
+</section>
+<section id="a-typical-micro-bit-while-loop">
+<h3>A Typical micro:bit <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop<a class="headerlink" href="#a-typical-micro-bit-while-loop" title="Permalink to this heading">#</a></h3>
+<p><img alt="while-flowchart-infinite" src="../../_images/while-flowchart-infinite.png" /></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
+<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Code in a &#39;while True:&#39; loop repeats forever</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># Scroll &quot;Python&quot; on the display</span>
+    <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s1">&#39;Python&#39;</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p><img alt="while-flowchart-microbit" src="../../_images/while-flowchart-microbit.png" /></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imports go at the top</span>
+<span class="kn">from</span> <span class="nn">microbit</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Code in a &#39;while True:&#39; loop repeats forever</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># Show each character of &quot;Python&quot; individually on the display</span>
+    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s1">&#39;Python&#39;</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>TODO</p>
 </section>
 </section>
 <hr class="docutils" />
-<section id="built-in-image-inventory">
-<h2>Built-In Image Inventory<a class="headerlink" href="#built-in-image-inventory" title="Permalink to this heading">#</a></h2>
-<p>The built-in images can separated into the following categories:</p>
-<ul class="simple">
-<li><p>Affirmations</p></li>
-<li><p>Arrows</p></li>
-<li><p>Animals</p></li>
-<li><p>Clocks</p></li>
-<li><p>Faces</p></li>
-<li><p>Music</p></li>
-<li><p>Miscellaneous</p></li>
-</ul>
-<p>These categories and images are presented below:</p>
-<section id="affirmations">
-<h3>Affirmations<a class="headerlink" href="#affirmations" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Affirmation</p></th>
-<th class="head"><p>Code</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><img alt="built-in-no" src="../../_images/built-in-no.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.NO</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-yes" src="../../_images/built-in-yes.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.YES</span></code></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="arrows">
-<h3>Arrows<a class="headerlink" href="#arrows" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Arrow</p></th>
-<th class="head"><p>Code</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><img alt="built-in-arrow-e" src="../../_images/built-in-arrow-e.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.ARROW_E</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-arrow-n" src="../../_images/built-in-arrow-n.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.ARROW_N</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-arrow-ne" src="../../_images/built-in-arrow-ne.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.ARROW_NE</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-arrow-nw" src="../../_images/built-in-arrow-nw.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.ARROW_NW</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-arrow-s" src="../../_images/built-in-arrow-s.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.ARROW_S</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-arrow-se" src="../../_images/built-in-arrow-se.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.ARROW_SE</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-arrow-sw" src="../../_images/built-in-arrow-sw.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.ARROW_SW</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-arrow-w" src="../../_images/built-in-arrow-w.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.ARROW_W</span></code></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="animals">
-<h3>Animals<a class="headerlink" href="#animals" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Animal</p></th>
-<th class="head"><p>Code</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><img alt="built-in-butterfly" src="../../_images/built-in-butterfly.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.BUTTERFLY</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-cow" src="../../_images/built-in-cow.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.COW</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-duck" src="../../_images/built-in-duck.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.DUCK</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-giraffe" src="../../_images/built-in-giraffe.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.GIRAFFE</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-rabbit" src="../../_images/built-in-rabbit.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.RABBIT</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-snake" src="../../_images/built-in-snake.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.SNAKE</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-tortoise" src="../../_images/built-in-tortoise.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.TORTOISE</span></code></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="clocks">
-<h3>Clocks<a class="headerlink" href="#clocks" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Clock</p></th>
-<th class="head"><p>Code</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><img alt="built-in-clock-01" src="../../_images/built-in-clock-01.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.CLOCK1</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-clock-02" src="../../_images/built-in-clock-02.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.CLOCK2</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-clock-03" src="../../_images/built-in-clock-03.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.CLOCK3</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-clock-04" src="../../_images/built-in-clock-04.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.CLOCK4</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-clock-05" src="../../_images/built-in-clock-05.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.CLOCK5</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-clock-06" src="../../_images/built-in-clock-06.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.CLOCK6</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-clock-07" src="../../_images/built-in-clock-07.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.CLOCK7</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-clock-08" src="../../_images/built-in-clock-08.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.CLOCK8</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-clock-09" src="../../_images/built-in-clock-09.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.CLOCK9</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-clock-10" src="../../_images/built-in-clock-10.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.CLOCK10</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-clock-11" src="../../_images/built-in-clock-11.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.CLOCK11</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-clock-12" src="../../_images/built-in-clock-12.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.CLOCK12</span></code></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="faces">
-<h3>Faces<a class="headerlink" href="#faces" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Face</p></th>
-<th class="head"><p>Code</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><img alt="built-in-angry" src="../../_images/built-in-angry.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.ANGRY</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-asleep" src="../../_images/built-in-asleep.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.ASLEEP</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-confused" src="../../_images/built-in-confused.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.CONFUSED</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-fabulous" src="../../_images/built-in-fabulous.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.FABULOUS</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-happy" src="../../_images/built-in-happy.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.HAPPY</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-meh" src="../../_images/built-in-meh.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.MEH</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-sad" src="../../_images/built-in-sad.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.SAD</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-silly" src="../../_images/built-in-silly.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.SILLY</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-smile" src="../../_images/built-in-smile.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.SMILE</span></code></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="music-notes">
-<h3>Music Notes<a class="headerlink" href="#music-notes" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Music Note</p></th>
-<th class="head"><p></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><img alt="built-in-music-crotchet" src="../../_images/built-in-music-crotchet.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.CROTCHET</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-music-quaver" src="../../_images/built-in-music-quaver.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.QUAVER</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-music-quavers" src="../../_images/built-in-music-quavers.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.QUAVERS</span></code></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="shapes">
-<h3>Shapes<a class="headerlink" href="#shapes" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Shape</p></th>
-<th class="head"><p>Code</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><img alt="built-in-diamond" src="../../_images/built-in-diamond.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.DIAMOND</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-diamond-small" src="../../_images/built-in-diamond-small.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.DIAMOND_SMALL</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-heart" src="../../_images/built-in-heart.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.HEART</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-heart-small" src="../../_images/built-in-heart-small.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.HEART_SMALL</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-square" src="../../_images/built-in-square.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.SQUARE</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-square-small" src="../../_images/built-in-square-small.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.SQUARE_SMALL</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-triangle" src="../../_images/built-in-triangle.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.TRIANGLE</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-triangle-left" src="../../_images/built-in-triangle-left.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.TRIANGLE_LEFT</span></code></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="miscellaneous">
-<h3>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this heading">#</a></h3>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Miscellaneous Image</p></th>
-<th class="head"><p>Code</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><img alt="built-in-chessboard" src="../../_images/built-in-chessboard.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.CHESSBOARD</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-ghost" src="../../_images/built-in-ghost.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.GHOST</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-house" src="../../_images/built-in-house.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.HOUSE</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-pacman" src="../../_images/built-in-pacman.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.PACMAN</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-pitchfork" src="../../_images/built-in-pitchfork.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.PITCHFORK</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-rollerscate" src="../../_images/built-in-rollerscate.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.ROLLERSKATE</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-scissors" src="../../_images/built-in-scissors.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.SCISSORS</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-skull" src="../../_images/built-in-skull.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.SKULL</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-stickfigure" src="../../_images/built-in-stickfigure.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.STICKFIGURE</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-sword" src="../../_images/built-in-sword.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.SWORD</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-target" src="../../_images/built-in-target.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.TARGET</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-tshirt" src="../../_images/built-in-tshirt.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.TSHIRT</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p><img alt="built-in-umbrella" src="../../_images/built-in-umbrella.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.UMBRELLA</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p><img alt="built-in-xmas" src="../../_images/built-in-xmas.png" /></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Image.XMAS</span></code></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="debugging">
-<h2>Debugging<a class="headerlink" href="#debugging" title="Permalink to this heading">#</a></h2>
-<p>The following image is intended to be displayed on the micro:bit, but there is an error in the code.</p>
-<p><img alt="quiz-image" src="../../_images/quiz-image.png" /></p>
-<p>Which line of code is correct for displaying the image above?</p>
-<p><strong>A</strong>: <code class="docutils literal notranslate"><span class="pre">display.scroll(Image.HOUSE)</span></code></p>
-<p><strong>B</strong>: <code class="docutils literal notranslate"><span class="pre">display(Image.HOUSE)</span></code></p>
-<p><strong>C</strong>: <code class="docutils literal notranslate"><span class="pre">display.show(Image.house)</span></code></p>
-<p><strong>D</strong>: <code class="docutils literal notranslate"><span class="pre">display.show(Image.HOUSE)</span></code></p>
-<div class="dropdown admonition">
-<p class="admonition-title">Click here to reveal the solutions.</p>
-<p>Solutions:
-<strong>D</strong>: <code class="docutils literal notranslate"><span class="pre">display.show(Image.HOUSE)</span></code></p>
-<p>Explanation:<br>
-<strong>A</strong>: This uses the <code class="docutils literal notranslate"><span class="pre">display.scroll()</span></code> method. This is only used with strings.<br>
-<strong>B</strong>: The method is incomplete.<br>
-<strong>C</strong>: The attribute of <code class="docutils literal notranslate"><span class="pre">Image</span></code> is not capitalized.</p>
-</div>
+<section id="the-for-loop">
+<h2>The <code class="docutils literal notranslate"><span class="pre">for</span></code> Loop<a class="headerlink" href="#the-for-loop" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 
@@ -926,20 +633,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="display-04-loops.html"
+       href="display-04-variables.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Loops</p>
+        <p class="prev-next-title">Variables</p>
       </div>
     </a>
     <a class="right-next"
-       href="display-06-display-custom-image.html"
+       href="display-06-display-image.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Displaying Custom Images</p>
+        <p class="prev-next-title">Built-In Images</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -959,22 +666,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#displaying-built-in-image">Displaying Built-In Image</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#display-show-image-enter-image"><code class="docutils literal notranslate"><span class="pre">display.show(Image.ENTER_IMAGE)</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-while-loop">The <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-simple-while-loop">A Simple <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-typical-micro-bit-while-loop">A Typical micro:bit <code class="docutils literal notranslate"><span class="pre">while</span></code> Loop</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#built-in-image-inventory">Built-In Image Inventory</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#affirmations">Affirmations</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arrows">Arrows</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#animals">Animals</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clocks">Clocks</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#faces">Faces</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#music-notes">Music Notes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shapes">Shapes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#miscellaneous">Miscellaneous</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#debugging">Debugging</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-for-loop">The <code class="docutils literal notranslate"><span class="pre">for</span></code> Loop</a></li>
 </ul>
   </nav></div>
 
