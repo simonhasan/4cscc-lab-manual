@@ -29,3 +29,4 @@ print('')
 #print('')
 ```
 
+<iframe src="https://trinket.io/embed/python3/f3d9b236a7?runOption=run&start=result&showInstructions=true" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
