@@ -503,7 +503,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -519,6 +521,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-on-start-block">The <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code> Block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-forever-block">The <code class="docutils literal notranslate"><span class="pre">forever</span></code> Block</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -530,7 +541,23 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="the-on-start-and-forever-blocks">
 <h1>The <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">forever</span></code> Blocks<a class="headerlink" href="#the-on-start-and-forever-blocks" title="Permalink to this heading">#</a></h1>
-<p>TODO</p>
+<p>When MakeCode is first loaded, two blocks are preloaded by default.</p>
+<p><img alt="blocks-on-start-forever" src="../../_images/blocks-on-start-forever.png" /></p>
+<section id="the-on-start-block">
+<h2>The <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code> Block<a class="headerlink" href="#the-on-start-block" title="Permalink to this heading">#</a></h2>
+<p><img alt="block-on-start" src="../../_images/block-on-start.png" /></p>
+</section>
+<section id="the-forever-block">
+<h2>The <code class="docutils literal notranslate"><span class="pre">forever</span></code> Block<a class="headerlink" href="#the-forever-block" title="Permalink to this heading">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">forever</span></code> block is a particular block representing a <strong>loop</strong> in MakeCode, particularly an <strong>infinite loop</strong>. Loops are control structures that allow the repetition of a set of instructions or a set of code blocks. Typically, there is a <strong>terminating condition</strong> that enables the flow of the code to exit the loop. An infinite loop repeats a set of instructions infinitely or continuously without a terminating condition.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Infinite loops are used frequently when coding with microcontrollers. In other coding applications, infinite loops are often undesireable as they can cause the program to be become unresponsibe or use much of the processers capabilities.</p>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">forever</span></code> block is displayed below with a <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">string</span></code> block with the string <code class="docutils literal notranslate"><span class="pre">&quot;Hello!&quot;</span></code>.</p>
+<p><img alt="block-forever" src="../../_images/block-forever.png" /></p>
+<p>This code displays the string <code class="docutils literal notranslate"><span class="pre">&quot;Hello&quot;</span></code>across the micro:bit display in an infinite loop (forever/again and again…)</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -588,7 +615,21 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-on-start-block">The <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code> Block</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-forever-block">The <code class="docutils literal notranslate"><span class="pre">forever</span></code> Block</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
