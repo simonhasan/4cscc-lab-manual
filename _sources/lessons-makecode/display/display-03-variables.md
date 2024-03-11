@@ -30,7 +30,7 @@ Drag the `set name to 0` block into the `on start` block into the `on start` blo
 
 ![makecode-variables-05](assets/makecode-variables-05.png)
 
-To set the variable to a string, select "Advanced" and "Text" in the Toolbox. Select the MakeCode string block <img src="/Users/simon/Documents/GitHub/4cscc-lab-manual/student-book/lessons-makecode/display/assets/makecode-string.png" alt="makecode-string" style="zoom:10%;" />.
+To set the variable to a string, select "Advanced" and "Text" in the Toolbox. Select the MakeCode string block <img src="assets/makecode-string.png" alt="makecode-string" style="zoom:10%;" />.
 
 ![makecode-variables-06](assets/makecode-variables-06.png)
 
