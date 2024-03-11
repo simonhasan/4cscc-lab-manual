@@ -1,28 +1,40 @@
 # Variables
 
-TODO
+In mathematics, a **variable** is a symbol or letter used to represent an unknown quantity or a value that can change within a given context or equation. Variables are typically denoted by letters such as $x$, $y$, or $z$​, and their values can vary depending on the conditions or constraints of the problem being considered.
+
+In computer science, a **variable** is a symbolic name associated with a memory location that stores data. Variables are placeholders for values that can change during a program's execution. They represent and manipulate different data types, such as numbers, strings, or objects, allowing programmers to work with dynamic information and perform computations. 
+
+## Creating Variables with MakeCode
+
+To create a variable, select "Variables" in the Toolbox, and selct "Make a Variable..."
 
 ![makecode-variables-01](assets/makecode-variables-01.png)
 
-TODO
+A window opens prompting the user to name the variable. After naming the variable, select "Ok".
 
 ![makecode-variables-02](assets/makecode-variables-02.png)
 
-TODO
+The variable is now available to use in "Variables" in the Toolbox.
 
 ![makecode-variables-03](assets/makecode-variables-03.png)
 
-TODO
+---
+
+## Assigning a Value to the Variable
+
+By default, MakeCode variables are numbers, as seen with the `set name to 0` block below. This can be changed after the variable is dragged to the Workspace.
 
 ![makecode-variables-04](assets/makecode-variables-04.png)
 
-TODO
+Drag the `set name to 0` block into the `on start` block into the `on start` block.
 
 ![makecode-variables-05](assets/makecode-variables-05.png)
 
-TODO
+To set the variable to a string, select "Advanced" and "Text" in the Toolbox. Select the MakeCode string block <img src="/Users/simon/Documents/GitHub/4cscc-lab-manual/student-book/lessons-makecode/display/assets/makecode-string.png" alt="makecode-string" style="zoom:10%;" />.
 
 ![makecode-variables-06](assets/makecode-variables-06.png)
+
+
 
 TODO
 
