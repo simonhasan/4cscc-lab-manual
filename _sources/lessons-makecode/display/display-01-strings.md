@@ -6,7 +6,7 @@ Computers manipulate data. Data can come in several forms. Not all data is handl
 
 In MakeCode, strings are characters between double `" "` quotes.
 
-![makecode-string](assets/makecode-string.png)
+![makecode-string](assets/makecode-string-block.png)
 
 Makecode will not allow users to use strings where a number value is expected. It will highlight the error in red:
 
