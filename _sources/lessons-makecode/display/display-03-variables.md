@@ -30,13 +30,11 @@ Drag the `set name to 0` block into the `on start` block into the `on start` blo
 
 ![makecode-variables-05](assets/makecode-variables-05.png)
 
-To set the variable to a string, select "Advanced" and "Text" in the Toolbox. Select the MakeCode string block <img src="assets/makecode-string-block.png" alt="makecode-string-block" style="zoom:10%;" />.
+To set the variable to a string, select "Advanced" and "Text" in the Toolbox. Select the MakeCode string block <img src="assets/makecode-string-block.png" alt="makecode-string-block" style="zoom:5%;" />. TODO:FIX THE IMAGE SIZE
 
 ![makecode-variables-06](assets/makecode-variables-06.png)
 
-
-
-TODO
+Change the value of the blank string.
 
 ![makecode-variables-07](assets/makecode-variables-07.png)
 
