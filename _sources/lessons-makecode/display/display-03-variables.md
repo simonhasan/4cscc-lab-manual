@@ -10,11 +10,11 @@ To create a variable, select "Variables" in the Toolbox, and selct "Make a Varia
 
 ![makecode-variables-01](assets/makecode-variables-01.png)
 
-A window opens prompting the user to name the variable. After naming the variable, select "Ok".
+A window prompts the user to name the variable. After naming the variable to "name", select "Ok."
 
 ![makecode-variables-02](assets/makecode-variables-02.png)
 
-The variable is now available to use in "Variables" in the Toolbox.
+The `name` variable is now available to use in "Variables" in the Toolbox.
 
 ![makecode-variables-03](assets/makecode-variables-03.png)
 
@@ -30,24 +30,24 @@ Drag the `set name to 0` block into the `on start` block into the `on start` blo
 
 ![makecode-variables-05](assets/makecode-variables-05.png)
 
-To set the variable to a string, select "Advanced" and "Text" in the Toolbox. Select the MakeCode string block <img src="assets/makecode-string-block.png" alt="makecode-string-block" style="zoom:5%;" />. TODO:FIX THE IMAGE SIZE
+Select "Advanced" and "Text" in the Toolbox to set the variable to a string. Select the MakeCode string block <img src="assets/makecode-string-block.png" alt="makecode-string-block" width="30px" />. TODO:FIX THE IMAGE SIZE
 
 ![makecode-variables-06](assets/makecode-variables-06.png)
 
-Change the value of the blank string.
+Change the type of the `name` variable from a number to a blank string. Enter a name for the value of the `name` variable.
 
 ![makecode-variables-07](assets/makecode-variables-07.png)
 
-TODO
+In the "Basic" section of the Toolbox, selct a `show string` block. Drag it into the forever block.
 
 ![makecode-variables-08](assets/makecode-variables-08.png)
 
-TODO
+In the "Variables" section of the Toolbox, select the variable `name`.
 
 ![makecode-variables-09](assets/makecode-variables-09.png)
 
-TODO
+Drag the `name` variable in the `show string` block 
 
 ![makecode-variables-10](assets/makecode-variables-10.png)
 
-TODO
+TODO:THERE IS A STEP MISSING FROM THE SCREENSHOTS. THIS MAY REQUIRE A REDO.
