@@ -62,8 +62,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'lessons-micropython/rgb-led/rgb-led-02-binary-bits-and-bytes';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -543,7 +541,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="binary-bits-and-bytes">
+  <section id="binary-bits-and-bytes">
 <h1>Binary, Bits, and Bytes<a class="headerlink" href="#binary-bits-and-bytes" title="Permalink to this heading">#</a></h1>
 <p>Binary numbers are the cornerstone of digital computing, serving as the fundamental language of modern computers.</p>
 <section id="binary-numbers">
@@ -553,20 +551,20 @@ document.write(`
 <p><img alt="light-switch" src="../../_images/light-switch.gif" /></p>
 <p>Binary numbers work on the principle of representing numbers using only two digits: 0 and 1. In the binary system, each digit’s position represents a power of 2, starting from the rightmost digit, which represents:</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(2^0=1\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(2^1=2\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(2^2=4\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(2^3=8\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(2^4=16\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(2^5=32\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(2^6=64\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(2^7=128\)</span></p></li>
+<li><p>$2^0=1$</p></li>
+<li><p>$2^1=2$</p></li>
+<li><p>$2^2=4$</p></li>
+<li><p>$2^3=8$</p></li>
+<li><p>$2^4=16$</p></li>
+<li><p>$2^5=32$</p></li>
+<li><p>$2^6=64$</p></li>
+<li><p>$2^7=128$</p></li>
 </ul>
 <p>Here are the binary numbers and there base-10 equivalents from 0 - 99:</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>It is common to represent binary numbers with a subscript 2 with or without parentheses to help distinguish them from base-10 numbers.
-<span class="math notranslate nohighlight">\((1001)_2 = 9\)</span> or <span class="math notranslate nohighlight">\(1001_2 = 9\)</span></p>
+$(1001)_2 = 9$ or $1001_2 = 9$</p>
 </div>
 <table class="colwidths-auto table">
 <thead>
@@ -705,15 +703,14 @@ document.write(`
 <section id="binary-expansion">
 <h2>Binary Expansion<a class="headerlink" href="#binary-expansion" title="Permalink to this heading">#</a></h2>
 <p><img alt="example-binary-calculation" src="../../_images/example-binary-calculation.png" /></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<p>$$
 \begin{align}
-(1010 \space 0111)_2 &amp;= 1 \cdot 2^7 + 0 \cdot 2^6 + 1 \cdot 2^5 + 0 \cdot 2^4 + 0 \cdot 2^3 + 1 \cdot 2^2 + 1 \cdot 2^1 + 1 \cdot 1^0 \\
-&amp;= 1 \cdot 128 + 0 \cdot 64 + 1 \cdot 32 + 0 \cdot 12 + 0 \cdot 8 + 1 \cdot 4 + 1 \cdot 2 + 1 \cdot 1 \\
-&amp;= 128 + 0 + 32 + 0 + 0 + 4 + 2 +1 \\
+(1010 \space 0111)_2 &amp;= 1 \cdot 2^7 + 0 \cdot 2^6 + 1 \cdot 2^5 + 0 \cdot 2^4 + 0 \cdot 2^3 + 1 \cdot 2^2 + 1 \cdot 2^1 + 1 \cdot 1^0 \
+&amp;= 1 \cdot 128 + 0 \cdot 64 + 1 \cdot 32 + 0 \cdot 12 + 0 \cdot 8 + 1 \cdot 4 + 1 \cdot 2 + 1 \cdot 1 \
+&amp;= 128 + 0 + 32 + 0 + 0 + 4 + 2 +1 \
 &amp;= 167
 \end{align}
-\end{split}\]</div>
+$$</p>
 </section>
 <section id="checkpoint-binary-expansion">
 <h2>Checkpoint: Binary Expansion<a class="headerlink" href="#checkpoint-binary-expansion" title="Permalink to this heading">#</a></h2>
@@ -723,14 +720,13 @@ document.write(`
 <p class="admonition-title">Click here to reveal the solutions.</p>
 <p>Solution:
 <img alt="quiz-binary-expansion" src="../../_images/quiz-binary-expansion-solution.png" /></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<p>$$
 \begin{align}
-(1000 \space 1100)_2 &amp;= 1 \cdot 2^7 + 0 \cdot 2^6 + 0 \cdot 2^5 + 0 \cdot 2^4 + 1 \cdot 2^3 + 1 \cdot 2^2 + 0 \cdot 2^1 + 0 \cdot 1^0 \\
-&amp;= 1 \cdot 128 + 0\cdot 64 + 0 \cdot 32 + 0 \cdot 12 + 1 \cdot 8 + 1 \cdot 4 + 0 \cdot 2 + 0 \cdot 1 \\
-&amp;= 128 + 0 + 0 + 0 + 8 + 4 + 0 + 0 \\
+(1000 \space 1100)_2 &amp;= 1 \cdot 2^7 + 0 \cdot 2^6 + 0 \cdot 2^5 + 0 \cdot 2^4 + 1 \cdot 2^3 + 1 \cdot 2^2 + 0 \cdot 2^1 + 0 \cdot 1^0 \
+&amp;= 1 \cdot 128 + 0\cdot 64 + 0 \cdot 32 + 0 \cdot 12 + 1 \cdot 8 + 1 \cdot 4 + 0 \cdot 2 + 0 \cdot 1 \
+&amp;= 128 + 0 + 0 + 0 + 8 + 4 + 0 + 0 \
 &amp;= 140\end{align}
-\end{split}\]</div>
+$$</p>
 </div>
 </section>
 </section>

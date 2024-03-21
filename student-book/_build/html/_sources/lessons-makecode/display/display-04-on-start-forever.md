@@ -1,6 +1,6 @@
 # The `on start` and `forever` Blocks
 
-When MakeCode is first loaded, two blocks are preloaded by default.
+When MakeCode is first loaded, two blocks are preloaded by default. These two blocks were used in the previous sections to display strings on the micro:bit display. 
 
 ![blocks-on-start-forever](assets/blocks-on-start-forever.png)
 
