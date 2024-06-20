@@ -36,8 +36,8 @@ The various parts of the MakeCode Editor are labeled below:
 | 4    | Download Button       | The download button has two parts. The part on the left labeled "Download" downloads the code to the micro:bit after it has been paired with the computer. The part on the right with three dots connects or pairs the micro:bit and disconnects it. |
 | 5    | Project Title         | This is where the project title can be changed. Files downloaded to be saved on the computer will be named according to the text in this field. |
 | 6    | Home Button           | The home button navigates the user to the start screen where the latest active projects are displayed, and other projects |
-| 7    | Share Button          |                                                              |
-| 8    | Help Button           |                                                              |
+| 7    | Share Button          | This button generates links for others to view the project.  |
+| 8    | Help Button           | This buton opens a tour to the MakeCode editor, opens the support page for micro:bit, |
 | 9    | Settings Button       |                                                              |
 | 10   | Sign In Button        |                                                              |
 | 11   | Undo and Redo Buttons |                                                              |
